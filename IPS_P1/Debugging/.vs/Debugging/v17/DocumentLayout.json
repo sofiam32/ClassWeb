@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS\\Debugging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76DF3748-B640-48FC-AC81-2DE6D3CB40AD}|Debugging.csproj|c:\\users\\felix\\onedrive\\escritorio\\ips\\debugging\\sample.smfjlyz_dslpractica1||{27A26C30-A56B-49F3-8462-8DF8AD09D828}|",
+      "RelativeMoniker": "D:0:0:{76DF3748-B640-48FC-AC81-2DE6D3CB40AD}|Debugging.csproj|solutionrelative:sample.smfjlyz_dslpractica1||{27A26C30-A56B-49F3-8462-8DF8AD09D828}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sample.SMFJLYZ_DSLPractica1",
+              "DocumentMoniker": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS\\Debugging\\Sample.SMFJLYZ_DSLPractica1",
+              "RelativeDocumentMoniker": "Sample.SMFJLYZ_DSLPractica1",
+              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS\\Debugging\\Sample.SMFJLYZ_DSLPractica1",
+              "RelativeToolTip": "Sample.SMFJLYZ_DSLPractica1",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-23T08:21:23.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
