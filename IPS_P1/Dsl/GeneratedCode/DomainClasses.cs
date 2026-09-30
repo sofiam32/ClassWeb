@@ -570,6 +570,22 @@ namespace UPM_IPS.SMFJLYZPractica1
 		}
 		
 		#endregion
+		#region ClaseEnriquecida opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of ClaseEnriquecida.
+		/// Description for
+		/// UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.EstiloClase
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<ClaseEnriquecida> ClaseEnriquecida
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<ClaseEnriquecida>, ClaseEnriquecida>(global::UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.EstiloClaseDomainRoleId);
+			}
+		}
+		#endregion
 	}
 }
 namespace UPM_IPS.SMFJLYZPractica1
@@ -1737,6 +1753,180 @@ namespace UPM_IPS.SMFJLYZPractica1
 		}
 		
 		#endregion
+		#region Atributo opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Atributo.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Clase
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Atributo> Atributo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Atributo>, Atributo>(global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.ClaseDomainRoleId);
+			}
+		}
+		#endregion
+		#region Operacion opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Operacion.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Clase
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Operacion> Operacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Operacion>, Operacion>(global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.ClaseDomainRoleId);
+			}
+		}
+		#endregion
+		#region Modelo opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Modelo.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Clase
+		/// </summary>
+		public virtual Modelo Modelo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ClaseDomainRoleId) as Modelo;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ClaseDomainRoleId, value);
+			}
+		}
+		#endregion
+		#region ElementGroupPrototype Merge methods
+		/// <summary>
+		/// Returns a value indicating whether the source element represented by the
+		/// specified root ProtoElement can be added to this element.
+		/// </summary>
+		/// <param name="rootElement">
+		/// The root ProtoElement representing a source element.  This can be null, 
+		/// in which case the ElementGroupPrototype does not contain an ProtoElements
+		/// and the code should inspect the ElementGroupPrototype context information.
+		/// </param>
+		/// <param name="elementGroupPrototype">The ElementGroupPrototype that contains the root ProtoElement.</param>
+		/// <returns>true if the source element represented by the ProtoElement can be added to this target element.</returns>
+		protected override bool CanMerge(DslModeling::ProtoElementBase rootElement, DslModeling::ElementGroupPrototype elementGroupPrototype)
+		{
+			if ( elementGroupPrototype == null ) throw new global::System.ArgumentNullException("elementGroupPrototype");
+			
+			if (rootElement != null)
+			{
+				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.SMFJLYZPractica1.Atributo.DomainClassId)) 
+				{
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.SMFJLYZPractica1.Operacion.DomainClassId)) 
+				{
+					return true;
+				}
+			}
+			return base.CanMerge(rootElement, elementGroupPrototype);
+		}
+		
+		/// <summary>
+		/// Called by the Merge process to create a relationship between 
+		/// this target element and the specified source element. 
+		/// Typically, a parent-child relationship is established
+		/// between the target element (the parent) and the source element 
+		/// (the child), but any relationship can be established.
+		/// </summary>
+		/// <param name="sourceElement">The element that is to be related to this model element.</param>
+		/// <param name="elementGroup">The group of source ModelElements that have been rehydrated into the target store.</param>
+		/// <remarks>
+		/// This method is overriden to create the relationship between the target element and the specified source element.
+		/// The base method does nothing.
+		/// </remarks>
+		protected override void MergeRelate(DslModeling::ModelElement sourceElement, DslModeling::ElementGroup elementGroup)
+		{
+			// In general, sourceElement is allowed to be null, meaning that the elementGroup must be parsed for special cases.
+			// However this is not supported in generated code.  Use double-deriving on this class and then override MergeRelate completely if you 
+			// need to support this case.
+			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
+		
+				
+			global::UPM_IPS.SMFJLYZPractica1.Atributo sourceAtributo1 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Atributo;
+			if (sourceAtributo1 != null)
+			{
+				// Create link for path ClaseHasAtributo.Atributo
+				this.Atributo.Add(sourceAtributo1);
+
+				return;
+			}
+				
+			global::UPM_IPS.SMFJLYZPractica1.Operacion sourceOperacion2 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Operacion;
+			if (sourceOperacion2 != null)
+			{
+				// Create link for path ClaseHasOperacion.Operacion
+				this.Operacion.Add(sourceOperacion2);
+
+				return;
+			}
+		
+			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
+			// during a "Paste".
+			if (sourceElement is DslModeling::ExtensionElement
+				&& sourceElement.Store.TransactionManager.CurrentTransaction.TopLevelTransaction.Context.ContextInfo.ContainsKey("{9DAFD42A-DC0E-4d78-8C3F-8266B2CF8B33}"))
+			{
+				return;
+			}
+		
+			// Fall through to base class if this class hasn't handled the merge.
+			base.MergeRelate(sourceElement, elementGroup);
+		}
+		
+		/// <summary>
+		/// Performs operation opposite to MergeRelate - i.e. disconnects a given
+		/// element from the current one (removes links created by MergeRelate).
+		/// </summary>
+		/// <param name="sourceElement">Element to be unmerged/disconnected.</param>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+		protected override void MergeDisconnect(DslModeling::ModelElement sourceElement)
+		{
+			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
+				
+			global::UPM_IPS.SMFJLYZPractica1.Atributo sourceAtributo1 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Atributo;
+			if (sourceAtributo1 != null)
+			{
+				// Delete link for path ClaseHasAtributo.Atributo
+				
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.GetLinks((global::UPM_IPS.SMFJLYZPractica1.Clase)this, sourceAtributo1))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.ClaseDomainRoleId, global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.AtributoDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::UPM_IPS.SMFJLYZPractica1.Operacion sourceOperacion2 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Operacion;
+			if (sourceOperacion2 != null)
+			{
+				// Delete link for path ClaseHasOperacion.Operacion
+				
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.GetLinks((global::UPM_IPS.SMFJLYZPractica1.Clase)this, sourceOperacion2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.ClaseDomainRoleId, global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.OperacionDomainRoleId);
+				}
+
+				return;
+			}
+			// Fall through to base class if this class hasn't handled the unmerge.
+			base.MergeDisconnect(sourceElement);
+		}
+		#endregion
 	}
 }
 namespace UPM_IPS.SMFJLYZPractica1
@@ -1951,6 +2141,25 @@ namespace UPM_IPS.SMFJLYZPractica1
 			}
 		}
 		
+		#endregion
+		#region Clase_atributo opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Clase_atributo.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Atributo
+		/// </summary>
+		public virtual Clase Clase_atributo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.AtributoDomainRoleId) as Clase;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.AtributoDomainRoleId, value);
+			}
+		}
 		#endregion
 	}
 }
@@ -2254,6 +2463,25 @@ namespace UPM_IPS.SMFJLYZPractica1
 		}
 		
 		#endregion
+		#region Clase_operacion opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Clase_operacion.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Operacion
+		/// </summary>
+		public virtual Clase Clase_operacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.OperacionDomainRoleId) as Clase;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.OperacionDomainRoleId, value);
+			}
+		}
+		#endregion
 	}
 }
 namespace UPM_IPS.SMFJLYZPractica1
@@ -2267,7 +2495,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("d1ea70d7-3670-4bfe-8790-288a62d5ed55")]
-	public partial class ClaseEnriquecida : EstiloClase
+	public abstract partial class ClaseEnriquecida : Clase
 	{
 		#region Constructors, domain class Id
 	
@@ -2276,11 +2504,58 @@ namespace UPM_IPS.SMFJLYZPractica1
 		/// </summary>
 		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xd1ea70d7, 0x3670, 0x4bfe, 0x87, 0x90, 0x28, 0x8a, 0x62, 0xd5, 0xed, 0x55);
 		/// <summary>
+		/// Constructor.
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		protected ClaseEnriquecida(DslModeling::Partition partition, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region EstiloClase opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of EstiloClase.
+		/// Description for
+		/// UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.ClaseEnriquecida
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<EstiloClase> EstiloClase
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloClase>, EstiloClase>(global::UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.ClaseEnriquecidaDomainRoleId);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainClass Modelo
+	/// Description for UPM_IPS.SMFJLYZPractica1.Modelo
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.SMFJLYZPractica1.Modelo.DisplayName", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.Modelo.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("be2e0c1a-91c1-4932-8085-8729c7317916")]
+	public partial class Modelo : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Modelo domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xbe2e0c1a, 0x91c1, 0x4932, 0x80, 0x85, 0x87, 0x29, 0xc7, 0x31, 0x79, 0x16);
+		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ClaseEnriquecida(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public Modelo(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -2290,9 +2565,121 @@ namespace UPM_IPS.SMFJLYZPractica1
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ClaseEnriquecida(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public Modelo(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
+		}
+		#endregion
+		#region Clase opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Clase.
+		/// Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Modelo
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Clase> Clase
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Clase>, Clase>(global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ModeloDomainRoleId);
+			}
+		}
+		#endregion
+		#region ElementGroupPrototype Merge methods
+		/// <summary>
+		/// Returns a value indicating whether the source element represented by the
+		/// specified root ProtoElement can be added to this element.
+		/// </summary>
+		/// <param name="rootElement">
+		/// The root ProtoElement representing a source element.  This can be null, 
+		/// in which case the ElementGroupPrototype does not contain an ProtoElements
+		/// and the code should inspect the ElementGroupPrototype context information.
+		/// </param>
+		/// <param name="elementGroupPrototype">The ElementGroupPrototype that contains the root ProtoElement.</param>
+		/// <returns>true if the source element represented by the ProtoElement can be added to this target element.</returns>
+		protected override bool CanMerge(DslModeling::ProtoElementBase rootElement, DslModeling::ElementGroupPrototype elementGroupPrototype)
+		{
+			if ( elementGroupPrototype == null ) throw new global::System.ArgumentNullException("elementGroupPrototype");
+			
+			if (rootElement != null)
+			{
+				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.SMFJLYZPractica1.Clase.DomainClassId)) 
+				{
+					return true;
+				}
+			}
+			return base.CanMerge(rootElement, elementGroupPrototype);
+		}
+		
+		/// <summary>
+		/// Called by the Merge process to create a relationship between 
+		/// this target element and the specified source element. 
+		/// Typically, a parent-child relationship is established
+		/// between the target element (the parent) and the source element 
+		/// (the child), but any relationship can be established.
+		/// </summary>
+		/// <param name="sourceElement">The element that is to be related to this model element.</param>
+		/// <param name="elementGroup">The group of source ModelElements that have been rehydrated into the target store.</param>
+		/// <remarks>
+		/// This method is overriden to create the relationship between the target element and the specified source element.
+		/// The base method does nothing.
+		/// </remarks>
+		protected override void MergeRelate(DslModeling::ModelElement sourceElement, DslModeling::ElementGroup elementGroup)
+		{
+			// In general, sourceElement is allowed to be null, meaning that the elementGroup must be parsed for special cases.
+			// However this is not supported in generated code.  Use double-deriving on this class and then override MergeRelate completely if you 
+			// need to support this case.
+			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
+		
+				
+			global::UPM_IPS.SMFJLYZPractica1.Clase sourceClase1 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Clase;
+			if (sourceClase1 != null)
+			{
+				// Create link for path ModeloHasClase.Clase
+				this.Clase.Add(sourceClase1);
+
+				return;
+			}
+		
+			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
+			// during a "Paste".
+			if (sourceElement is DslModeling::ExtensionElement
+				&& sourceElement.Store.TransactionManager.CurrentTransaction.TopLevelTransaction.Context.ContextInfo.ContainsKey("{9DAFD42A-DC0E-4d78-8C3F-8266B2CF8B33}"))
+			{
+				return;
+			}
+		
+			// Fall through to base class if this class hasn't handled the merge.
+			base.MergeRelate(sourceElement, elementGroup);
+		}
+		
+		/// <summary>
+		/// Performs operation opposite to MergeRelate - i.e. disconnects a given
+		/// element from the current one (removes links created by MergeRelate).
+		/// </summary>
+		/// <param name="sourceElement">Element to be unmerged/disconnected.</param>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+		protected override void MergeDisconnect(DslModeling::ModelElement sourceElement)
+		{
+			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
+				
+			global::UPM_IPS.SMFJLYZPractica1.Clase sourceClase1 = sourceElement as global::UPM_IPS.SMFJLYZPractica1.Clase;
+			if (sourceClase1 != null)
+			{
+				// Delete link for path ModeloHasClase.Clase
+				
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.GetLinks((global::UPM_IPS.SMFJLYZPractica1.Modelo)this, sourceClase1))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ModeloDomainRoleId, global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ClaseDomainRoleId);
+				}
+
+				return;
+			}
+			// Fall through to base class if this class hasn't handled the unmerge.
+			base.MergeDisconnect(sourceElement);
 		}
 		#endregion
 	}

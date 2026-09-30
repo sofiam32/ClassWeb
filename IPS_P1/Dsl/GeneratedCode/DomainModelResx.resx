@@ -365,6 +365,142 @@
     <value>Clase Enriquecida</value>
     <comment>DisplayName for DomainClass &apos;ClaseEnriquecida&apos;</comment>
   </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.Modelo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.Modelo</value>
+    <comment>Description for DomainClass &apos;Modelo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.Modelo.DisplayName" xml:space="preserve">
+    <value>Modelo</value>
+    <comment>DisplayName for DomainClass &apos;Modelo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo</value>
+    <comment>Description for DomainClass &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.DisplayName" xml:space="preserve">
+    <value>Clase Has Atributo</value>
+    <comment>DisplayName for DomainClass &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Clase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Clase</value>
+    <comment>Description for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Clase.DisplayName" xml:space="preserve">
+    <value>Clase</value>
+    <comment>DisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Clase.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Clase_atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;ClaseHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion</value>
+    <comment>Description for DomainClass &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.DisplayName" xml:space="preserve">
+    <value>Clase Has Operacion</value>
+    <comment>DisplayName for DomainClass &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Clase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Clase</value>
+    <comment>Description for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Clase.DisplayName" xml:space="preserve">
+    <value>Clase</value>
+    <comment>DisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Clase.PropertyDisplayName" xml:space="preserve">
+    <value>Operacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Operacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Operacion</value>
+    <comment>Description for DomainRole &apos;Operacion&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Operacion.DisplayName" xml:space="preserve">
+    <value>Operacion</value>
+    <comment>DisplayName for DomainRole &apos;Operacion&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion/Operacion.PropertyDisplayName" xml:space="preserve">
+    <value>Clase_operacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Operacion&apos; on DomainRelationship &apos;ClaseHasOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase</value>
+    <comment>Description for DomainClass &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase.DisplayName" xml:space="preserve">
+    <value>Modelo Has Clase</value>
+    <comment>DisplayName for DomainClass &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Modelo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Modelo</value>
+    <comment>Description for DomainRole &apos;Modelo&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Modelo.DisplayName" xml:space="preserve">
+    <value>Modelo</value>
+    <comment>DisplayName for DomainRole &apos;Modelo&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Modelo.PropertyDisplayName" xml:space="preserve">
+    <value>Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Modelo&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Clase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Clase</value>
+    <comment>Description for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Clase.DisplayName" xml:space="preserve">
+    <value>Clase</value>
+    <comment>DisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.ModeloHasClase/Clase.PropertyDisplayName" xml:space="preserve">
+    <value>Modelo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Clase&apos; on DomainRelationship &apos;ModeloHasClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida</value>
+    <comment>Description for DomainClass &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.DisplayName" xml:space="preserve">
+    <value>Estilo Clase References Clase Enriquecida</value>
+    <comment>DisplayName for DomainClass &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/EstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.EstiloClase</value>
+    <comment>Description for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/EstiloClase.DisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>DisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/EstiloClase.PropertyDisplayName" xml:space="preserve">
+    <value>Clase Enriquecida</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/ClaseEnriquecida.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.ClaseEnriquecida</value>
+    <comment>Description for DomainRole &apos;ClaseEnriquecida&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/ClaseEnriquecida.DisplayName" xml:space="preserve">
+    <value>Clase Enriquecida</value>
+    <comment>DisplayName for DomainRole &apos;ClaseEnriquecida&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida/ClaseEnriquecida.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ClaseEnriquecida&apos; on DomainRelationship &apos;EstiloClaseReferencesClaseEnriquecida&apos;</comment>
+  </data>
   <data name="UPM_IPS.SMFJLYZPractica1.alineacion_enum/izquierda.DisplayName" xml:space="preserve">
     <value>izquierda</value>
     <comment>Display name for EnumerationLiteral &apos;izquierda&apos; on DomainEnumeration &apos;alineacion_enum&apos;</comment>

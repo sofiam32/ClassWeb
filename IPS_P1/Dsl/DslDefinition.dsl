@@ -106,6 +106,24 @@
           </Type>
         </DomainProperty>
       </Properties>
+      <ElementMergeDirectives>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="Atributo" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>ClaseHasAtributo.Atributo</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="Operacion" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>ClaseHasOperacion.Operacion</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+      </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="f5ff3557-2bbd-4fd6-853c-16a0abdabba2" Description="Description for UPM_IPS.SMFJLYZPractica1.Atributo" Name="Atributo" DisplayName="Atributo" Namespace="UPM_IPS.SMFJLYZPractica1">
       <Properties>
@@ -140,12 +158,90 @@
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="d1ea70d7-3670-4bfe-8790-288a62d5ed55" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseEnriquecida" Name="ClaseEnriquecida" DisplayName="Clase Enriquecida" Namespace="UPM_IPS.SMFJLYZPractica1">
+    <DomainClass Id="d1ea70d7-3670-4bfe-8790-288a62d5ed55" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseEnriquecida" Name="ClaseEnriquecida" DisplayName="Clase Enriquecida" InheritanceModifier="Abstract" Namespace="UPM_IPS.SMFJLYZPractica1">
       <BaseClass>
-        <DomainClassMoniker Name="EstiloClase" />
+        <DomainClassMoniker Name="Clase" />
       </BaseClass>
     </DomainClass>
+    <DomainClass Id="be2e0c1a-91c1-4932-8085-8729c7317916" Description="Description for UPM_IPS.SMFJLYZPractica1.Modelo" Name="Modelo" DisplayName="Modelo" Namespace="UPM_IPS.SMFJLYZPractica1">
+      <ElementMergeDirectives>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="Clase" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>ModeloHasClase.Clase</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+      </ElementMergeDirectives>
+    </DomainClass>
   </Classes>
+  <Relationships>
+    <DomainRelationship Id="8b96e59a-2f42-4f77-aada-bcda5c83d11b" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo" Name="ClaseHasAtributo" DisplayName="Clase Has Atributo" Namespace="UPM_IPS.SMFJLYZPractica1" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="c1b01599-b59d-479b-9e0f-1026d4209be2" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Clase" Name="Clase" DisplayName="Clase" PropertyName="Atributo" Multiplicity="OneMany" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Atributo">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="4508c724-b8e3-4518-a2da-1a770072afb9" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="Clase_atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Clase_atributo">
+          <RolePlayer>
+            <DomainClassMoniker Name="Atributo" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="1b0e1c16-8318-46b6-a59f-a0d5c9822b8c" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion" Name="ClaseHasOperacion" DisplayName="Clase Has Operacion" Namespace="UPM_IPS.SMFJLYZPractica1" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="a015d3ad-16a1-49bb-83e1-c5d9086a0b43" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Clase" Name="Clase" DisplayName="Clase" PropertyName="Operacion" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Operacion">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="5282a365-d14c-43a7-b76f-ef17d519310c" Description="Description for UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.Operacion" Name="Operacion" DisplayName="Operacion" PropertyName="Clase_operacion" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Clase_operacion">
+          <RolePlayer>
+            <DomainClassMoniker Name="Operacion" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="4bef14e5-c291-453c-b036-196039954335" Description="Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase" Name="ModeloHasClase" DisplayName="Modelo Has Clase" Namespace="UPM_IPS.SMFJLYZPractica1" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="b763ba38-fd6e-4958-95d0-e64435e6e5d2" Description="Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Modelo" Name="Modelo" DisplayName="Modelo" PropertyName="Clase" Multiplicity="OneMany" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="Modelo" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="80ffdb09-cbbc-427f-9250-cd71d5c64a75" Description="Description for UPM_IPS.SMFJLYZPractica1.ModeloHasClase.Clase" Name="Clase" DisplayName="Clase" PropertyName="Modelo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Modelo">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="640475cd-eeb9-4e81-a1cc-2f2fd8b30016" Description="Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida" Name="EstiloClaseReferencesClaseEnriquecida" DisplayName="Estilo Clase References Clase Enriquecida" Namespace="UPM_IPS.SMFJLYZPractica1">
+      <Source>
+        <DomainRole Id="aee2e347-a16e-4597-839f-670fd7556d71" Description="Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.EstiloClase" Name="EstiloClase" DisplayName="Estilo Clase" PropertyName="ClaseEnriquecida" PropertyDisplayName="Clase Enriquecida">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloClase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="e2dc89e0-9bf4-4604-b675-f4f9f5edf156" Description="Description for UPM_IPS.SMFJLYZPractica1.EstiloClaseReferencesClaseEnriquecida.ClaseEnriquecida" Name="ClaseEnriquecida" DisplayName="Clase Enriquecida" PropertyName="EstiloClase" PropertyDisplayName="Estilo Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="ClaseEnriquecida" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+  </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
     <ExternalType Name="String" Namespace="System" />
@@ -245,6 +341,9 @@
           <XmlPropertyData XmlName="alineacion">
             <DomainPropertyMoniker Name="EstiloClase/alineacion" />
           </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="claseEnriquecida">
+            <DomainRelationshipMoniker Name="EstiloClaseReferencesClaseEnriquecida" />
+          </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EstiloAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloAtributoMoniker" ElementName="estiloAtributo" MonikerTypeName="EstiloAtributoMoniker">
@@ -296,6 +395,12 @@
           <XmlPropertyData XmlName="atributo_identificacion">
             <DomainPropertyMoniker Name="Clase/atributo_identificacion" />
           </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="atributo">
+            <DomainRelationshipMoniker Name="ClaseHasAtributo" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="operacion">
+            <DomainRelationshipMoniker Name="ClaseHasOperacion" />
+          </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="Atributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoMoniker" ElementName="atributo" MonikerTypeName="AtributoMoniker">
@@ -326,9 +431,50 @@
       <XmlClassData TypeName="ClaseEnriquecida" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseEnriquecidaMoniker" ElementName="claseEnriquecida" MonikerTypeName="ClaseEnriquecidaMoniker">
         <DomainClassMoniker Name="ClaseEnriquecida" />
       </XmlClassData>
+      <XmlClassData TypeName="ClaseHasAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseHasAtributoMoniker" ElementName="claseHasAtributo" MonikerTypeName="ClaseHasAtributoMoniker">
+        <DomainRelationshipMoniker Name="ClaseHasAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="ClaseHasOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseHasOperacionMoniker" ElementName="claseHasOperacion" MonikerTypeName="ClaseHasOperacionMoniker">
+        <DomainRelationshipMoniker Name="ClaseHasOperacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="Modelo" MonikerAttributeName="" SerializeId="true" MonikerElementName="modeloMoniker" ElementName="modelo" MonikerTypeName="ModeloMoniker">
+        <DomainClassMoniker Name="Modelo" />
+        <ElementData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="clase">
+            <DomainRelationshipMoniker Name="ModeloHasClase" />
+          </XmlRelationshipData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="ModeloHasClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="modeloHasClaseMoniker" ElementName="modeloHasClase" MonikerTypeName="ModeloHasClaseMoniker">
+        <DomainRelationshipMoniker Name="ModeloHasClase" />
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloClaseReferencesClaseEnriquecida" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloClaseReferencesClaseEnriquecidaMoniker" ElementName="estiloClaseReferencesClaseEnriquecida" MonikerTypeName="EstiloClaseReferencesClaseEnriquecidaMoniker">
+        <DomainRelationshipMoniker Name="EstiloClaseReferencesClaseEnriquecida" />
+      </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
   <ExplorerBehavior Name="SMFJLYZPractica1Explorer" />
+  <ConnectionBuilders>
+    <ConnectionBuilder Name="EstiloClaseReferencesClaseEnriquecidaBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="EstiloClaseReferencesClaseEnriquecida" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="EstiloClase" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="ClaseEnriquecida" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+  </ConnectionBuilders>
   <Diagram Id="69e5447e-45d1-4007-bef5-a554c46a00ce" Description="Description for UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1Diagram" Name="SMFJLYZPractica1Diagram" DisplayName="Minimal Language Diagram" Namespace="UPM_IPS.SMFJLYZPractica1">
     <Class>
       <DomainClassMoniker Name="EstiloClase" />

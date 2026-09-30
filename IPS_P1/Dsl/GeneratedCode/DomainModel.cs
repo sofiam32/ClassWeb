@@ -74,6 +74,11 @@ namespace UPM_IPS.SMFJLYZPractica1
 				typeof(Atributo),
 				typeof(Operacion),
 				typeof(ClaseEnriquecida),
+				typeof(Modelo),
+				typeof(ClaseHasAtributo),
+				typeof(ClaseHasOperacion),
+				typeof(ModeloHasClase),
+				typeof(EstiloClaseReferencesClaseEnriquecida),
 				typeof(SMFJLYZPractica1Diagram),
 				typeof(ExampleConnector),
 				typeof(ExampleShape),
@@ -113,6 +118,24 @@ namespace UPM_IPS.SMFJLYZPractica1
 				new DomainMemberInfo(typeof(Operacion), "parametro", Operacion.parametroDomainPropertyId, typeof(Operacion.parametroPropertyHandler)),
 			};
 		}
+		/// <summary>
+		/// Gets the list of generated domain roles.
+		/// </summary>
+		/// <returns>List of role data.</returns>
+		protected sealed override DomainRolePlayerInfo[] GetGeneratedDomainRoles()
+		{
+			return new DomainRolePlayerInfo[]
+			{
+				new DomainRolePlayerInfo(typeof(ClaseHasAtributo), "Clase", ClaseHasAtributo.ClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseHasAtributo), "Atributo", ClaseHasAtributo.AtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseHasOperacion), "Clase", ClaseHasOperacion.ClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseHasOperacion), "Operacion", ClaseHasOperacion.OperacionDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ModeloHasClase), "Modelo", ModeloHasClase.ModeloDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ModeloHasClase), "Clase", ModeloHasClase.ClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseReferencesClaseEnriquecida), "EstiloClase", EstiloClaseReferencesClaseEnriquecida.EstiloClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseReferencesClaseEnriquecida), "ClaseEnriquecida", EstiloClaseReferencesClaseEnriquecida.ClaseEnriquecidaDomainRoleId),
+			};
+		}
 		#endregion
 		#region Factory methods
 		private static global::System.Collections.Generic.Dictionary<global::System.Type, int> createElementMap;
@@ -132,14 +155,14 @@ namespace UPM_IPS.SMFJLYZPractica1
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(10);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(11);
 				createElementMap.Add(typeof(EstiloClase), 0);
 				createElementMap.Add(typeof(EstiloAtributo), 1);
 				createElementMap.Add(typeof(EstiloOperacion), 2);
 				createElementMap.Add(typeof(Clase), 3);
 				createElementMap.Add(typeof(Atributo), 4);
 				createElementMap.Add(typeof(Operacion), 5);
-				createElementMap.Add(typeof(ClaseEnriquecida), 6);
+				createElementMap.Add(typeof(Modelo), 6);
 				createElementMap.Add(typeof(SMFJLYZPractica1Diagram), 7);
 				createElementMap.Add(typeof(ExampleConnector), 8);
 				createElementMap.Add(typeof(ExampleShape), 9);
@@ -162,7 +185,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 				case 3: return new Clase(partition, propertyAssignments);
 				case 4: return new Atributo(partition, propertyAssignments);
 				case 5: return new Operacion(partition, propertyAssignments);
-				case 6: return new ClaseEnriquecida(partition, propertyAssignments);
+				case 6: return new Modelo(partition, propertyAssignments);
 				case 7: return new SMFJLYZPractica1Diagram(partition, propertyAssignments);
 				case 8: return new ExampleConnector(partition, propertyAssignments);
 				case 9: return new ExampleShape(partition, propertyAssignments);
@@ -188,7 +211,11 @@ namespace UPM_IPS.SMFJLYZPractica1
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(0);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(4);
+				createElementLinkMap.Add(typeof(ClaseHasAtributo), 0);
+				createElementLinkMap.Add(typeof(ClaseHasOperacion), 1);
+				createElementLinkMap.Add(typeof(ModeloHasClase), 2);
+				createElementLinkMap.Add(typeof(EstiloClaseReferencesClaseEnriquecida), 3);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -203,6 +230,10 @@ namespace UPM_IPS.SMFJLYZPractica1
 			}
 			switch (index)
 			{
+				case 0: return new ClaseHasAtributo(partition, roleAssignments, propertyAssignments);
+				case 1: return new ClaseHasOperacion(partition, roleAssignments, propertyAssignments);
+				case 2: return new ModeloHasClase(partition, roleAssignments, propertyAssignments);
+				case 3: return new EstiloClaseReferencesClaseEnriquecida(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -367,6 +398,9 @@ namespace UPM_IPS.SMFJLYZPractica1
 		public SMFJLYZPractica1DeleteClosureBase()
 		{
 			#region Initialize DomainData Table
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZPractica1.ClaseHasAtributo.AtributoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZPractica1.ClaseHasOperacion.OperacionDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZPractica1.ModeloHasClase.ClaseDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>
