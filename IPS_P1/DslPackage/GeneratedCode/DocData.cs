@@ -305,7 +305,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 		protected override void Load(string fileName, bool isReload)
 		{
 			DslModeling::SerializationResult serializationResult = new DslModeling::SerializationResult();
-			global::UPM_IPS.SMFJLYZPractica1.ExampleModel modelRoot = null;
+			global::UPM_IPS.SMFJLYZPractica1.EstiloClase modelRoot = null;
 			DslModeling::ISchemaResolver schemaResolver = new DslShell::ModelingSchemaResolver(this.ServiceProvider);
 			//clear the current root element
 			this.SetRootElement(null);
@@ -410,7 +410,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 		protected override void Save(string fileName)
 		{
 			DslModeling::SerializationResult serializationResult = new DslModeling::SerializationResult();
-			global::UPM_IPS.SMFJLYZPractica1.ExampleModel modelRoot = (global::UPM_IPS.SMFJLYZPractica1.ExampleModel)this.RootElement;
+			global::UPM_IPS.SMFJLYZPractica1.EstiloClase modelRoot = (global::UPM_IPS.SMFJLYZPractica1.EstiloClase)this.RootElement;
 
 			
 			// Only save the diagrams if
@@ -556,7 +556,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 		{
 			get
 			{
-				global::UPM_IPS.SMFJLYZPractica1.ExampleModel modelRoot = this.RootElement as global::UPM_IPS.SMFJLYZPractica1.ExampleModel;
+				global::UPM_IPS.SMFJLYZPractica1.EstiloClase modelRoot = this.RootElement as global::UPM_IPS.SMFJLYZPractica1.EstiloClase;
 				string modelFile = string.Empty;
 				if (modelRoot != null)
 				{

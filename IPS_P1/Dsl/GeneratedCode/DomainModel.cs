@@ -67,15 +67,16 @@ namespace UPM_IPS.SMFJLYZPractica1
 		{
 			return new global::System.Type[]
 			{
-				typeof(ExampleModel),
-				typeof(ExampleElement),
-				typeof(ExampleModelHasElements),
-				typeof(ExampleElementReferencesTargets),
+				typeof(EstiloClase),
+				typeof(EstiloAtributo),
+				typeof(EstiloOperacion),
+				typeof(Clase),
+				typeof(Atributo),
+				typeof(Operacion),
+				typeof(ClaseEnriquecida),
 				typeof(SMFJLYZPractica1Diagram),
 				typeof(ExampleConnector),
 				typeof(ExampleShape),
-				typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram),
-				typeof(global::UPM_IPS.SMFJLYZPractica1.ConnectorRolePlayerChanged),
 			};
 		}
 		/// <summary>
@@ -87,21 +88,29 @@ namespace UPM_IPS.SMFJLYZPractica1
 		{
 			return new DomainMemberInfo[]
 			{
-				new DomainMemberInfo(typeof(ExampleElement), "Name", ExampleElement.NameDomainPropertyId, typeof(ExampleElement.NamePropertyHandler)),
-			};
-		}
-		/// <summary>
-		/// Gets the list of generated domain roles.
-		/// </summary>
-		/// <returns>List of role data.</returns>
-		protected sealed override DomainRolePlayerInfo[] GetGeneratedDomainRoles()
-		{
-			return new DomainRolePlayerInfo[]
-			{
-				new DomainRolePlayerInfo(typeof(ExampleModelHasElements), "ExampleModel", ExampleModelHasElements.ExampleModelDomainRoleId),
-				new DomainRolePlayerInfo(typeof(ExampleModelHasElements), "Element", ExampleModelHasElements.ElementDomainRoleId),
-				new DomainRolePlayerInfo(typeof(ExampleElementReferencesTargets), "Source", ExampleElementReferencesTargets.SourceDomainRoleId),
-				new DomainRolePlayerInfo(typeof(ExampleElementReferencesTargets), "Target", ExampleElementReferencesTargets.TargetDomainRoleId),
+				new DomainMemberInfo(typeof(EstiloClase), "color_fondo", EstiloClase.color_fondoDomainPropertyId, typeof(EstiloClase.color_fondoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "tipo_letra", EstiloClase.tipo_letraDomainPropertyId, typeof(EstiloClase.tipo_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "formato_letra", EstiloClase.formato_letraDomainPropertyId, typeof(EstiloClase.formato_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "tamanio_letra", EstiloClase.tamanio_letraDomainPropertyId, typeof(EstiloClase.tamanio_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "color_letra", EstiloClase.color_letraDomainPropertyId, typeof(EstiloClase.color_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "alineacion", EstiloClase.alineacionDomainPropertyId, typeof(EstiloClase.alineacionPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "tipo_letra", EstiloAtributo.tipo_letraDomainPropertyId, typeof(EstiloAtributo.tipo_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "formato_letra", EstiloAtributo.formato_letraDomainPropertyId, typeof(EstiloAtributo.formato_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "tamanio_letra", EstiloAtributo.tamanio_letraDomainPropertyId, typeof(EstiloAtributo.tamanio_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "color_letra", EstiloAtributo.color_letraDomainPropertyId, typeof(EstiloAtributo.color_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "formato_atributo", EstiloAtributo.formato_atributoDomainPropertyId, typeof(EstiloAtributo.formato_atributoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "color_fondo", EstiloOperacion.color_fondoDomainPropertyId, typeof(EstiloOperacion.color_fondoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "tipo_letra", EstiloOperacion.tipo_letraDomainPropertyId, typeof(EstiloOperacion.tipo_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "formato_letra", EstiloOperacion.formato_letraDomainPropertyId, typeof(EstiloOperacion.formato_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "tamanio_letra", EstiloOperacion.tamanio_letraDomainPropertyId, typeof(EstiloOperacion.tamanio_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "color_letra", EstiloOperacion.color_letraDomainPropertyId, typeof(EstiloOperacion.color_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(Clase), "nombre", Clase.nombreDomainPropertyId, typeof(Clase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(Clase), "atributo_identificacion", Clase.atributo_identificacionDomainPropertyId, typeof(Clase.atributo_identificacionPropertyHandler)),
+				new DomainMemberInfo(typeof(Atributo), "nombre", Atributo.nombreDomainPropertyId, typeof(Atributo.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(Atributo), "tipo_dato", Atributo.tipo_datoDomainPropertyId, typeof(Atributo.tipo_datoPropertyHandler)),
+				new DomainMemberInfo(typeof(Operacion), "nombre", Operacion.nombreDomainPropertyId, typeof(Operacion.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(Operacion), "tipo_retorno", Operacion.tipo_retornoDomainPropertyId, typeof(Operacion.tipo_retornoPropertyHandler)),
+				new DomainMemberInfo(typeof(Operacion), "parametro", Operacion.parametroDomainPropertyId, typeof(Operacion.parametroPropertyHandler)),
 			};
 		}
 		#endregion
@@ -123,12 +132,17 @@ namespace UPM_IPS.SMFJLYZPractica1
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(5);
-				createElementMap.Add(typeof(ExampleModel), 0);
-				createElementMap.Add(typeof(ExampleElement), 1);
-				createElementMap.Add(typeof(SMFJLYZPractica1Diagram), 2);
-				createElementMap.Add(typeof(ExampleConnector), 3);
-				createElementMap.Add(typeof(ExampleShape), 4);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(10);
+				createElementMap.Add(typeof(EstiloClase), 0);
+				createElementMap.Add(typeof(EstiloAtributo), 1);
+				createElementMap.Add(typeof(EstiloOperacion), 2);
+				createElementMap.Add(typeof(Clase), 3);
+				createElementMap.Add(typeof(Atributo), 4);
+				createElementMap.Add(typeof(Operacion), 5);
+				createElementMap.Add(typeof(ClaseEnriquecida), 6);
+				createElementMap.Add(typeof(SMFJLYZPractica1Diagram), 7);
+				createElementMap.Add(typeof(ExampleConnector), 8);
+				createElementMap.Add(typeof(ExampleShape), 9);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -142,11 +156,16 @@ namespace UPM_IPS.SMFJLYZPractica1
 			}
 			switch (index)
 			{
-				case 0: return new ExampleModel(partition, propertyAssignments);
-				case 1: return new ExampleElement(partition, propertyAssignments);
-				case 2: return new SMFJLYZPractica1Diagram(partition, propertyAssignments);
-				case 3: return new ExampleConnector(partition, propertyAssignments);
-				case 4: return new ExampleShape(partition, propertyAssignments);
+				case 0: return new EstiloClase(partition, propertyAssignments);
+				case 1: return new EstiloAtributo(partition, propertyAssignments);
+				case 2: return new EstiloOperacion(partition, propertyAssignments);
+				case 3: return new Clase(partition, propertyAssignments);
+				case 4: return new Atributo(partition, propertyAssignments);
+				case 5: return new Operacion(partition, propertyAssignments);
+				case 6: return new ClaseEnriquecida(partition, propertyAssignments);
+				case 7: return new SMFJLYZPractica1Diagram(partition, propertyAssignments);
+				case 8: return new ExampleConnector(partition, propertyAssignments);
+				case 9: return new ExampleShape(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -169,9 +188,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(2);
-				createElementLinkMap.Add(typeof(ExampleModelHasElements), 0);
-				createElementLinkMap.Add(typeof(ExampleElementReferencesTargets), 1);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(0);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -186,8 +203,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 			}
 			switch (index)
 			{
-				case 0: return new ExampleModelHasElements(partition, roleAssignments, propertyAssignments);
-				case 1: return new ExampleElementReferencesTargets(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -307,8 +322,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 			if(store == null) throw new global::System.ArgumentNullException("store");
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
-			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram));
-			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.ConnectorRolePlayerChanged));
 		}
 		
 		/// <summary>
@@ -319,8 +332,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 			if(store == null) throw new global::System.ArgumentNullException("store");
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
-			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram));
-			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.ConnectorRolePlayerChanged));
 		}
 		#endregion
 	}
@@ -356,7 +367,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 		public SMFJLYZPractica1DeleteClosureBase()
 		{
 			#region Initialize DomainData Table
-			DomainRoles.Add(global::UPM_IPS.SMFJLYZPractica1.ExampleModelHasElements.ElementDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>
@@ -430,5 +440,174 @@ namespace UPM_IPS.SMFJLYZPractica1
 	}
 	#endregion
 		
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainEnumeration: alineacion_enum
+	/// Description for UPM_IPS.SMFJLYZPractica1.alineacion_enum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum alineacion_enum
+	{
+		/// <summary>
+		/// izquierda
+		/// Description for UPM_IPS.SMFJLYZPractica1.alineacion_enum.izquierda
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.alineacion_enum/izquierda.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		izquierda,
+		/// <summary>
+		/// derecha
+		/// Description for UPM_IPS.SMFJLYZPractica1.alineacion_enum.derecha
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.alineacion_enum/derecha.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		derecha,
+		/// <summary>
+		/// centrado
+		/// Description for UPM_IPS.SMFJLYZPractica1.alineacion_enum.centrado
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.alineacion_enum/centrado.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		centrado,
+		/// <summary>
+		/// justificado
+		/// Description for UPM_IPS.SMFJLYZPractica1.alineacion_enum.justificado
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.alineacion_enum/justificado.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		justificado,
+	}
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainEnumeration: tipo_letra_enum
+	/// Description for UPM_IPS.SMFJLYZPractica1.tipo_letra_enum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum tipo_letra_enum
+	{
+		/// <summary>
+		/// arial
+		/// Description for UPM_IPS.SMFJLYZPractica1.tipo_letra_enum.arial
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tipo_letra_enum/arial.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		arial,
+		/// <summary>
+		/// times_new_roman
+		/// Description for UPM_IPS.SMFJLYZPractica1.tipo_letra_enum.times_new_roman
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tipo_letra_enum/times_new_roman.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		times_new_roman,
+		/// <summary>
+		/// comic_sans
+		/// Description for UPM_IPS.SMFJLYZPractica1.tipo_letra_enum.comic_sans
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tipo_letra_enum/comic_sans.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		comic_sans,
+	}
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainEnumeration: formato_letra_enum
+	/// Description for UPM_IPS.SMFJLYZPractica1.formato_letra_enum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum formato_letra_enum
+	{
+		/// <summary>
+		/// cursiva
+		/// Description for UPM_IPS.SMFJLYZPractica1.formato_letra_enum.cursiva
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.formato_letra_enum/cursiva.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		cursiva,
+		/// <summary>
+		/// negrita
+		/// Description for UPM_IPS.SMFJLYZPractica1.formato_letra_enum.negrita
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.formato_letra_enum/negrita.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		negrita,
+		/// <summary>
+		/// subrayada
+		/// Description for UPM_IPS.SMFJLYZPractica1.formato_letra_enum.subrayada
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.formato_letra_enum/subrayada.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		subrayada,
+	}
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainEnumeration: color_enum
+	/// Description for UPM_IPS.SMFJLYZPractica1.color_enum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum color_enum
+	{
+		/// <summary>
+		/// rojo
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.rojo
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/rojo.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		rojo,
+		/// <summary>
+		/// negro
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.negro
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/negro.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		negro,
+		/// <summary>
+		/// azul
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.azul
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/azul.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		azul,
+		/// <summary>
+		/// verde
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.verde
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/verde.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		verde,
+		/// <summary>
+		/// morado
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.morado
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/morado.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		morado,
+		/// <summary>
+		/// blanco
+		/// Description for UPM_IPS.SMFJLYZPractica1.color_enum.blanco
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.color_enum/blanco.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		blanco,
+	}
+}
+namespace UPM_IPS.SMFJLYZPractica1
+{
+	/// <summary>
+	/// DomainEnumeration: tamanio_enum
+	/// Description for UPM_IPS.SMFJLYZPractica1.tamanio_enum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum tamanio_enum
+	{
+		/// <summary>
+		/// diez
+		/// Description for UPM_IPS.SMFJLYZPractica1.tamanio_enum.diez
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tamanio_enum/diez.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		diez,
+		/// <summary>
+		/// doce
+		/// Description for UPM_IPS.SMFJLYZPractica1.tamanio_enum.doce
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tamanio_enum/doce.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		doce,
+		/// <summary>
+		/// quince
+		/// Description for UPM_IPS.SMFJLYZPractica1.tamanio_enum.quince
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZPractica1.tamanio_enum/quince.Description", typeof(global::UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1DomainModel), "UPM_IPS.SMFJLYZPractica1.GeneratedCode.DomainModelResx")]
+		quince,
+	}
 }
 

@@ -67,7 +67,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 		///</summary>
 		protected override global::System.Guid RootElementDomainClassId
 		{
-			get { return global::UPM_IPS.SMFJLYZPractica1.ExampleModel.DomainClassId; }
+			get { return global::UPM_IPS.SMFJLYZPractica1.EstiloClase.DomainClassId; }
 		}
 		
 		/// <summary>

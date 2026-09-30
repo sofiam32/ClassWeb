@@ -15943,11 +15943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\DslPackage\\DslPackage.csproj",
+      "projectUniqueName": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\DslPackage\\DslPackage.csproj",
       "projectName": "UPM_IPS.SMFJLYZPractica1.DslPackage",
-      "projectPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\DslPackage\\DslPackage.csproj",
+      "projectPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\DslPackage\\DslPackage.csproj",
       "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\DslPackage\\obj\\",
+      "outputPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\DslPackage\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -15969,8 +15969,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\Dsl\\Dsl.csproj": {
-              "projectPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\Dsl\\Dsl.csproj"
+            "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\Dsl.csproj": {
+              "projectPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\Dsl.csproj"
             }
           }
         }

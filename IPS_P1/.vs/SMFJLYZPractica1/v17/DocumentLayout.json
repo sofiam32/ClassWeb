@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\",
+  "WorkspaceRootPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|c:\\users\\felix\\onedrive\\escritorio\\ips_p1\\dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|",
+      "AbsoluteMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|c:\\users\\felix\\onedrive\\escritorio\\nueva carpeta\\classweb\\ips_p1\\dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|",
       "RelativeMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|solutionrelative:dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DslDefinition.dsl",
-              "DocumentMoniker": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\Dsl\\DslDefinition.dsl",
+              "DocumentMoniker": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\DslDefinition.dsl",
               "RelativeDocumentMoniker": "Dsl\\DslDefinition.dsl",
-              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\Dsl\\DslDefinition.dsl",
+              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\DslDefinition.dsl",
               "RelativeToolTip": "Dsl\\DslDefinition.dsl",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-09-23T08:02:58.805Z",

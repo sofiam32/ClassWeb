@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nf5FYlb66xg=",
+  "dgSpecHash": "i45+sIOWhBw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\felix\\OneDrive\\Escritorio\\IPS_P1\\DslPackage\\DslPackage.csproj",
+  "projectFilePath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\DslPackage\\DslPackage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felix\\.nuget\\packages\\envdte\\17.0.32112.339\\envdte.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\envdte100\\17.0.32112.339\\envdte100.17.0.32112.339.nupkg.sha512",

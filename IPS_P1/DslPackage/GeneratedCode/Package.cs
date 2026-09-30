@@ -29,22 +29,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 	[VSShell::ProvideToolWindow(typeof(SMFJLYZPractica1ExplorerToolWindow), MultiInstances = false, Style = VSShell::VsDockStyle.Tabbed, Orientation = VSShell::ToolWindowOrientation.Right, Window = "{3AE79031-E1BC-11D0-8F78-00A0C9110057}")]
 	[VSShell::ProvideToolWindowVisibility(typeof(SMFJLYZPractica1ExplorerToolWindow), Constants.SMFJLYZPractica1EditorFactoryId)]
 	[VSShell::ProvideStaticToolboxGroup("@SMFJLYZPractica1ToolboxTab;UPM_IPS.SMFJLYZPractica1.Dsl.dll", "UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1ToolboxTab")]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1ToolboxTab",
-					"@ExampleElementToolboxItem;UPM_IPS.SMFJLYZPractica1.Dsl.dll", 
-					"UPM_IPS.SMFJLYZPractica1.ExampleElementToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"CreateExampleClassF1Keyword", 
-					"@ExampleElementToolboxBitmap;UPM_IPS.SMFJLYZPractica1.Dsl.dll", 
-					0xff00ff,
-					Index = 0)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1ToolboxTab",
-					"@ExampleRelationshipToolboxItem;UPM_IPS.SMFJLYZPractica1.Dsl.dll", 
-					"UPM_IPS.SMFJLYZPractica1.ExampleRelationshipToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"ConnectExampleRelationF1Keyword", 
-					"@ExampleRelationshipToolboxBitmap;UPM_IPS.SMFJLYZPractica1.Dsl.dll", 
-					0xff00ff,
-					Index = 1)]
 	[VSShell::ProvideEditorFactory(typeof(SMFJLYZPractica1EditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(SMFJLYZPractica1EditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(SMFJLYZPractica1EditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

@@ -47,10 +47,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 		/// item filters.
 		/// </remarks>
 		public const string ToolboxFilterString = "SMFJLYZPractica1.1.0";
-		/// <summary>
-		/// Toolbox item filter string used to identify ExampleRelationship connector tool.
-		/// </summary>
-		public const string ExampleRelationshipFilterString = "ExampleRelationship.1.0";
 
 	
 		private global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem> toolboxItemCache = new global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem>();
@@ -98,7 +94,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 		{
 			get
 			{
-				return 2;
+				return 0;
 			}
 		}
 		
@@ -147,40 +143,6 @@ namespace UPM_IPS.SMFJLYZPractica1
 			global::System.Globalization.CultureInfo resourceCulture = global::System.Globalization.CultureInfo.CurrentUICulture;
 			switch(itemId)
 			{
-				case "UPM_IPS.SMFJLYZPractica1.ExampleElementToolboxItem":
-					// Add ExampleElement shape tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.SMFJLYZPractica1.ExampleElementToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						1, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("ExampleElementToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExampleElementToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1ToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("SMFJLYZPractica1ToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"CreateExampleClassF1Keyword", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("ExampleElementToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZPractica1.ExampleElement.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
-						});
-					break;
-				case "UPM_IPS.SMFJLYZPractica1.ExampleRelationshipToolboxItem":
-
-					// Add ExampleRelationship connector tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.SMFJLYZPractica1.ExampleRelationshipToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						2, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("ExampleRelationshipToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExampleRelationshipToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"UPM_IPS.SMFJLYZPractica1.SMFJLYZPractica1ToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("SMFJLYZPractica1ToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"ConnectExampleRelationF1Keyword", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("ExampleRelationshipToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						null, // Connector toolbox items do not have an underlying data object.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
-							new global::System.ComponentModel.ToolboxItemFilterAttribute(ExampleRelationshipFilterString)
-						});
-					break;
 				default:
 					break;
 			} // end switch
