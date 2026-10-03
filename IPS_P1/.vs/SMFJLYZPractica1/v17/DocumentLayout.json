@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|c:\\users\\felix\\onedrive\\escritorio\\nueva carpeta\\classweb\\ips_p1\\dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|",
+      "AbsoluteMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|",
       "RelativeMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|solutionrelative:dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|c:\\users\\felix\\onedrive\\escritorio\\nueva carpeta\\classweb\\ips_p1\\dsl\\codigo\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C39161-97CC-4BD4-89AB-700DFAB02446}|Dsl\\Dsl.csproj|solutionrelative:dsl\\codigo\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,12 +26,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileName.cs",
+              "DocumentMoniker": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\Codigo\\FileName.cs",
+              "RelativeDocumentMoniker": "Dsl\\Codigo\\FileName.cs",
+              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\Codigo\\FileName.cs",
+              "RelativeToolTip": "Dsl\\Codigo\\FileName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T08:47:43.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DslDefinition.dsl",
               "DocumentMoniker": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\DslDefinition.dsl",
               "RelativeDocumentMoniker": "Dsl\\DslDefinition.dsl",
-              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\DslDefinition.dsl",
-              "RelativeToolTip": "Dsl\\DslDefinition.dsl",
+              "ToolTip": "C:\\Users\\felix\\OneDrive\\Escritorio\\Nueva carpeta\\ClassWeb\\IPS_P1\\Dsl\\DslDefinition.dsl*",
+              "RelativeToolTip": "Dsl\\DslDefinition.dsl*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-09-23T08:02:58.805Z",
               "EditorCaption": ""

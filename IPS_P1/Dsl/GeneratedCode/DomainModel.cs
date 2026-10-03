@@ -82,6 +82,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 				typeof(SMFJLYZPractica1Diagram),
 				typeof(ExampleConnector),
 				typeof(ExampleShape),
+				typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram),
 			};
 		}
 		/// <summary>
@@ -353,6 +354,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 			if(store == null) throw new global::System.ArgumentNullException("store");
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
+			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram));
 		}
 		
 		/// <summary>
@@ -363,6 +365,7 @@ namespace UPM_IPS.SMFJLYZPractica1
 			if(store == null) throw new global::System.ArgumentNullException("store");
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
+			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZPractica1.FixUpDiagram));
 		}
 		#endregion
 	}

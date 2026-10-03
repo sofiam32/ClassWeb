@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{cf16fdc3-5651-42df-8a1e-edd246b5c578}</TemplateID>
+		<Name Package="{1ddb04fa-a559-4a82-aeaf-a592d0d55ec2}" ID="103"/>
+		<Description Package="{1ddb04fa-a559-4a82-aeaf-a592d0d55ec2}" ID="102"/>
+		<Icon Package="{1ddb04fa-a559-4a82-aeaf-a592d0d55ec2}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>SMFJLYZClassWeb.SMFJLYZ_DSLClassWeb</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.SMFJLYZ_DSLClassWeb">SMFJLYZ_DSLClassWeb.SMFJLYZ_DSLClassWeb</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.SMFJLYZ_DSLClassWeb.diagram">SMFJLYZ_DSLClassWeb.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

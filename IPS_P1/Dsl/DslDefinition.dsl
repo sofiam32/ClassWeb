@@ -479,6 +479,16 @@
     <Class>
       <DomainClassMoniker Name="EstiloClase" />
     </Class>
+    <ShapeMaps>
+      <ShapeMap HasCustomParentElement="true">
+        <DomainClassMoniker Name="Clase" />
+        <GeometryShapeMoniker Name="ExampleShape" />
+      </ShapeMap>
+      <ShapeMap HasCustomParentElement="true">
+        <DomainClassMoniker Name="Atributo" />
+        <GeometryShapeMoniker Name="ExampleShape" />
+      </ShapeMap>
+    </ShapeMaps>
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="SMFJLYZ_DSLPractica1" EditorGuid="27a26c30-a56b-49f3-8462-8df8ad09d828">
     <RootClass>

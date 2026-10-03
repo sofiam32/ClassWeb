@@ -86,6 +86,68 @@ namespace UPM_IPS.SMFJLYZPractica1
 			}
 		}
 		#endregion
+		#region Shape mapping
+		/// <summary>
+		/// Called during view fixup to ask the parent whether a shape should be created for the given child element.
+		/// </summary>
+		/// <remarks>
+		/// Always return true, since we assume there is only one diagram per model file for DSL scenarios.
+		/// </remarks>
+		protected override bool ShouldAddShapeForElement(DslModeling::ModelElement element)
+		{
+			return true;
+		}
+		
+		
+		/// <summary>
+		/// Most connectors are mapped to element links, but there can be exceptions. This method tell if a connector should be
+		/// mapped to an element link.
+		/// </summary>
+		public override bool IsConnectorMappedToLink(DslDiagrams::BinaryLinkShape connector)
+		{
+			#region Check Parameters
+			global::System.Diagnostics.Debug.Assert(connector != null);
+			if (connector == null)
+				throw new global::System.ArgumentNullException("connector");
+			#endregion
+			if (connector.GetType() == typeof(global::UPM_IPS.SMFJLYZPractica1.ExampleConnector))
+				return false;
+			return base.IsConnectorMappedToLink(connector);
+		}
+		
+		/// <summary>
+		/// Creates a new shape for the given model element as part of view fixup
+		/// </summary>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily", Justification = "Generated code.")]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
+		protected override DslDiagrams::ShapeElement CreateChildShape(DslModeling::ModelElement element)
+		{
+			if(element is global::UPM_IPS.SMFJLYZPractica1.Clase)
+			{
+				global::UPM_IPS.SMFJLYZPractica1.ExampleShape newShape = new global::UPM_IPS.SMFJLYZPractica1.ExampleShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			if(element is global::UPM_IPS.SMFJLYZPractica1.Atributo)
+			{
+				global::UPM_IPS.SMFJLYZPractica1.ExampleShape newShape = new global::UPM_IPS.SMFJLYZPractica1.ExampleShape(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
+			return base.CreateChildShape(element);
+		}
+		#endregion
+		#region Decorator mapping
+		/// <summary>
+		/// Initialize shape decorator mappings.  This is done here rather than in individual shapes because decorator maps
+		/// are defined per diagram type rather than per shape type.
+		/// </summary>
+		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
+		{
+			base.InitializeShapeFields(shapeFields);
+		}
+		
+		#endregion
 		#region Constructors, domain class Id
 	
 		/// <summary>
@@ -116,5 +178,67 @@ namespace UPM_IPS.SMFJLYZPractica1
 }
 namespace UPM_IPS.SMFJLYZPractica1
 {
+	
+		/// <summary>
+		/// Double derived implementation for the rule that initiates view fixup when an element that has an associated shape is added to the model.
+		/// This now enables the DSL author to everride the SkipFixUp() method 
+		/// </summary>
+		internal partial class FixUpDiagramBase : DslModeling::AddRule
+		{
+			protected virtual bool SkipFixup(DslModeling::ModelElement childElement)
+			{
+				return childElement.IsDeleted;
+			}
+		}
+	
+		/// <summary>
+		/// Rule that initiates view fixup when an element that has an associated shape is added to the model. 
+		/// </summary>
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.SMFJLYZPractica1.Clase), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.SMFJLYZPractica1.Atributo), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		internal sealed partial class FixUpDiagram : FixUpDiagramBase
+		{
+			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+			public override void ElementAdded(DslModeling::ElementAddedEventArgs e)
+			{
+				if(e == null) throw new global::System.ArgumentNullException("e");
+			
+				DslModeling::ModelElement childElement = e.ModelElement;
+				if (this.SkipFixup(childElement))
+					return;
+				DslModeling::ModelElement parentElement;
+				if(childElement is global::UPM_IPS.SMFJLYZPractica1.Clase)
+				{
+					// Method:
+					// private Microsoft.VisualStudio.Modeling.ModelElement GetParentForClase(Clase childElement)
+					// {
+					// }
+					// must be implemented in a partial class of UPM_IPS.SMFJLYZPractica1.FixUpDiagram.  Given a child element,
+					// this method should return the parent model element that is associated with the shape or diagram that will be the parent 
+					// of the shape created for this child.  If no shape should be created, the method should return null.
+					parentElement = GetParentForClase((global::UPM_IPS.SMFJLYZPractica1.Clase)childElement);
+				} else
+				if(childElement is global::UPM_IPS.SMFJLYZPractica1.Atributo)
+				{
+					// Method:
+					// private Microsoft.VisualStudio.Modeling.ModelElement GetParentForAtributo(Atributo childElement)
+					// {
+					// }
+					// must be implemented in a partial class of UPM_IPS.SMFJLYZPractica1.FixUpDiagram.  Given a child element,
+					// this method should return the parent model element that is associated with the shape or diagram that will be the parent 
+					// of the shape created for this child.  If no shape should be created, the method should return null.
+					parentElement = GetParentForAtributo((global::UPM_IPS.SMFJLYZPractica1.Atributo)childElement);
+				} else
+				{
+					parentElement = null;
+				}
+				
+				if(parentElement != null)
+				{
+					DslDiagrams::Diagram.FixUpDiagram(parentElement, childElement);
+				}
+			}
+		}
+		
 	
 	}
