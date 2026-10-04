@@ -73,14 +73,37 @@ namespace UPM_IPS.SMFJLYZClassWeb
 				typeof(Operacion),
 				typeof(ClaseEnriquecida),
 				typeof(EstiloClase),
+				typeof(EstiloAtributo),
+				typeof(EstiloOperacion),
 				typeof(TapizClaseHasClase),
 				typeof(ClaseHasAtributo),
 				typeof(ClaseHasOperacion),
 				typeof(ClaseEnriquecidaReferencesEstiloClase),
+				typeof(EstiloClaseHasEstiloAtributo),
+				typeof(EstiloClaseHasEstiloOperacion),
+				typeof(TapizClaseHasEstiloClase),
+				typeof(TapizClaseHasEstiloAtributo),
+				typeof(TapizClaseHasEstiloOperacion),
+				typeof(ClaseHerenciaClase),
+				typeof(ClaseAsociaClase),
+				typeof(ClaseComponeClase),
+				typeof(ClaseAgregaClase),
 				typeof(SMFJLYZClassWebDiagram),
+				typeof(EnlaceCE_EC),
+				typeof(EnlaceEC_ATRIB),
+				typeof(EnlaceEC_OPER),
+				typeof(ConectorHerencia),
+				typeof(ConectorAsociacion),
+				typeof(ConectorComposicion),
+				typeof(ConectorAgregacion),
+				typeof(MetaforaEstiloClase),
+				typeof(MetaforaEstiloAtributo),
+				typeof(MetaforaEstiloOperacion),
 				typeof(MetaforaClase),
 				typeof(MetaforaClaseEnriquecida),
 				typeof(global::UPM_IPS.SMFJLYZClassWeb.FixUpDiagram),
+				typeof(global::UPM_IPS.SMFJLYZClassWeb.DecoratorPropertyChanged),
+				typeof(global::UPM_IPS.SMFJLYZClassWeb.ConnectorRolePlayerChanged),
 				typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemAddRule),
 				typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemDeleteRule),
 				typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemRolePlayerChangeRule),
@@ -98,6 +121,7 @@ namespace UPM_IPS.SMFJLYZClassWeb
 			return new DomainMemberInfo[]
 			{
 				new DomainMemberInfo(typeof(Clase), "nombre", Clase.nombreDomainPropertyId, typeof(Clase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(Clase), "esAbstracta", Clase.esAbstractaDomainPropertyId, typeof(Clase.esAbstractaPropertyHandler)),
 				new DomainMemberInfo(typeof(Atributo), "nombre", Atributo.nombreDomainPropertyId, typeof(Atributo.nombrePropertyHandler)),
 				new DomainMemberInfo(typeof(Atributo), "tipo_dato", Atributo.tipo_datoDomainPropertyId, typeof(Atributo.tipo_datoPropertyHandler)),
 				new DomainMemberInfo(typeof(Operacion), "tipo_retorne", Operacion.tipo_retorneDomainPropertyId, typeof(Operacion.tipo_retornePropertyHandler)),
@@ -109,6 +133,29 @@ namespace UPM_IPS.SMFJLYZClassWeb
 				new DomainMemberInfo(typeof(EstiloClase), "tamanio_letra", EstiloClase.tamanio_letraDomainPropertyId, typeof(EstiloClase.tamanio_letraPropertyHandler)),
 				new DomainMemberInfo(typeof(EstiloClase), "color_letra", EstiloClase.color_letraDomainPropertyId, typeof(EstiloClase.color_letraPropertyHandler)),
 				new DomainMemberInfo(typeof(EstiloClase), "alineacion", EstiloClase.alineacionDomainPropertyId, typeof(EstiloClase.alineacionPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloClase), "nombre", EstiloClase.nombreDomainPropertyId, typeof(EstiloClase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "tipo_letra", EstiloAtributo.tipo_letraDomainPropertyId, typeof(EstiloAtributo.tipo_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "formato_letra", EstiloAtributo.formato_letraDomainPropertyId, typeof(EstiloAtributo.formato_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "tamanio_letra", EstiloAtributo.tamanio_letraDomainPropertyId, typeof(EstiloAtributo.tamanio_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "color_letra", EstiloAtributo.color_letraDomainPropertyId, typeof(EstiloAtributo.color_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloAtributo), "formato_atributo", EstiloAtributo.formato_atributoDomainPropertyId, typeof(EstiloAtributo.formato_atributoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "color_fondo", EstiloOperacion.color_fondoDomainPropertyId, typeof(EstiloOperacion.color_fondoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "tipo_letra", EstiloOperacion.tipo_letraDomainPropertyId, typeof(EstiloOperacion.tipo_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "formato_letra", EstiloOperacion.formato_letraDomainPropertyId, typeof(EstiloOperacion.formato_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "tamanio_letra", EstiloOperacion.tamanio_letraDomainPropertyId, typeof(EstiloOperacion.tamanio_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloOperacion), "color_letra", EstiloOperacion.color_letraDomainPropertyId, typeof(EstiloOperacion.color_letraPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseHerenciaClase), "esDisjunta", ClaseHerenciaClase.esDisjuntaDomainPropertyId, typeof(ClaseHerenciaClase.esDisjuntaPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseHerenciaClase), "esTotal", ClaseHerenciaClase.esTotalDomainPropertyId, typeof(ClaseHerenciaClase.esTotalPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseHerenciaClase), "etiquetasHerencia", ClaseHerenciaClase.etiquetasHerenciaDomainPropertyId, typeof(ClaseHerenciaClase.etiquetasHerenciaPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAsociaClase), "cardinalidadOrigen", ClaseAsociaClase.cardinalidadOrigenDomainPropertyId, typeof(ClaseAsociaClase.cardinalidadOrigenPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAsociaClase), "cardinalidadDestino", ClaseAsociaClase.cardinalidadDestinoDomainPropertyId, typeof(ClaseAsociaClase.cardinalidadDestinoPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAsociaClase), "nombre", ClaseAsociaClase.nombreDomainPropertyId, typeof(ClaseAsociaClase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseComponeClase), "nombre", ClaseComponeClase.nombreDomainPropertyId, typeof(ClaseComponeClase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseComponeClase), "cardinalidadOrigen", ClaseComponeClase.cardinalidadOrigenDomainPropertyId, typeof(ClaseComponeClase.cardinalidadOrigenPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseComponeClase), "cardinalidadDestino", ClaseComponeClase.cardinalidadDestinoDomainPropertyId, typeof(ClaseComponeClase.cardinalidadDestinoPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAgregaClase), "nombre", ClaseAgregaClase.nombreDomainPropertyId, typeof(ClaseAgregaClase.nombrePropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAgregaClase), "cardinalidadOrigen", ClaseAgregaClase.cardinalidadOrigenDomainPropertyId, typeof(ClaseAgregaClase.cardinalidadOrigenPropertyHandler)),
+				new DomainMemberInfo(typeof(ClaseAgregaClase), "cardinalidadDestino", ClaseAgregaClase.cardinalidadDestinoDomainPropertyId, typeof(ClaseAgregaClase.cardinalidadDestinoPropertyHandler)),
 			};
 		}
 		/// <summary>
@@ -127,6 +174,24 @@ namespace UPM_IPS.SMFJLYZClassWeb
 				new DomainRolePlayerInfo(typeof(ClaseHasOperacion), "Operacion", ClaseHasOperacion.OperacionDomainRoleId),
 				new DomainRolePlayerInfo(typeof(ClaseEnriquecidaReferencesEstiloClase), "ClaseEnriquecida", ClaseEnriquecidaReferencesEstiloClase.ClaseEnriquecidaDomainRoleId),
 				new DomainRolePlayerInfo(typeof(ClaseEnriquecidaReferencesEstiloClase), "EstiloClase", ClaseEnriquecidaReferencesEstiloClase.EstiloClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseHasEstiloAtributo), "EstiloClase", EstiloClaseHasEstiloAtributo.EstiloClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseHasEstiloAtributo), "EstiloAtributo", EstiloClaseHasEstiloAtributo.EstiloAtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseHasEstiloOperacion), "EstiloClase", EstiloClaseHasEstiloOperacion.EstiloClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EstiloClaseHasEstiloOperacion), "EstiloOperacion", EstiloClaseHasEstiloOperacion.EstiloOperacionDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloClase), "TapizClase", TapizClaseHasEstiloClase.TapizClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloClase), "EstiloClase", TapizClaseHasEstiloClase.EstiloClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloAtributo), "TapizClase", TapizClaseHasEstiloAtributo.TapizClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloAtributo), "EstiloAtributo", TapizClaseHasEstiloAtributo.EstiloAtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloOperacion), "TapizClase", TapizClaseHasEstiloOperacion.TapizClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizClaseHasEstiloOperacion), "EstiloOperacion", TapizClaseHasEstiloOperacion.EstiloOperacionDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseHerenciaClase), "SourceClase", ClaseHerenciaClase.SourceClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseHerenciaClase), "TargetClase", ClaseHerenciaClase.TargetClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseAsociaClase), "SourceClase", ClaseAsociaClase.SourceClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseAsociaClase), "TargetClase", ClaseAsociaClase.TargetClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseComponeClase), "SourceClase", ClaseComponeClase.SourceClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseComponeClase), "TargetClase", ClaseComponeClase.TargetClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseAgregaClase), "SourceClase", ClaseAgregaClase.SourceClaseDomainRoleId),
+				new DomainRolePlayerInfo(typeof(ClaseAgregaClase), "TargetClase", ClaseAgregaClase.TargetClaseDomainRoleId),
 			};
 		}
 		#endregion
@@ -148,16 +213,28 @@ namespace UPM_IPS.SMFJLYZClassWeb
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(9);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(21);
 				createElementMap.Add(typeof(TapizClase), 0);
 				createElementMap.Add(typeof(Clase), 1);
 				createElementMap.Add(typeof(Atributo), 2);
 				createElementMap.Add(typeof(Operacion), 3);
 				createElementMap.Add(typeof(ClaseEnriquecida), 4);
 				createElementMap.Add(typeof(EstiloClase), 5);
-				createElementMap.Add(typeof(SMFJLYZClassWebDiagram), 6);
-				createElementMap.Add(typeof(MetaforaClase), 7);
-				createElementMap.Add(typeof(MetaforaClaseEnriquecida), 8);
+				createElementMap.Add(typeof(EstiloAtributo), 6);
+				createElementMap.Add(typeof(EstiloOperacion), 7);
+				createElementMap.Add(typeof(SMFJLYZClassWebDiagram), 8);
+				createElementMap.Add(typeof(EnlaceCE_EC), 9);
+				createElementMap.Add(typeof(EnlaceEC_ATRIB), 10);
+				createElementMap.Add(typeof(EnlaceEC_OPER), 11);
+				createElementMap.Add(typeof(ConectorHerencia), 12);
+				createElementMap.Add(typeof(ConectorAsociacion), 13);
+				createElementMap.Add(typeof(ConectorComposicion), 14);
+				createElementMap.Add(typeof(ConectorAgregacion), 15);
+				createElementMap.Add(typeof(MetaforaEstiloClase), 16);
+				createElementMap.Add(typeof(MetaforaEstiloAtributo), 17);
+				createElementMap.Add(typeof(MetaforaEstiloOperacion), 18);
+				createElementMap.Add(typeof(MetaforaClase), 19);
+				createElementMap.Add(typeof(MetaforaClaseEnriquecida), 20);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -177,9 +254,21 @@ namespace UPM_IPS.SMFJLYZClassWeb
 				case 3: return new Operacion(partition, propertyAssignments);
 				case 4: return new ClaseEnriquecida(partition, propertyAssignments);
 				case 5: return new EstiloClase(partition, propertyAssignments);
-				case 6: return new SMFJLYZClassWebDiagram(partition, propertyAssignments);
-				case 7: return new MetaforaClase(partition, propertyAssignments);
-				case 8: return new MetaforaClaseEnriquecida(partition, propertyAssignments);
+				case 6: return new EstiloAtributo(partition, propertyAssignments);
+				case 7: return new EstiloOperacion(partition, propertyAssignments);
+				case 8: return new SMFJLYZClassWebDiagram(partition, propertyAssignments);
+				case 9: return new EnlaceCE_EC(partition, propertyAssignments);
+				case 10: return new EnlaceEC_ATRIB(partition, propertyAssignments);
+				case 11: return new EnlaceEC_OPER(partition, propertyAssignments);
+				case 12: return new ConectorHerencia(partition, propertyAssignments);
+				case 13: return new ConectorAsociacion(partition, propertyAssignments);
+				case 14: return new ConectorComposicion(partition, propertyAssignments);
+				case 15: return new ConectorAgregacion(partition, propertyAssignments);
+				case 16: return new MetaforaEstiloClase(partition, propertyAssignments);
+				case 17: return new MetaforaEstiloAtributo(partition, propertyAssignments);
+				case 18: return new MetaforaEstiloOperacion(partition, propertyAssignments);
+				case 19: return new MetaforaClase(partition, propertyAssignments);
+				case 20: return new MetaforaClaseEnriquecida(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -202,11 +291,20 @@ namespace UPM_IPS.SMFJLYZClassWeb
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(4);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(13);
 				createElementLinkMap.Add(typeof(TapizClaseHasClase), 0);
 				createElementLinkMap.Add(typeof(ClaseHasAtributo), 1);
 				createElementLinkMap.Add(typeof(ClaseHasOperacion), 2);
 				createElementLinkMap.Add(typeof(ClaseEnriquecidaReferencesEstiloClase), 3);
+				createElementLinkMap.Add(typeof(EstiloClaseHasEstiloAtributo), 4);
+				createElementLinkMap.Add(typeof(EstiloClaseHasEstiloOperacion), 5);
+				createElementLinkMap.Add(typeof(TapizClaseHasEstiloClase), 6);
+				createElementLinkMap.Add(typeof(TapizClaseHasEstiloAtributo), 7);
+				createElementLinkMap.Add(typeof(TapizClaseHasEstiloOperacion), 8);
+				createElementLinkMap.Add(typeof(ClaseHerenciaClase), 9);
+				createElementLinkMap.Add(typeof(ClaseAsociaClase), 10);
+				createElementLinkMap.Add(typeof(ClaseComponeClase), 11);
+				createElementLinkMap.Add(typeof(ClaseAgregaClase), 12);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -225,6 +323,15 @@ namespace UPM_IPS.SMFJLYZClassWeb
 				case 1: return new ClaseHasAtributo(partition, roleAssignments, propertyAssignments);
 				case 2: return new ClaseHasOperacion(partition, roleAssignments, propertyAssignments);
 				case 3: return new ClaseEnriquecidaReferencesEstiloClase(partition, roleAssignments, propertyAssignments);
+				case 4: return new EstiloClaseHasEstiloAtributo(partition, roleAssignments, propertyAssignments);
+				case 5: return new EstiloClaseHasEstiloOperacion(partition, roleAssignments, propertyAssignments);
+				case 6: return new TapizClaseHasEstiloClase(partition, roleAssignments, propertyAssignments);
+				case 7: return new TapizClaseHasEstiloAtributo(partition, roleAssignments, propertyAssignments);
+				case 8: return new TapizClaseHasEstiloOperacion(partition, roleAssignments, propertyAssignments);
+				case 9: return new ClaseHerenciaClase(partition, roleAssignments, propertyAssignments);
+				case 10: return new ClaseAsociaClase(partition, roleAssignments, propertyAssignments);
+				case 11: return new ClaseComponeClase(partition, roleAssignments, propertyAssignments);
+				case 12: return new ClaseAgregaClase(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -345,6 +452,8 @@ namespace UPM_IPS.SMFJLYZClassWeb
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
 			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.FixUpDiagram));
+			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.DecoratorPropertyChanged));
+			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.ConnectorRolePlayerChanged));
 			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemAddRule));
 			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemDeleteRule));
 			ruleManager.EnableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemRolePlayerChangeRule));
@@ -361,6 +470,8 @@ namespace UPM_IPS.SMFJLYZClassWeb
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
 			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.FixUpDiagram));
+			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.DecoratorPropertyChanged));
+			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.ConnectorRolePlayerChanged));
 			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemAddRule));
 			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemDeleteRule));
 			ruleManager.DisableRule(typeof(global::UPM_IPS.SMFJLYZClassWeb.CompartmentItemRolePlayerChangeRule));
@@ -404,6 +515,12 @@ namespace UPM_IPS.SMFJLYZClassWeb
 			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.TapizClaseHasClase.ClaseDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.ClaseHasAtributo.AtributoDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.ClaseHasOperacion.OperacionDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.EstiloAtributoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.EstiloOperacionDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.EstiloClaseDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.EstiloAtributoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.EstiloOperacionDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.TargetClaseDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>
@@ -739,6 +856,47 @@ namespace UPM_IPS.SMFJLYZClassWeb
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.AlineacionEnum/Izquierda.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
 		Izquierda = 3,
+	}
+}
+namespace UPM_IPS.SMFJLYZClassWeb
+{
+	/// <summary>
+	/// DomainEnumeration: CardinalidadEnum
+	/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum CardinalidadEnum
+	{
+		/// <summary>
+		/// CeroAUno
+		/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAUno
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAUno.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
+		CeroAUno = 0,
+		/// <summary>
+		/// CeroAMucho
+		/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAMucho
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAMucho.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
+		CeroAMucho = 1,
+		/// <summary>
+		/// UnoAUno
+		/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAUno
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAUno.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
+		UnoAUno = 2,
+		/// <summary>
+		/// UnoAMucho
+		/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAMucho
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAMucho.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
+		UnoAMucho = 3,
+		/// <summary>
+		/// MuchoAMucho
+		/// Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.MuchoAMucho
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/MuchoAMucho.Description", typeof(global::UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel), "UPM_IPS.SMFJLYZClassWeb.GeneratedCode.DomainModelResx")]
+		MuchoAMucho = 4,
 	}
 }
 

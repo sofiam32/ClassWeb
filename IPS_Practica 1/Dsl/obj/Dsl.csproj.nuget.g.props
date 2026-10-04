@@ -14,7 +14,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_VisualStudio_Threading_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Threading_Analyzers)' == '' ">C:\Users\jilin\.nuget\packages\microsoft.visualstudio.threading.analyzers\17.0.64</PkgMicrosoft_VisualStudio_Threading_Analyzers>
+    <PkgMicrosoft_VisualStudio_Threading_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Threading_Analyzers)' == '' ">C:\Users\jilin\.nuget\packages\microsoft.visualstudio.threading.analyzers\17.13.2</PkgMicrosoft_VisualStudio_Threading_Analyzers>
+    <PkgMicrosoft_VisualStudio_Composition_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Composition_Analyzers)' == '' ">C:\Users\jilin\.nuget\packages\microsoft.visualstudio.composition.analyzers\17.12.20</PkgMicrosoft_VisualStudio_Composition_Analyzers>
     <PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers)' == '' ">C:\Users\jilin\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2</PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers>
     <PkgMicrosoft_VisualStudio_SDK_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_SDK_Analyzers)' == '' ">C:\Users\jilin\.nuget\packages\microsoft.visualstudio.sdk.analyzers\16.10.10</PkgMicrosoft_VisualStudio_SDK_Analyzers>
   </PropertyGroup>

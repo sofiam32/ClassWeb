@@ -37,6 +37,38 @@ namespace UPM_IPS.SMFJLYZClassWeb
 namespace UPM_IPS.SMFJLYZClassWeb
 {
 	[DslValidation::ValidationState(DslValidation::ValidationState.Enabled)]
+	public partial class Clase
+	{
+		/// <summary>
+		/// Checks that the relationships that have a multiplicity of One or OneMany do actually have a link.
+		/// </summary>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Justification = "Generated code.")]
+		[DslValidation::ValidationMethod(DslValidation::ValidationCategories.Open | DslValidation::ValidationCategories.Save | DslValidation::ValidationCategories.Menu)]
+		private void ValidateClaseMultiplicity (DslValidation::ValidationContext context)
+		{
+			if (this.SuperClase.Count == 0)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"Clase", "", "SuperClase"),
+						"DSL0001", this);
+			}
+			if (this.SubClase == null)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.SMFJLYZClassWeb.SMFJLYZClassWebDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"Clase", "", "SubClase"),
+						"DSL0001", this);
+			}
+		} // ValidateClaseMultiplicity
+	} // class Clase
+} // UPM_IPS.SMFJLYZClassWeb
+
+namespace UPM_IPS.SMFJLYZClassWeb
+{
+	[DslValidation::ValidationState(DslValidation::ValidationState.Enabled)]
 	public partial class ClaseEnriquecida
 	{
 		/// <summary>

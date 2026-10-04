@@ -149,6 +149,14 @@
     <value>Nombre</value>
     <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;Clase&apos;</comment>
   </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.Clase/esAbstracta.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.Clase.Es Abstracta</value>
+    <comment>Description for DomainProperty &apos;esAbstracta&apos; on DomainClass &apos;Clase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.Clase/esAbstracta.DisplayName" xml:space="preserve">
+    <value>Es Abstracta</value>
+    <comment>DisplayName for DomainProperty &apos;esAbstracta&apos; on DomainClass &apos;Clase&apos;</comment>
+  </data>
   <data name="UPM_IPS.SMFJLYZClassWeb.Atributo.Description" xml:space="preserve">
     <value>Description for UPM_IPS.SMFJLYZClassWeb.Atributo</value>
     <comment>Description for DomainClass &apos;Atributo&apos;</comment>
@@ -268,6 +276,110 @@
   <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClase/alineacion.DisplayName" xml:space="preserve">
     <value>Alineacion</value>
     <comment>DisplayName for DomainProperty &apos;alineacion&apos; on DomainClass &apos;EstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClase/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClase.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;EstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClase/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;EstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo</value>
+    <comment>Description for DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>DisplayName for DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/tipo_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Tipo_letra</value>
+    <comment>Description for DomainProperty &apos;tipo_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/tipo_letra.DisplayName" xml:space="preserve">
+    <value>Tipo_letra</value>
+    <comment>DisplayName for DomainProperty &apos;tipo_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/formato_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Formato_letra</value>
+    <comment>Description for DomainProperty &apos;formato_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/formato_letra.DisplayName" xml:space="preserve">
+    <value>Formato_letra</value>
+    <comment>DisplayName for DomainProperty &apos;formato_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/tamanio_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Tamanio_letra</value>
+    <comment>Description for DomainProperty &apos;tamanio_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/tamanio_letra.DisplayName" xml:space="preserve">
+    <value>Tamanio_letra</value>
+    <comment>DisplayName for DomainProperty &apos;tamanio_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/color_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Color_letra</value>
+    <comment>Description for DomainProperty &apos;color_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/color_letra.DisplayName" xml:space="preserve">
+    <value>Color_letra</value>
+    <comment>DisplayName for DomainProperty &apos;color_letra&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/formato_atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.Formato_atributo</value>
+    <comment>Description for DomainProperty &apos;formato_atributo&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloAtributo/formato_atributo.DisplayName" xml:space="preserve">
+    <value>Formato_atributo</value>
+    <comment>DisplayName for DomainProperty &apos;formato_atributo&apos; on DomainClass &apos;EstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion</value>
+    <comment>Description for DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>DisplayName for DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/color_fondo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Color_fondo</value>
+    <comment>Description for DomainProperty &apos;color_fondo&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/color_fondo.DisplayName" xml:space="preserve">
+    <value>Color_fondo</value>
+    <comment>DisplayName for DomainProperty &apos;color_fondo&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/tipo_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Tipo_letra</value>
+    <comment>Description for DomainProperty &apos;tipo_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/tipo_letra.DisplayName" xml:space="preserve">
+    <value>Tipo_letra</value>
+    <comment>DisplayName for DomainProperty &apos;tipo_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/formato_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Formato_letra</value>
+    <comment>Description for DomainProperty &apos;formato_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/formato_letra.DisplayName" xml:space="preserve">
+    <value>Formato_letra</value>
+    <comment>DisplayName for DomainProperty &apos;formato_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/tamanio_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Tamanio_letra</value>
+    <comment>Description for DomainProperty &apos;tamanio_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/tamanio_letra.DisplayName" xml:space="preserve">
+    <value>Tamanio_letra</value>
+    <comment>DisplayName for DomainProperty &apos;tamanio_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/color_letra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.Color_letra</value>
+    <comment>Description for DomainProperty &apos;color_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloOperacion/color_letra.DisplayName" xml:space="preserve">
+    <value>Color_letra</value>
+    <comment>DisplayName for DomainProperty &apos;color_letra&apos; on DomainClass &apos;EstiloOperacion&apos;</comment>
   </data>
   <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasClase.Description" xml:space="preserve">
     <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasClase</value>
@@ -396,6 +508,390 @@
   <data name="UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloClase/EstiloClase.PropertyDisplayName" xml:space="preserve">
     <value>Clase Enriquecida</value>
     <comment>PropertyDisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;ClaseEnriquecidaReferencesEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo</value>
+    <comment>Description for DomainClass &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Estilo Clase Has Estilo Atributo</value>
+    <comment>DisplayName for DomainClass &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.EstiloClase</value>
+    <comment>Description for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloClase.DisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>DisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloClase.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.EstiloAtributo</value>
+    <comment>Description for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>DisplayName for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo/EstiloAtributo.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;EstiloClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion</value>
+    <comment>Description for DomainClass &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Estilo Clase Has Estilo Operacion</value>
+    <comment>DisplayName for DomainClass &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.EstiloClase</value>
+    <comment>Description for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloClase.DisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>DisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloClase.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.EstiloOperacion</value>
+    <comment>Description for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>DisplayName for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion/EstiloOperacion.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;EstiloClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase</value>
+    <comment>Description for DomainClass &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase Has Estilo Clase</value>
+    <comment>DisplayName for DomainClass &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/TapizClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.TapizClase</value>
+    <comment>Description for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/TapizClase.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>DisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/TapizClase.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/EstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.EstiloClase</value>
+    <comment>Description for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/EstiloClase.DisplayName" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>DisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase/EstiloClase.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo</value>
+    <comment>Description for DomainClass &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase Has Estilo Atributo</value>
+    <comment>DisplayName for DomainClass &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/TapizClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.TapizClase</value>
+    <comment>Description for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/TapizClase.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>DisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/TapizClase.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/EstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.EstiloAtributo</value>
+    <comment>Description for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/EstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>DisplayName for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo/EstiloAtributo.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloAtributo&apos; on DomainRelationship &apos;TapizClaseHasEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion</value>
+    <comment>Description for DomainClass &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase Has Estilo Operacion</value>
+    <comment>DisplayName for DomainClass &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/TapizClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.TapizClase</value>
+    <comment>Description for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/TapizClase.DisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>DisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/TapizClase.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizClase&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/EstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.EstiloOperacion</value>
+    <comment>Description for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/EstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>DisplayName for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion/EstiloOperacion.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloOperacion&apos; on DomainRelationship &apos;TapizClaseHasEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase</value>
+    <comment>Description for DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.DisplayName" xml:space="preserve">
+    <value>Clase Herencia Clase</value>
+    <comment>DisplayName for DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/esDisjunta.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Es Disjunta</value>
+    <comment>Description for DomainProperty &apos;esDisjunta&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/esDisjunta.DisplayName" xml:space="preserve">
+    <value>Es Disjunta</value>
+    <comment>DisplayName for DomainProperty &apos;esDisjunta&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/esTotal.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Es Total</value>
+    <comment>Description for DomainProperty &apos;esTotal&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/esTotal.DisplayName" xml:space="preserve">
+    <value>Es Total</value>
+    <comment>DisplayName for DomainProperty &apos;esTotal&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/etiquetasHerencia.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Etiquetas Herencia</value>
+    <comment>Description for DomainProperty &apos;etiquetasHerencia&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/etiquetasHerencia.DisplayName" xml:space="preserve">
+    <value>Etiquetas Herencia</value>
+    <comment>DisplayName for DomainProperty &apos;etiquetasHerencia&apos; on DomainClass &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/SourceClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.SourceClase</value>
+    <comment>Description for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/SourceClase.DisplayName" xml:space="preserve">
+    <value>Source Clase</value>
+    <comment>DisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/SourceClase.PropertyDisplayName" xml:space="preserve">
+    <value>Super Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/TargetClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.TargetClase</value>
+    <comment>Description for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/TargetClase.DisplayName" xml:space="preserve">
+    <value>Target Clase</value>
+    <comment>DisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase/TargetClase.PropertyDisplayName" xml:space="preserve">
+    <value>Sub Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseHerenciaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase</value>
+    <comment>Description for DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.DisplayName" xml:space="preserve">
+    <value>Clase Asocia Clase</value>
+    <comment>DisplayName for DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/cardinalidadOrigen.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Cardinalidad Origen</value>
+    <comment>Description for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/cardinalidadOrigen.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Origen</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/cardinalidadDestino.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Cardinalidad Destino</value>
+    <comment>Description for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/cardinalidadDestino.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Destino</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/SourceClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.SourceClase</value>
+    <comment>Description for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/SourceClase.DisplayName" xml:space="preserve">
+    <value>Source Clase</value>
+    <comment>DisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/SourceClase.PropertyDisplayName" xml:space="preserve">
+    <value>Origen Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/TargetClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.TargetClase</value>
+    <comment>Description for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/TargetClase.DisplayName" xml:space="preserve">
+    <value>Target Clase</value>
+    <comment>DisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase/TargetClase.PropertyDisplayName" xml:space="preserve">
+    <value>Destino Clase</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAsociaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase</value>
+    <comment>Description for DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.DisplayName" xml:space="preserve">
+    <value>Clase Compone Clase</value>
+    <comment>DisplayName for DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/cardinalidadOrigen.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Cardinalidad Origen</value>
+    <comment>Description for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/cardinalidadOrigen.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Origen</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/cardinalidadDestino.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Cardinalidad Destino</value>
+    <comment>Description for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/cardinalidadDestino.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Destino</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/SourceClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.SourceClase</value>
+    <comment>Description for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/SourceClase.DisplayName" xml:space="preserve">
+    <value>Source Clase</value>
+    <comment>DisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/SourceClase.PropertyDisplayName" xml:space="preserve">
+    <value>Esta Compuesta</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/TargetClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.TargetClase</value>
+    <comment>Description for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/TargetClase.DisplayName" xml:space="preserve">
+    <value>Target Clase</value>
+    <comment>DisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase/TargetClase.PropertyDisplayName" xml:space="preserve">
+    <value>Es Componente</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseComponeClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase</value>
+    <comment>Description for DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.DisplayName" xml:space="preserve">
+    <value>Clase Agrega Clase</value>
+    <comment>DisplayName for DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/cardinalidadOrigen.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Cardinalidad Origen</value>
+    <comment>Description for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/cardinalidadOrigen.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Origen</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadOrigen&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/cardinalidadDestino.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Cardinalidad Destino</value>
+    <comment>Description for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/cardinalidadDestino.DisplayName" xml:space="preserve">
+    <value>Cardinalidad Destino</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidadDestino&apos; on DomainClass &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/SourceClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.SourceClase</value>
+    <comment>Description for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/SourceClase.DisplayName" xml:space="preserve">
+    <value>Source Clase</value>
+    <comment>DisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/SourceClase.PropertyDisplayName" xml:space="preserve">
+    <value>Esta Agregada</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/TargetClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.TargetClase</value>
+    <comment>Description for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/TargetClase.DisplayName" xml:space="preserve">
+    <value>Target Clase</value>
+    <comment>DisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase/TargetClase.PropertyDisplayName" xml:space="preserve">
+    <value>Es Agregado</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetClase&apos; on DomainRelationship &apos;ClaseAgregaClase&apos;</comment>
   </data>
   <data name="UPM_IPS.SMFJLYZClassWeb.TipoDatoEnum/String.DisplayName" xml:space="preserve">
     <value>String</value>
@@ -645,6 +1141,46 @@
     <value>Description for UPM_IPS.SMFJLYZClassWeb.AlineacionEnum.Izquierda</value>
     <comment>Description for EnumerationLiteral &apos;Izquierda&apos; on DomainEnumeration &apos;AlineacionEnum&apos;</comment>
   </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAUno.DisplayName" xml:space="preserve">
+    <value>CeroAUno</value>
+    <comment>Display name for EnumerationLiteral &apos;CeroAUno&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAUno.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAUno</value>
+    <comment>Description for EnumerationLiteral &apos;CeroAUno&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAMucho.DisplayName" xml:space="preserve">
+    <value>CeroAMucho</value>
+    <comment>Display name for EnumerationLiteral &apos;CeroAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/CeroAMucho.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAMucho</value>
+    <comment>Description for EnumerationLiteral &apos;CeroAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAUno.DisplayName" xml:space="preserve">
+    <value>UnoAUno</value>
+    <comment>Display name for EnumerationLiteral &apos;UnoAUno&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAUno.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAUno</value>
+    <comment>Description for EnumerationLiteral &apos;UnoAUno&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAMucho.DisplayName" xml:space="preserve">
+    <value>UnoAMucho</value>
+    <comment>Display name for EnumerationLiteral &apos;UnoAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/UnoAMucho.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAMucho</value>
+    <comment>Description for EnumerationLiteral &apos;UnoAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/MuchoAMucho.DisplayName" xml:space="preserve">
+    <value>MuchoAMucho</value>
+    <comment>Display name for EnumerationLiteral &apos;MuchoAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum/MuchoAMucho.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.MuchoAMucho</value>
+    <comment>Description for EnumerationLiteral &apos;MuchoAMucho&apos; on DomainEnumeration &apos;CardinalidadEnum&apos;</comment>
+  </data>
   <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaClase.Description" xml:space="preserve">
     <value>Description for UPM_IPS.SMFJLYZClassWeb.MetaforaClase</value>
     <comment>Description for DomainClass &apos;MetaforaClase&apos;</comment>
@@ -683,6 +1219,126 @@
   </data>
   <data name="MetaforaClaseEnriquecidanombreCEDecDefaultText" xml:space="preserve">
     <value>nombreCEDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloClase.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloClase</value>
+    <comment>Description for DomainClass &apos;MetaforaEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloClase.DisplayName" xml:space="preserve">
+    <value>Metafora Estilo Clase</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEstiloClase&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloAtributo</value>
+    <comment>Description for DomainClass &apos;MetaforaEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloAtributo.DisplayName" xml:space="preserve">
+    <value>Metafora Estilo Atributo</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEstiloAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloOperacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloOperacion</value>
+    <comment>Description for DomainClass &apos;MetaforaEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloOperacion.DisplayName" xml:space="preserve">
+    <value>Metafora Estilo Operacion</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEstiloOperacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceCE_EC.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EnlaceCE_EC</value>
+    <comment>Description for DomainClass &apos;EnlaceCE_EC&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceCE_EC.DisplayName" xml:space="preserve">
+    <value>Enlace CE_ EC</value>
+    <comment>DisplayName for DomainClass &apos;EnlaceCE_EC&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceEC_ATRIB.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EnlaceEC_ATRIB</value>
+    <comment>Description for DomainClass &apos;EnlaceEC_ATRIB&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceEC_ATRIB.DisplayName" xml:space="preserve">
+    <value>Enlace EC_ ATRIB</value>
+    <comment>DisplayName for DomainClass &apos;EnlaceEC_ATRIB&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceEC_OPER.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.EnlaceEC_OPER</value>
+    <comment>Description for DomainClass &apos;EnlaceEC_OPER&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.EnlaceEC_OPER.DisplayName" xml:space="preserve">
+    <value>Enlace EC_ OPER</value>
+    <comment>DisplayName for DomainClass &apos;EnlaceEC_OPER&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorHerencia.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ConectorHerencia</value>
+    <comment>Description for DomainClass &apos;ConectorHerencia&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorHerencia.DisplayName" xml:space="preserve">
+    <value>Conector Herencia</value>
+    <comment>DisplayName for DomainClass &apos;ConectorHerencia&apos;</comment>
+  </data>
+  <data name="ConectorHerenciaetiquetasDecDefaultText" xml:space="preserve">
+    <value>etiquetasDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorAsociacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ConectorAsociacion</value>
+    <comment>Description for DomainClass &apos;ConectorAsociacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorAsociacion.DisplayName" xml:space="preserve">
+    <value>Conector Asociacion</value>
+    <comment>DisplayName for DomainClass &apos;ConectorAsociacion&apos;</comment>
+  </data>
+  <data name="ConectorAsociacionnombreDecDefaultText" xml:space="preserve">
+    <value>nombreDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorAsociacionCardOrigenDecDefaultText" xml:space="preserve">
+    <value>CardOrigenDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorAsociacionCardDestinoDecDefaultText" xml:space="preserve">
+    <value>CardDestinoDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorComposicion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ConectorComposicion</value>
+    <comment>Description for DomainClass &apos;ConectorComposicion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorComposicion.DisplayName" xml:space="preserve">
+    <value>Conector Composicion</value>
+    <comment>DisplayName for DomainClass &apos;ConectorComposicion&apos;</comment>
+  </data>
+  <data name="ConectorComposicionnombreDecDefaultText" xml:space="preserve">
+    <value>nombreDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorComposicionCardOrigenDecDefaultText" xml:space="preserve">
+    <value>CardOrigenDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorComposicionCardDestinoDecDefaultText" xml:space="preserve">
+    <value>CardDestinoDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorAgregacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.SMFJLYZClassWeb.ConectorAgregacion</value>
+    <comment>Description for DomainClass &apos;ConectorAgregacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.SMFJLYZClassWeb.ConectorAgregacion.DisplayName" xml:space="preserve">
+    <value>Conector Agregacion</value>
+    <comment>DisplayName for DomainClass &apos;ConectorAgregacion&apos;</comment>
+  </data>
+  <data name="ConectorAgregacionnombreDecDefaultText" xml:space="preserve">
+    <value>nombreDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorAgregacionCardOrigenDecDefaultText" xml:space="preserve">
+    <value>CardOrigenDec</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="ConectorAgregacionCardDestinoDecDefaultText" xml:space="preserve">
+    <value>CardDestinoDec</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="FormatList" xml:space="preserve">
@@ -725,9 +1381,93 @@
     <value>Crea una Clase Enriquecida</value>
     <comment>Toolbox tooltip text</comment>
   </data>
+  <data name="AtributoToolToolboxItem" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un Atributo</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="OperacionToolToolboxItem" xml:space="preserve">
+    <value>Operacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="OperacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una operacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
   <data name="RelacionesToolboxTab" xml:space="preserve">
     <value>Relaciones</value>
     <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="EnlaceHerenciaToolToolboxItem" xml:space="preserve">
+    <value>Enlace Herencia</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceHerenciaToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una Herencia</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnlaceAsociacionToolToolboxItem" xml:space="preserve">
+    <value>Enlace Asociacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceAsociacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una Asociacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnlaceComposicionToolToolboxItem" xml:space="preserve">
+    <value>Enlace Composicion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceComposicionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una Composicion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnlaceAgregacionToolToolboxItem" xml:space="preserve">
+    <value>Enlace Agregacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceAgregacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una Agregacion </value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstilosToolboxTab" xml:space="preserve">
+    <value>Estilos</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="EnlaceCE_ECToolToolboxItem" xml:space="preserve">
+    <value>Enlace CE-EC</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceCE_ECToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un enlace de CE a EC</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloClaseToolToolboxItem" xml:space="preserve">
+    <value>Estilo Clase</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloClaseToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un Estilo Clase </value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloAtributoToolToolboxItem" xml:space="preserve">
+    <value>Estilo Atributo</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloAtributoToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un Estilo Atributo </value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloOperacionToolToolboxItem" xml:space="preserve">
+    <value>Estilo Operacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloOperacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un Estilo Operacion </value>
+    <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
     <value>ToolboxItem {0} was not found</value>
@@ -868,6 +1608,46 @@ A DomainClass can be serialized as a moniker only if
   </data>
   <data name="ClaseEnriquecidaToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\CE_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Atributo_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="OperacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Operacion_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceHerenciaToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EnlaceHerenciaTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceAsociacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EnlaceAsociacionTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceComposicionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EnlaceComposicionTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceAgregacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EnlaceAgregacionTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceCE_ECToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EnlaceCE_ECTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloClaseToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EC_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloAtributoToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EA_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloOperacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\EO_Tool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
 </root>

@@ -58,12 +58,18 @@
   </Target>
   -->
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.RpcContracts">
+      <Version>17.14.20</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.*-*" ExcludeAssets="runtime" />
     <PackageReference Include="Microsoft.VisualStudio.Modeling.Sdk" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.Modeling.Sdk.Diagrams" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.Modeling.Sdk.Shell" Version="17.0.*-*" />
     <PackageReference Include="StreamJsonRpc">
       <Version>2.25.29</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>10.0.12</Version>
     </PackageReference>
     <PackageReference Include="System.Numerics.Vectors">
       <Version>4.6.1</Version>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5Rx0qRlVn+o=",
+  "dgSpecHash": "qZAnr5+HVUk=",
   "success": true,
   "projectFilePath": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\DslPackage\\DslPackage.csproj",
   "expectedPackageFiles": [
@@ -19,12 +19,14 @@
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.net.stringtools\\18.4.0\\microsoft.net.stringtools.18.4.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.analyzers\\3.0.3078\\microsoft.servicehub.analyzers.3.0.3078.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.analyzers\\4.8.55\\microsoft.servicehub.analyzers.4.8.55.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.client\\3.0.3078\\microsoft.servicehub.client.3.0.3078.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.framework\\3.0.3078\\microsoft.servicehub.framework.3.0.3078.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.framework\\4.8.55\\microsoft.servicehub.framework.4.8.55.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.servicehub.resources\\3.0.3078\\microsoft.servicehub.resources.3.0.3078.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.commandbars\\17.0.32112.339\\microsoft.visualstudio.commandbars.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.componentmodelhost\\17.0.491\\microsoft.visualstudio.componentmodelhost.17.0.491.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.composition\\17.12.20\\microsoft.visualstudio.composition.17.12.20.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.composition.analyzers\\17.12.20\\microsoft.visualstudio.composition.analyzers.17.12.20.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.coreutility\\17.0.491\\microsoft.visualstudio.coreutility.17.0.491.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.debugger.interop.10.0\\17.0.32112.339\\microsoft.visualstudio.debugger.interop.10.0.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.debugger.interop.11.0\\17.0.32112.339\\microsoft.visualstudio.debugger.interop.11.0.17.0.32112.339.nupkg.sha512",
@@ -52,7 +54,7 @@
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.package.languageservice.15.0\\17.0.32112.339\\microsoft.visualstudio.package.languageservice.15.0.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.projectaggregator\\17.0.32112.339\\microsoft.visualstudio.projectaggregator.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.remotecontrol\\16.3.41\\microsoft.visualstudio.remotecontrol.16.3.41.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.rpccontracts\\17.0.51\\microsoft.visualstudio.rpccontracts.17.0.51.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.rpccontracts\\17.14.20\\microsoft.visualstudio.rpccontracts.17.14.20.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.sdk\\17.0.32112.339\\microsoft.visualstudio.sdk.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.sdk.analyzers\\16.10.10\\microsoft.visualstudio.sdk.analyzers.16.10.10.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.setup.configuration.interop\\3.0.4496\\microsoft.visualstudio.setup.configuration.interop.3.0.4496.nupkg.sha512",
@@ -83,8 +85,8 @@
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.texttemplating.interfaces.11.0\\17.0.32112.339\\microsoft.visualstudio.texttemplating.interfaces.11.0.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.texttemplating.modeling\\17.0.32112.339\\microsoft.visualstudio.texttemplating.modeling.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.texttemplating.vshost\\17.0.32112.339\\microsoft.visualstudio.texttemplating.vshost.17.0.32112.339.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.threading\\17.0.64\\microsoft.visualstudio.threading.17.0.64.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\17.0.64\\microsoft.visualstudio.threading.analyzers.17.0.64.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.threading\\17.13.2\\microsoft.visualstudio.threading.17.13.2.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\17.13.2\\microsoft.visualstudio.threading.analyzers.17.13.2.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.threading.only\\17.14.15\\microsoft.visualstudio.threading.only.17.14.15.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.utilities\\17.0.32112.339\\microsoft.visualstudio.utilities.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\microsoft.visualstudio.utilities.internal\\16.3.23\\microsoft.visualstudio.utilities.internal.16.3.23.nupkg.sha512",
@@ -104,14 +106,22 @@
     "C:\\Users\\jilin\\.nuget\\packages\\stdole\\17.0.32112.339\\stdole.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\streamjsonrpc\\2.25.29\\streamjsonrpc.2.25.29.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
-    "C:\\Users\\jilin\\.nuget\\packages\\system.componentmodel.composition\\4.5.0\\system.componentmodel.composition.4.5.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.collections.immutable\\10.0.12\\system.collections.immutable.10.0.12.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.componentmodel.composition\\8.0.0\\system.componentmodel.composition.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition\\8.0.0\\system.composition.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition.attributedmodel\\8.0.0\\system.composition.attributedmodel.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition.convention\\8.0.0\\system.composition.convention.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition.hosting\\8.0.0\\system.composition.hosting.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition.runtime\\8.0.0\\system.composition.runtime.8.0.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.composition.typedparts\\8.0.0\\system.composition.typedparts.8.0.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.1\\system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\jilin\\.nuget\\packages\\system.reflection.metadata\\6.0.0\\system.reflection.metadata.6.0.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
@@ -133,5 +143,22 @@
     "C:\\Users\\jilin\\.nuget\\packages\\vslangproj80\\17.0.32112.339\\vslangproj80.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\jilin\\.nuget\\packages\\vslangproj90\\17.0.32112.339\\vslangproj90.17.0.32112.339.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Microsoft.VisualStudio.RpcContracts 17.14.20 depends on Microsoft.ServiceHub.Framework (>= 4.8.40) but Microsoft.ServiceHub.Framework 4.8.40 was not found. Microsoft.ServiceHub.Framework 4.8.55 was resolved instead.",
+      "projectPath": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\DslPackage\\DslPackage.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\DslPackage\\DslPackage.csproj",
+      "libraryId": "Microsoft.ServiceHub.Framework",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-arm64",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

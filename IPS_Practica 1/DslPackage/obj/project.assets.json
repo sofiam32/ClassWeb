@@ -222,7 +222,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.ServiceHub.Analyzers/3.0.3078": {
+      "Microsoft.ServiceHub.Analyzers/4.8.55": {
         "type": "package"
       },
       "Microsoft.ServiceHub.Client/3.0.3078": {
@@ -256,61 +256,66 @@
           }
         }
       },
-      "Microsoft.ServiceHub.Framework/3.0.3078": {
+      "Microsoft.ServiceHub.Framework/4.8.55": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Analyzers": "3.0.3078",
-          "StreamJsonRpc": "2.7.70",
-          "System.Collections.Immutable": "5.0.0"
+          "Microsoft.ServiceHub.Analyzers": "4.8.55",
+          "Microsoft.VisualStudio.Composition": "17.12.20",
+          "Microsoft.VisualStudio.Threading": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "Nerdbank.Streams": "2.11.86",
+          "StreamJsonRpc": "2.21.10",
+          "System.Collections.Immutable": "8.0.0",
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -402,6 +407,75 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.VisualStudio.Composition/17.12.20": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "Microsoft.VisualStudio.Composition.Analyzers": "17.12.20",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "System.Collections.Immutable": "6.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Composition": "8.0.0",
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Metadata": "6.0.0",
+          "System.Threading.Tasks.Dataflow": "6.0.0"
+        },
+        "compile": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+        "type": "package"
       },
       "Microsoft.VisualStudio.CoreUtility/17.0.491": {
         "type": "package",
@@ -861,11 +935,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.RpcContracts/17.0.51": {
+      "Microsoft.VisualStudio.RpcContracts/17.14.20": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Framework": "3.0.2061",
-          "StreamJsonRpc": "2.8.28"
+          "Microsoft.ServiceHub.Framework": "4.8.40",
+          "System.Text.Json": "8.0.5",
+          "System.Threading.Tasks.Dataflow": "8.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll": {
@@ -1487,13 +1562,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading/17.0.64": {
+      "Microsoft.VisualStudio.Threading/17.13.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.64",
-          "Microsoft.VisualStudio.Validation": "16.10.35",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
           "Microsoft.Win32.Registry": "5.0.0",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "frameworkAssemblies": [
@@ -1551,7 +1628,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
+      "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
@@ -2047,11 +2124,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/10.0.12": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "compile": {
           "lib/net462/System.Collections.Immutable.dll": {
@@ -2067,16 +2144,129 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.ComponentModel.Composition/4.5.0": {
+      "System.ComponentModel.Composition/8.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.Composition"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "lib/net462/_._": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/_._": {}
+        }
+      },
+      "System.Composition/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Convention": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0",
+          "System.Composition.TypedParts": "8.0.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.AttributedModel/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Convention/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Hosting/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Runtime/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.TypedParts/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -2170,6 +2360,15 @@
           "ref/netstandard/_._": {}
         }
       },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Reflection.Emit.Lightweight/4.7.0": {
         "type": "package",
         "compile": {
@@ -2177,6 +2376,22 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -2550,11 +2765,13 @@
         "dependencies": {
           "Microsoft.VisualStudio.Modeling.Sdk": "17.0.0-0",
           "Microsoft.VisualStudio.Modeling.Sdk.Diagrams": "17.0.0-0",
+          "Microsoft.VisualStudio.RpcContracts": "17.14.20",
           "Microsoft.VisualStudio.TextTemplating": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.10.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.11.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Modeling": "17.0.0-0",
           "StreamJsonRpc": "2.25.29",
+          "System.Collections.Immutable": "10.0.12",
           "System.Numerics.Vectors": "4.6.1"
         },
         "compile": {
@@ -2786,7 +3003,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.ServiceHub.Analyzers/3.0.3078": {
+      "Microsoft.ServiceHub.Analyzers/4.8.55": {
         "type": "package"
       },
       "Microsoft.ServiceHub.Client/3.0.3078": {
@@ -2820,61 +3037,66 @@
           }
         }
       },
-      "Microsoft.ServiceHub.Framework/3.0.3078": {
+      "Microsoft.ServiceHub.Framework/4.8.55": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Analyzers": "3.0.3078",
-          "StreamJsonRpc": "2.7.70",
-          "System.Collections.Immutable": "5.0.0"
+          "Microsoft.ServiceHub.Analyzers": "4.8.55",
+          "Microsoft.VisualStudio.Composition": "17.12.20",
+          "Microsoft.VisualStudio.Threading": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "Nerdbank.Streams": "2.11.86",
+          "StreamJsonRpc": "2.21.10",
+          "System.Collections.Immutable": "8.0.0",
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -2966,6 +3188,75 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.VisualStudio.Composition/17.12.20": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "Microsoft.VisualStudio.Composition.Analyzers": "17.12.20",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "System.Collections.Immutable": "6.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Composition": "8.0.0",
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Metadata": "6.0.0",
+          "System.Threading.Tasks.Dataflow": "6.0.0"
+        },
+        "compile": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+        "type": "package"
       },
       "Microsoft.VisualStudio.CoreUtility/17.0.491": {
         "type": "package",
@@ -3425,11 +3716,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.RpcContracts/17.0.51": {
+      "Microsoft.VisualStudio.RpcContracts/17.14.20": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Framework": "3.0.2061",
-          "StreamJsonRpc": "2.8.28"
+          "Microsoft.ServiceHub.Framework": "4.8.40",
+          "System.Text.Json": "8.0.5",
+          "System.Threading.Tasks.Dataflow": "8.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll": {
@@ -4051,13 +4343,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading/17.0.64": {
+      "Microsoft.VisualStudio.Threading/17.13.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.64",
-          "Microsoft.VisualStudio.Validation": "16.10.35",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
           "Microsoft.Win32.Registry": "5.0.0",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "frameworkAssemblies": [
@@ -4115,7 +4409,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
+      "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
@@ -4617,11 +4911,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/10.0.12": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "compile": {
           "lib/net462/System.Collections.Immutable.dll": {
@@ -4637,16 +4931,129 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.ComponentModel.Composition/4.5.0": {
+      "System.ComponentModel.Composition/8.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.Composition"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "lib/net462/_._": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/_._": {}
+        }
+      },
+      "System.Composition/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Convention": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0",
+          "System.Composition.TypedParts": "8.0.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.AttributedModel/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Convention/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Hosting/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Runtime/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.TypedParts/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -4740,6 +5147,15 @@
           "ref/netstandard/_._": {}
         }
       },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Reflection.Emit.Lightweight/4.7.0": {
         "type": "package",
         "compile": {
@@ -4747,6 +5163,22 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -5102,11 +5534,13 @@
         "dependencies": {
           "Microsoft.VisualStudio.Modeling.Sdk": "17.0.0-0",
           "Microsoft.VisualStudio.Modeling.Sdk.Diagrams": "17.0.0-0",
+          "Microsoft.VisualStudio.RpcContracts": "17.14.20",
           "Microsoft.VisualStudio.TextTemplating": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.10.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.11.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Modeling": "17.0.0-0",
           "StreamJsonRpc": "2.25.29",
+          "System.Collections.Immutable": "10.0.12",
           "System.Numerics.Vectors": "4.6.1"
         },
         "compile": {
@@ -5338,7 +5772,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.ServiceHub.Analyzers/3.0.3078": {
+      "Microsoft.ServiceHub.Analyzers/4.8.55": {
         "type": "package"
       },
       "Microsoft.ServiceHub.Client/3.0.3078": {
@@ -5372,61 +5806,66 @@
           }
         }
       },
-      "Microsoft.ServiceHub.Framework/3.0.3078": {
+      "Microsoft.ServiceHub.Framework/4.8.55": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Analyzers": "3.0.3078",
-          "StreamJsonRpc": "2.7.70",
-          "System.Collections.Immutable": "5.0.0"
+          "Microsoft.ServiceHub.Analyzers": "4.8.55",
+          "Microsoft.VisualStudio.Composition": "17.12.20",
+          "Microsoft.VisualStudio.Threading": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "Nerdbank.Streams": "2.11.86",
+          "StreamJsonRpc": "2.21.10",
+          "System.Collections.Immutable": "8.0.0",
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -5518,6 +5957,75 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.VisualStudio.Composition/17.12.20": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "Microsoft.VisualStudio.Composition.Analyzers": "17.12.20",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "System.Collections.Immutable": "6.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Composition": "8.0.0",
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Metadata": "6.0.0",
+          "System.Threading.Tasks.Dataflow": "6.0.0"
+        },
+        "compile": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+        "type": "package"
       },
       "Microsoft.VisualStudio.CoreUtility/17.0.491": {
         "type": "package",
@@ -5977,11 +6485,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.RpcContracts/17.0.51": {
+      "Microsoft.VisualStudio.RpcContracts/17.14.20": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Framework": "3.0.2061",
-          "StreamJsonRpc": "2.8.28"
+          "Microsoft.ServiceHub.Framework": "4.8.40",
+          "System.Text.Json": "8.0.5",
+          "System.Threading.Tasks.Dataflow": "8.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll": {
@@ -6603,13 +7112,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading/17.0.64": {
+      "Microsoft.VisualStudio.Threading/17.13.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.64",
-          "Microsoft.VisualStudio.Validation": "16.10.35",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
           "Microsoft.Win32.Registry": "5.0.0",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "frameworkAssemblies": [
@@ -6667,7 +7178,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
+      "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
@@ -7157,11 +7668,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/10.0.12": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "compile": {
           "lib/net462/System.Collections.Immutable.dll": {
@@ -7177,16 +7688,129 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.ComponentModel.Composition/4.5.0": {
+      "System.ComponentModel.Composition/8.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.Composition"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "lib/net462/_._": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/_._": {}
+        }
+      },
+      "System.Composition/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Convention": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0",
+          "System.Composition.TypedParts": "8.0.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.AttributedModel/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Convention/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Hosting/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Runtime/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.TypedParts/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -7280,6 +7904,15 @@
           "ref/netstandard/_._": {}
         }
       },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Reflection.Emit.Lightweight/4.7.0": {
         "type": "package",
         "compile": {
@@ -7287,6 +7920,22 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -7642,11 +8291,13 @@
         "dependencies": {
           "Microsoft.VisualStudio.Modeling.Sdk": "17.0.0-0",
           "Microsoft.VisualStudio.Modeling.Sdk.Diagrams": "17.0.0-0",
+          "Microsoft.VisualStudio.RpcContracts": "17.14.20",
           "Microsoft.VisualStudio.TextTemplating": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.10.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.11.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Modeling": "17.0.0-0",
           "StreamJsonRpc": "2.25.29",
+          "System.Collections.Immutable": "10.0.12",
           "System.Numerics.Vectors": "4.6.1"
         },
         "compile": {
@@ -7878,7 +8529,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.ServiceHub.Analyzers/3.0.3078": {
+      "Microsoft.ServiceHub.Analyzers/4.8.55": {
         "type": "package"
       },
       "Microsoft.ServiceHub.Client/3.0.3078": {
@@ -7912,61 +8563,66 @@
           }
         }
       },
-      "Microsoft.ServiceHub.Framework/3.0.3078": {
+      "Microsoft.ServiceHub.Framework/4.8.55": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Analyzers": "3.0.3078",
-          "StreamJsonRpc": "2.7.70",
-          "System.Collections.Immutable": "5.0.0"
+          "Microsoft.ServiceHub.Analyzers": "4.8.55",
+          "Microsoft.VisualStudio.Composition": "17.12.20",
+          "Microsoft.VisualStudio.Threading": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "Nerdbank.Streams": "2.11.86",
+          "StreamJsonRpc": "2.21.10",
+          "System.Collections.Immutable": "8.0.0",
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -8058,6 +8714,75 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.VisualStudio.Composition/17.12.20": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "Microsoft.VisualStudio.Composition.Analyzers": "17.12.20",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "System.Collections.Immutable": "6.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Composition": "8.0.0",
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Metadata": "6.0.0",
+          "System.Threading.Tasks.Dataflow": "6.0.0"
+        },
+        "compile": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+        "type": "package"
       },
       "Microsoft.VisualStudio.CoreUtility/17.0.491": {
         "type": "package",
@@ -8517,11 +9242,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.RpcContracts/17.0.51": {
+      "Microsoft.VisualStudio.RpcContracts/17.14.20": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Framework": "3.0.2061",
-          "StreamJsonRpc": "2.8.28"
+          "Microsoft.ServiceHub.Framework": "4.8.40",
+          "System.Text.Json": "8.0.5",
+          "System.Threading.Tasks.Dataflow": "8.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll": {
@@ -9143,13 +9869,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading/17.0.64": {
+      "Microsoft.VisualStudio.Threading/17.13.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.64",
-          "Microsoft.VisualStudio.Validation": "16.10.35",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
           "Microsoft.Win32.Registry": "5.0.0",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "frameworkAssemblies": [
@@ -9207,7 +9935,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
+      "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
@@ -9709,11 +10437,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/10.0.12": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "compile": {
           "lib/net462/System.Collections.Immutable.dll": {
@@ -9729,16 +10457,129 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.ComponentModel.Composition/4.5.0": {
+      "System.ComponentModel.Composition/8.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.Composition"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "lib/net462/_._": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/_._": {}
+        }
+      },
+      "System.Composition/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Convention": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0",
+          "System.Composition.TypedParts": "8.0.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.AttributedModel/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Convention/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Hosting/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Runtime/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.TypedParts/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -9832,6 +10673,15 @@
           "ref/netstandard/_._": {}
         }
       },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Reflection.Emit.Lightweight/4.7.0": {
         "type": "package",
         "compile": {
@@ -9839,6 +10689,22 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -10194,11 +11060,13 @@
         "dependencies": {
           "Microsoft.VisualStudio.Modeling.Sdk": "17.0.0-0",
           "Microsoft.VisualStudio.Modeling.Sdk.Diagrams": "17.0.0-0",
+          "Microsoft.VisualStudio.RpcContracts": "17.14.20",
           "Microsoft.VisualStudio.TextTemplating": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.10.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.11.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Modeling": "17.0.0-0",
           "StreamJsonRpc": "2.25.29",
+          "System.Collections.Immutable": "10.0.12",
           "System.Numerics.Vectors": "4.6.1"
         },
         "compile": {
@@ -10430,7 +11298,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.ServiceHub.Analyzers/3.0.3078": {
+      "Microsoft.ServiceHub.Analyzers/4.8.55": {
         "type": "package"
       },
       "Microsoft.ServiceHub.Client/3.0.3078": {
@@ -10464,61 +11332,66 @@
           }
         }
       },
-      "Microsoft.ServiceHub.Framework/3.0.3078": {
+      "Microsoft.ServiceHub.Framework/4.8.55": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Analyzers": "3.0.3078",
-          "StreamJsonRpc": "2.7.70",
-          "System.Collections.Immutable": "5.0.0"
+          "Microsoft.ServiceHub.Analyzers": "4.8.55",
+          "Microsoft.VisualStudio.Composition": "17.12.20",
+          "Microsoft.VisualStudio.Threading": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "Nerdbank.Streams": "2.11.86",
+          "StreamJsonRpc": "2.21.10",
+          "System.Collections.Immutable": "8.0.0",
+          "System.Text.Json": "8.0.5"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll": {
+          "lib/net472/Microsoft.ServiceHub.Framework.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
+          "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -10610,6 +11483,75 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.VisualStudio.Composition/17.12.20": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "Microsoft.VisualStudio.Composition.Analyzers": "17.12.20",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
+          "System.Collections.Immutable": "6.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Composition": "8.0.0",
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Metadata": "6.0.0",
+          "System.Threading.Tasks.Dataflow": "6.0.0"
+        },
+        "compile": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/Microsoft.VisualStudio.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+        "type": "package"
       },
       "Microsoft.VisualStudio.CoreUtility/17.0.491": {
         "type": "package",
@@ -11069,11 +12011,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.RpcContracts/17.0.51": {
+      "Microsoft.VisualStudio.RpcContracts/17.14.20": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ServiceHub.Framework": "3.0.2061",
-          "StreamJsonRpc": "2.8.28"
+          "Microsoft.ServiceHub.Framework": "4.8.40",
+          "System.Text.Json": "8.0.5",
+          "System.Threading.Tasks.Dataflow": "8.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll": {
@@ -11695,13 +12638,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading/17.0.64": {
+      "Microsoft.VisualStudio.Threading/17.13.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.VisualStudio.Threading.Analyzers": "17.0.64",
-          "Microsoft.VisualStudio.Validation": "16.10.35",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.VisualStudio.Threading.Analyzers": "17.13.2",
+          "Microsoft.VisualStudio.Validation": "17.8.8",
           "Microsoft.Win32.Registry": "5.0.0",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "frameworkAssemblies": [
@@ -11759,7 +12704,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
+      "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Threading.Analyzers.targets": {}
@@ -12261,11 +13206,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/10.0.12": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "compile": {
           "lib/net462/System.Collections.Immutable.dll": {
@@ -12281,16 +13226,129 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.ComponentModel.Composition/4.5.0": {
+      "System.ComponentModel.Composition/8.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System.ComponentModel.Composition"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "lib/net462/_._": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/_._": {}
+        }
+      },
+      "System.Composition/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Convention": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0",
+          "System.Composition.TypedParts": "8.0.0"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.AttributedModel/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.AttributedModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Convention/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Convention.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Hosting/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.Runtime/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Composition.TypedParts/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "8.0.0",
+          "System.Composition.Hosting": "8.0.0",
+          "System.Composition.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Composition.TypedParts.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -12384,6 +13442,15 @@
           "ref/netstandard/_._": {}
         }
       },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Reflection.Emit.Lightweight/4.7.0": {
         "type": "package",
         "compile": {
@@ -12391,6 +13458,22 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -12746,11 +13829,13 @@
         "dependencies": {
           "Microsoft.VisualStudio.Modeling.Sdk": "17.0.0-0",
           "Microsoft.VisualStudio.Modeling.Sdk.Diagrams": "17.0.0-0",
+          "Microsoft.VisualStudio.RpcContracts": "17.14.20",
           "Microsoft.VisualStudio.TextTemplating": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.10.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Interfaces.11.0": "17.0.0-0",
           "Microsoft.VisualStudio.TextTemplating.Modeling": "17.0.0-0",
           "StreamJsonRpc": "2.25.29",
+          "System.Collections.Immutable": "10.0.12",
           "System.Numerics.Vectors": "4.6.1"
         },
         "compile": {
@@ -13175,29 +14260,21 @@
         "runtime.json"
       ]
     },
-    "Microsoft.ServiceHub.Analyzers/3.0.3078": {
-      "sha512": "LQsmEP/5i9PvM6O1dx69Yj3C0z/tSWiaLjoX31jQ+ilJZ8x7yqthYOnWaQpeZKxJn+oFxymzGtXgPasnqYM/ww==",
+    "Microsoft.ServiceHub.Analyzers/4.8.55": {
+      "sha512": "BrJ18egJTVcSQ8AjvDiW3bBlLGr/tLQ0vW0OrTMdZ0Jm9ML8zJv9BGvRaUeHwaYZT1VYgmE5A4tIHAk1R5oYiQ==",
       "type": "package",
-      "path": "microsoft.servicehub.analyzers/3.0.3078",
+      "path": "microsoft.servicehub.analyzers/4.8.55",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.txt",
-        "analyzers/Microsoft.ServiceHub.Analyzers.dll",
-        "analyzers/cs/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/de/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/es/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/fr/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/it/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/ja/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/ko/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/pl/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/pt-BR/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/ru/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/tr/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/zh-Hans/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "analyzers/zh-Hant/Microsoft.ServiceHub.Analyzers.resources.dll",
-        "microsoft.servicehub.analyzers.3.0.3078.nupkg.sha512",
+        "NOTICE",
+        "analyzers/cs/Microsoft.ServiceHub.Analyzers.CSharp.dll",
+        "analyzers/cs/Microsoft.ServiceHub.Analyzers.CodeFixes.dll",
+        "analyzers/cs/Microsoft.ServiceHub.Analyzers.dll",
+        "analyzers/vb/Microsoft.ServiceHub.Analyzers.CodeFixes.dll",
+        "analyzers/vb/Microsoft.ServiceHub.Analyzers.VisualBasic.dll",
+        "analyzers/vb/Microsoft.ServiceHub.Analyzers.dll",
+        "microsoft.servicehub.analyzers.4.8.55.nupkg.sha512",
         "microsoft.servicehub.analyzers.nuspec"
       ]
     },
@@ -13217,14 +14294,47 @@
         "microsoft.servicehub.client.nuspec"
       ]
     },
-    "Microsoft.ServiceHub.Framework/3.0.3078": {
-      "sha512": "RMBx+TEE3Fl6CRd1d1ZWKnNPRbPL23NFydDEEjRtZdwTSWe1x0gkUqnGU/ZgtqSsgWUfaQtEPxd8S9qfPGkz0Q==",
+    "Microsoft.ServiceHub.Framework/4.8.55": {
+      "sha512": "AZCNlrMnQwaHVPrsm8jtAhbXl2xOJl9YAUZPVsb0g42j5a6+3z4Ur4DN7f6ceZbAtKXpYVcirBl+yfVsxzayXg==",
       "type": "package",
-      "path": "microsoft.servicehub.framework/3.0.3078",
+      "path": "microsoft.servicehub.framework/4.8.55",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.txt",
+        "NOTICE",
+        "README.md",
+        "lib/net472/Microsoft.ServiceHub.Framework.dll",
+        "lib/net472/Microsoft.ServiceHub.Framework.xml",
+        "lib/net472/cs/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/de/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/es/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/fr/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/it/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/ja/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/ko/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/manifest.spdx.json",
+        "lib/net472/pl/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/pt-BR/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/ru/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/tr/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net472/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/Microsoft.ServiceHub.Framework.dll",
+        "lib/net8.0/Microsoft.ServiceHub.Framework.xml",
+        "lib/net8.0/cs/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/de/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/es/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/fr/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/it/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/ja/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/ko/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/manifest.spdx.json",
+        "lib/net8.0/pl/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/ru/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/tr/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/net8.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll",
         "lib/netstandard2.0/Microsoft.ServiceHub.Framework.xml",
         "lib/netstandard2.0/cs/Microsoft.ServiceHub.Framework.resources.dll",
@@ -13234,13 +14344,14 @@
         "lib/netstandard2.0/it/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/ja/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/ko/Microsoft.ServiceHub.Framework.resources.dll",
+        "lib/netstandard2.0/manifest.spdx.json",
         "lib/netstandard2.0/pl/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/pt-BR/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/ru/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/tr/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.ServiceHub.Framework.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.ServiceHub.Framework.resources.dll",
-        "microsoft.servicehub.framework.3.0.3078.nupkg.sha512",
+        "microsoft.servicehub.framework.4.8.55.nupkg.sha512",
         "microsoft.servicehub.framework.nuspec"
       ]
     },
@@ -13324,6 +14435,99 @@
         "lib/netstandard2.0/Microsoft.VisualStudio.ComponentModelHost.xml",
         "microsoft.visualstudio.componentmodelhost.17.0.491.nupkg.sha512",
         "microsoft.visualstudio.componentmodelhost.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Composition/17.12.20": {
+      "sha512": "yRjO6wI6bq7+B+4VSG2KaYC0ZN7LDS1PB6lZi+ERM0L0FRC2ESL+3RejnQifj2/dZJDECENK9OUc2hS5w/5csw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.composition/17.12.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NOTICE",
+        "PackageIcon.png",
+        "README.md",
+        "lib/net472/Microsoft.VisualStudio.Composition.dll",
+        "lib/net472/Microsoft.VisualStudio.Composition.xml",
+        "lib/net472/cs/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/de/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/es/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/fr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/it/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/ja/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/ko/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/manifest.spdx.json",
+        "lib/net472/pl/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/pt-BR/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/ru/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/tr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net472/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/Microsoft.VisualStudio.Composition.dll",
+        "lib/net6.0/Microsoft.VisualStudio.Composition.xml",
+        "lib/net6.0/cs/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/de/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/es/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/fr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/it/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/ja/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/ko/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/manifest.spdx.json",
+        "lib/net6.0/pl/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/pt-BR/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/ru/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/tr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/net6.0/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Composition.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Composition.xml",
+        "lib/netstandard2.0/cs/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/manifest.spdx.json",
+        "lib/netstandard2.0/pl/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.Composition.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.Composition.resources.dll",
+        "microsoft.visualstudio.composition.17.12.20.nupkg.sha512",
+        "microsoft.visualstudio.composition.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Composition.Analyzers/17.12.20": {
+      "sha512": "P5auqyL+DKNFL/E7e4KZbYLFCBVmQmqdYw6xVGIuuEVphjnYSCZ6QS4zl1iqjjRlRguW8EV1JLIF2j9ZaMledg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.composition.analyzers/17.12.20",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NOTICE",
+        "PackageIcon.png",
+        "README.md",
+        "analyzers/dotnet/Microsoft.VisualStudio.Composition.Analyzers.dll",
+        "analyzers/dotnet/cs/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/de/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/es/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/fr/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/it/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/ja/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/ko/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/pl/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/pt-BR/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/ru/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/tr/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/zh-Hans/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "analyzers/dotnet/zh-Hant/Microsoft.VisualStudio.Composition.Analyzers.resources.dll",
+        "microsoft.visualstudio.composition.analyzers.17.12.20.nupkg.sha512",
+        "microsoft.visualstudio.composition.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Microsoft.VisualStudio.CoreUtility/17.0.491": {
@@ -13795,20 +14999,23 @@
         "microsoft.visualstudio.remotecontrol.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.RpcContracts/17.0.51": {
-      "sha512": "4cMhOmJJl18BU+LTrcjNTLDqWBuCN5t87fB64n7UNyKLs03o4UVNKEjsUwlo6USbccGfoyba4mWPWIo7vL0qkA==",
+    "Microsoft.VisualStudio.RpcContracts/17.14.20": {
+      "sha512": "sAU2KIlghJ3jKnr80V3hGB8zE/n0+K6H6Zm3nN+8tcoLZMKtdt79UtiSTEy7p9XNrN0MHI1g42lurXpiX3FkPQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.rpccontracts/17.0.51",
+      "path": "microsoft.visualstudio.rpccontracts/17.14.20",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
+        "NOTICE",
         "PackageIcon.png",
-        "lib/net5.0/Microsoft.VisualStudio.RpcContracts.dll",
-        "lib/net5.0/Microsoft.VisualStudio.RpcContracts.xml",
+        "lib/net8.0/Microsoft.VisualStudio.RpcContracts.dll",
+        "lib/net8.0/Microsoft.VisualStudio.RpcContracts.xml",
+        "lib/net8.0/manifest.spdx.json",
         "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.RpcContracts.xml",
-        "microsoft.visualstudio.rpccontracts.17.0.51.nupkg.sha512",
+        "lib/netstandard2.0/manifest.spdx.json",
+        "microsoft.visualstudio.rpccontracts.17.14.20.nupkg.sha512",
         "microsoft.visualstudio.rpccontracts.nuspec"
       ]
     },
@@ -14375,14 +15582,16 @@
         "microsoft.visualstudio.texttemplating.vshost.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Threading/17.0.64": {
-      "sha512": "HD/yoC7u1Ignj/EsCST4iFXl8zaE+8r2A+4CUkl6GLTJjdNjfl8iNvhqpyK8+DjCMwhyNRRH0I6S6FA37fz95Q==",
+    "Microsoft.VisualStudio.Threading/17.13.2": {
+      "sha512": "BmbIlTqUI5q9dUfpzW/CJXeQUefUhcLVvOgcsjAq8OqnSTS30e8D0Sj7Vmst+p+Y2eKJ33Ml0FlB9jKyPR4pZQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.threading/17.0.64",
+      "path": "microsoft.visualstudio.threading/17.13.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "NOTICE",
         "PackageIcon.png",
+        "README.md",
         "lib/net472/Microsoft.VisualStudio.Threading.dll",
         "lib/net472/Microsoft.VisualStudio.Threading.xml",
         "lib/net472/cs/Microsoft.VisualStudio.Threading.resources.dll",
@@ -14392,27 +15601,45 @@
         "lib/net472/it/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/ja/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/ko/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net472/manifest.spdx.json",
         "lib/net472/pl/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/pt-BR/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/ru/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/tr/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/net472/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/Microsoft.VisualStudio.Threading.dll",
-        "lib/netcoreapp3.1/Microsoft.VisualStudio.Threading.xml",
-        "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/de/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/es/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/it/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll",
-        "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/Microsoft.VisualStudio.Threading.dll",
+        "lib/net6.0-windows7.0/Microsoft.VisualStudio.Threading.xml",
+        "lib/net6.0-windows7.0/cs/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/de/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/es/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/fr/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/it/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/ja/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/ko/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/manifest.spdx.json",
+        "lib/net6.0-windows7.0/pl/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/ru/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/tr/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0-windows7.0/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/Microsoft.VisualStudio.Threading.dll",
+        "lib/net6.0/Microsoft.VisualStudio.Threading.xml",
+        "lib/net6.0/cs/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/de/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/es/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/fr/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/it/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/ja/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/ko/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/manifest.spdx.json",
+        "lib/net6.0/pl/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/pt-BR/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/ru/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/tr/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/net6.0/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Threading.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Threading.xml",
         "lib/netstandard2.0/cs/Microsoft.VisualStudio.Threading.resources.dll",
@@ -14422,25 +15649,28 @@
         "lib/netstandard2.0/it/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/ja/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/ko/Microsoft.VisualStudio.Threading.resources.dll",
+        "lib/netstandard2.0/manifest.spdx.json",
         "lib/netstandard2.0/pl/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/ru/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/tr/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.Threading.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.Threading.resources.dll",
-        "microsoft.visualstudio.threading.17.0.64.nupkg.sha512",
+        "microsoft.visualstudio.threading.17.13.2.nupkg.sha512",
         "microsoft.visualstudio.threading.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Threading.Analyzers/17.0.64": {
-      "sha512": "+xz3lAqA3h2/5q6H7Udmz9TsxDQ99O+PjoQ4k4BTO3SfAfyJX7ejh7I1D1N/M/GzGUci9YOUpr6KBO4vXLg+zQ==",
+    "Microsoft.VisualStudio.Threading.Analyzers/17.13.2": {
+      "sha512": "Qcd8IlaTXZVq3wolBnzby1P7kWihdWaExtD8riumiKuG1sHa8EgjV/o70TMjTaeUMhomBbhfdC9OPwAHoZfnjQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.threading.analyzers/17.0.64",
+      "path": "microsoft.visualstudio.threading.analyzers/17.13.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "NOTICE",
         "PackageIcon.png",
+        "README.md",
         "analyzers/cs/Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll",
         "analyzers/cs/Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll",
         "analyzers/cs/Microsoft.VisualStudio.Threading.Analyzers.dll",
@@ -14478,7 +15708,7 @@
         "build/AdditionalFiles/vs-threading.MainThreadSwitchingMethods.txt",
         "build/AdditionalFiles/vs-threading.MembersRequiringMainThread.txt",
         "build/Microsoft.VisualStudio.Threading.Analyzers.targets",
-        "microsoft.visualstudio.threading.analyzers.17.0.64.nupkg.sha512",
+        "microsoft.visualstudio.threading.analyzers.17.13.2.nupkg.sha512",
         "microsoft.visualstudio.threading.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
@@ -15109,68 +16339,226 @@
         "system.buffers.nuspec"
       ]
     },
-    "System.Collections.Immutable/8.0.0": {
-      "sha512": "AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==",
+    "System.Collections.Immutable/10.0.12": {
+      "sha512": "tRMzrybcwEEaudfpL9ghzfnSjEVVuhKa5sR86q30mYxXJdcKOLSBkpMFm62CGsbB50diPZta73Pxu8DgjGdDbA==",
       "type": "package",
-      "path": "system.collections.immutable/8.0.0",
+      "path": "system.collections.immutable/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net10.0/System.Collections.Immutable.dll",
+        "lib/net10.0/System.Collections.Immutable.xml",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net8.0/System.Collections.Immutable.dll",
+        "lib/net8.0/System.Collections.Immutable.xml",
+        "lib/net9.0/System.Collections.Immutable.dll",
+        "lib/net9.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "system.collections.immutable.10.0.12.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.ComponentModel.Composition/8.0.0": {
+      "sha512": "bGhUX5BTivJ9Wax0qnJy7uGq7dn/TQkEpJ2Fpu1etg8dbPwyDkUzNPc1d3I2/jUr9y4wDI3a1dkSmi8X21Pzbw==",
+      "type": "package",
+      "path": "system.componentmodel.composition/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Collections.Immutable.targets",
-        "buildTransitive/net462/_._",
         "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
-        "lib/net462/System.Collections.Immutable.dll",
-        "lib/net462/System.Collections.Immutable.xml",
-        "lib/net6.0/System.Collections.Immutable.dll",
-        "lib/net6.0/System.Collections.Immutable.xml",
-        "lib/net7.0/System.Collections.Immutable.dll",
-        "lib/net7.0/System.Collections.Immutable.xml",
-        "lib/net8.0/System.Collections.Immutable.dll",
-        "lib/net8.0/System.Collections.Immutable.xml",
-        "lib/netstandard2.0/System.Collections.Immutable.dll",
-        "lib/netstandard2.0/System.Collections.Immutable.xml",
-        "system.collections.immutable.8.0.0.nupkg.sha512",
-        "system.collections.immutable.nuspec",
+        "buildTransitive/netcoreapp2.0/System.ComponentModel.Composition.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.ComponentModel.Composition.dll",
+        "lib/net6.0/System.ComponentModel.Composition.xml",
+        "lib/net7.0/System.ComponentModel.Composition.dll",
+        "lib/net7.0/System.ComponentModel.Composition.xml",
+        "lib/net8.0/System.ComponentModel.Composition.dll",
+        "lib/net8.0/System.ComponentModel.Composition.xml",
+        "lib/netstandard2.0/System.ComponentModel.Composition.dll",
+        "lib/netstandard2.0/System.ComponentModel.Composition.xml",
+        "system.componentmodel.composition.8.0.0.nupkg.sha512",
+        "system.componentmodel.composition.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.ComponentModel.Composition/4.5.0": {
-      "sha512": "+iB9FoZnfdqMEGq6np28X6YNSUrse16CakmIhV3h6PxEWt7jYxUN3Txs1D8MZhhf4QmyvK0F/EcIN0f4gGN0dA==",
+    "System.Composition/8.0.0": {
+      "sha512": "E9oO9olNNxA39J8CxQwf7ceIPm+j/B/PhYpyK9M4LhN/OLLRw6u5fNInkhVqaWueMB9iXxYqnwqwgz+W91loIA==",
       "type": "package",
-      "path": "system.componentmodel.composition/4.5.0",
+      "path": "system.composition/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcoreapp2.0/System.ComponentModel.Composition.dll",
-        "lib/netstandard2.0/System.ComponentModel.Composition.dll",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netstandard2.0/System.ComponentModel.Composition.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.componentmodel.composition.4.5.0.nupkg.sha512",
-        "system.componentmodel.composition.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "buildTransitive/net461/System.Composition.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.targets",
+        "lib/net461/_._",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard2.0/_._",
+        "system.composition.8.0.0.nupkg.sha512",
+        "system.composition.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Composition.AttributedModel/8.0.0": {
+      "sha512": "NyElSuvmBMYdn2iPG0n29i7Igu0bq99izOP3MAtEwskY3OP9jqsavvVmPn9lesVaj/KT/o/QkNjA43dOJTsDQw==",
+      "type": "package",
+      "path": "system.composition.attributedmodel/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Composition.AttributedModel.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.AttributedModel.targets",
+        "lib/net462/System.Composition.AttributedModel.dll",
+        "lib/net462/System.Composition.AttributedModel.xml",
+        "lib/net6.0/System.Composition.AttributedModel.dll",
+        "lib/net6.0/System.Composition.AttributedModel.xml",
+        "lib/net7.0/System.Composition.AttributedModel.dll",
+        "lib/net7.0/System.Composition.AttributedModel.xml",
+        "lib/net8.0/System.Composition.AttributedModel.dll",
+        "lib/net8.0/System.Composition.AttributedModel.xml",
+        "lib/netstandard2.0/System.Composition.AttributedModel.dll",
+        "lib/netstandard2.0/System.Composition.AttributedModel.xml",
+        "system.composition.attributedmodel.8.0.0.nupkg.sha512",
+        "system.composition.attributedmodel.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Composition.Convention/8.0.0": {
+      "sha512": "UuVkc1B3vQU/LzEbWLMZ1aYVssv4rpShzf8wPEyrUqoGNqdYKREmB8bXR73heOMKkwS6ZnPz3PjGODT2MenukQ==",
+      "type": "package",
+      "path": "system.composition.convention/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Composition.Convention.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.Convention.targets",
+        "lib/net462/System.Composition.Convention.dll",
+        "lib/net462/System.Composition.Convention.xml",
+        "lib/net6.0/System.Composition.Convention.dll",
+        "lib/net6.0/System.Composition.Convention.xml",
+        "lib/net7.0/System.Composition.Convention.dll",
+        "lib/net7.0/System.Composition.Convention.xml",
+        "lib/net8.0/System.Composition.Convention.dll",
+        "lib/net8.0/System.Composition.Convention.xml",
+        "lib/netstandard2.0/System.Composition.Convention.dll",
+        "lib/netstandard2.0/System.Composition.Convention.xml",
+        "system.composition.convention.8.0.0.nupkg.sha512",
+        "system.composition.convention.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Composition.Hosting/8.0.0": {
+      "sha512": "qwbONqoxlazxcbiohvb3t1JWZgKIKcRdXS5uEeLbo5wtuBupIbAvdC3PYTAeBCZrZeERvrtAbhYHuuS43Zr1bQ==",
+      "type": "package",
+      "path": "system.composition.hosting/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Composition.Hosting.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.Hosting.targets",
+        "lib/net462/System.Composition.Hosting.dll",
+        "lib/net462/System.Composition.Hosting.xml",
+        "lib/net6.0/System.Composition.Hosting.dll",
+        "lib/net6.0/System.Composition.Hosting.xml",
+        "lib/net7.0/System.Composition.Hosting.dll",
+        "lib/net7.0/System.Composition.Hosting.xml",
+        "lib/net8.0/System.Composition.Hosting.dll",
+        "lib/net8.0/System.Composition.Hosting.xml",
+        "lib/netstandard2.0/System.Composition.Hosting.dll",
+        "lib/netstandard2.0/System.Composition.Hosting.xml",
+        "system.composition.hosting.8.0.0.nupkg.sha512",
+        "system.composition.hosting.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Composition.Runtime/8.0.0": {
+      "sha512": "G+kRyB5/6+3ucRRQz+DF4uSHGqpkK8Q4ilVdbt4zvxpmvLVZNmSkyFAQpJLcbOyVF85aomJx0m+TGMDVlwx7ZQ==",
+      "type": "package",
+      "path": "system.composition.runtime/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Composition.Runtime.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.Runtime.targets",
+        "lib/net462/System.Composition.Runtime.dll",
+        "lib/net462/System.Composition.Runtime.xml",
+        "lib/net6.0/System.Composition.Runtime.dll",
+        "lib/net6.0/System.Composition.Runtime.xml",
+        "lib/net7.0/System.Composition.Runtime.dll",
+        "lib/net7.0/System.Composition.Runtime.xml",
+        "lib/net8.0/System.Composition.Runtime.dll",
+        "lib/net8.0/System.Composition.Runtime.xml",
+        "lib/netstandard2.0/System.Composition.Runtime.dll",
+        "lib/netstandard2.0/System.Composition.Runtime.xml",
+        "system.composition.runtime.8.0.0.nupkg.sha512",
+        "system.composition.runtime.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Composition.TypedParts/8.0.0": {
+      "sha512": "DsSklhuA+Dsgo3ZZrar8hjBFvq1wa1grrkNCTt+6SoX3vq0Vy+HXJnVXrU/nNH1BjlGH684A7h4hJQHZd/u5mA==",
+      "type": "package",
+      "path": "system.composition.typedparts/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Composition.TypedParts.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Composition.TypedParts.targets",
+        "lib/net462/System.Composition.TypedParts.dll",
+        "lib/net462/System.Composition.TypedParts.xml",
+        "lib/net6.0/System.Composition.TypedParts.dll",
+        "lib/net6.0/System.Composition.TypedParts.xml",
+        "lib/net7.0/System.Composition.TypedParts.dll",
+        "lib/net7.0/System.Composition.TypedParts.xml",
+        "lib/net8.0/System.Composition.TypedParts.dll",
+        "lib/net8.0/System.Composition.TypedParts.xml",
+        "lib/netstandard2.0/System.Composition.TypedParts.dll",
+        "lib/netstandard2.0/System.Composition.TypedParts.xml",
+        "system.composition.typedparts.8.0.0.nupkg.sha512",
+        "system.composition.typedparts.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Diagnostics.DiagnosticSource/8.0.1": {
@@ -15287,6 +16675,60 @@
         "system.private.uri.nuspec"
       ]
     },
+    "System.Reflection.Emit/4.7.0": {
+      "sha512": "VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "type": "package",
+      "path": "system.reflection.emit/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.1/System.Reflection.Emit.xml",
+        "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.xml",
+        "lib/netstandard2.1/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Reflection.Emit.dll",
+        "ref/netstandard1.1/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/de/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/es/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/fr/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/it/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ja/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ko/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.xml",
+        "ref/netstandard2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.7.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Reflection.Emit.Lightweight/4.7.0": {
       "sha512": "a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
       "type": "package",
@@ -15343,6 +16785,29 @@
         "system.reflection.emit.lightweight.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Reflection.Metadata/6.0.0": {
+      "sha512": "sffDOcex1C3HO5kDolOYcWXTwRpZY/LvJujM6SMjn63fWMJWchYAAmkoAJXlbpZ5yf4d+KMgxd+LeETa4gD9sQ==",
+      "type": "package",
+      "path": "system.reflection.metadata/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Reflection.Metadata.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Reflection.Metadata.dll",
+        "lib/net461/System.Reflection.Metadata.xml",
+        "lib/net6.0/System.Reflection.Metadata.dll",
+        "lib/net6.0/System.Reflection.Metadata.xml",
+        "lib/netstandard2.0/System.Reflection.Metadata.dll",
+        "lib/netstandard2.0/System.Reflection.Metadata.xml",
+        "system.reflection.metadata.6.0.0.nupkg.sha512",
+        "system.reflection.metadata.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/6.1.2": {
@@ -15983,8 +17448,10 @@
       "Microsoft.VisualStudio.Modeling.Sdk >= 17.0.*-*",
       "Microsoft.VisualStudio.Modeling.Sdk.Diagrams >= 17.0.*-*",
       "Microsoft.VisualStudio.Modeling.Sdk.Shell >= 17.0.*-*",
+      "Microsoft.VisualStudio.RpcContracts >= 17.14.20",
       "Microsoft.VisualStudio.SDK >= 17.0.*-*",
       "StreamJsonRpc >= 2.25.29",
+      "System.Collections.Immutable >= 10.0.12",
       "System.Numerics.Vectors >= 4.6.1",
       "UPM_IPS.SMFJLYZClassWeb.Dsl >= 1.0.0"
     ]
@@ -16049,6 +17516,10 @@
             "target": "Package",
             "version": "[17.0.*-*, )"
           },
+          "Microsoft.VisualStudio.RpcContracts": {
+            "target": "Package",
+            "version": "[17.14.20, )"
+          },
           "Microsoft.VisualStudio.SDK": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
@@ -16057,6 +17528,10 @@
           "StreamJsonRpc": {
             "target": "Package",
             "version": "[2.25.29, )"
+          },
+          "System.Collections.Immutable": {
+            "target": "Package",
+            "version": "[10.0.12, )"
           },
           "System.Numerics.Vectors": {
             "target": "Package",
@@ -16079,5 +17554,21 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.VisualStudio.RpcContracts 17.14.20 depends on Microsoft.ServiceHub.Framework (>= 4.8.40) but Microsoft.ServiceHub.Framework 4.8.40 was not found. Microsoft.ServiceHub.Framework 4.8.55 was resolved instead.",
+      "libraryId": "Microsoft.ServiceHub.Framework",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-arm64",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

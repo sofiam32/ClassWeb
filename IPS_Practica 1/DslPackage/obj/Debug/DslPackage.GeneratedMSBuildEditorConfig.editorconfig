@@ -1,6 +1,4 @@
 is_global = true
-build_property.EnableStreamJsonRpcInterceptors = 
-build_property.PublicRpcMarshalableInterfaceExtensions = 
 build_property.TargetFramework = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 

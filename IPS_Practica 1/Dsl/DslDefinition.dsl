@@ -11,6 +11,30 @@
             <DomainPath>TapizClaseHasClase.Clase</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloClase" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>TapizClaseHasEstiloClase.EstiloClase</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloAtributo" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>TapizClaseHasEstiloAtributo.EstiloAtributo</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloOperacion" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>TapizClaseHasEstiloOperacion.EstiloOperacion</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="33dc00d6-49c4-4960-99a9-2c4cb3ce06ce" Description="Description for UPM_IPS.SMFJLYZClassWeb.Clase" Name="Clase" DisplayName="Clase" Namespace="UPM_IPS.SMFJLYZClassWeb">
@@ -18,6 +42,11 @@
         <DomainProperty Id="f40f68de-cdf9-404a-b3ce-c985bbc44a92" Description="Description for UPM_IPS.SMFJLYZClassWeb.Clase.Nombre" Name="nombre" DisplayName="Nombre">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="9ca1cd9c-b178-4f3b-ab66-735cdfd64d8f" Description="Description for UPM_IPS.SMFJLYZClassWeb.Clase.Es Abstracta" Name="esAbstracta" DisplayName="Es Abstracta">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -110,7 +139,30 @@
             <DomainEnumerationMoniker Name="AlineacionEnum" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="8ac6e2b0-1d23-4525-a496-b1d821b06281" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClase.Nombre" Name="nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
       </Properties>
+      <ElementMergeDirectives>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloAtributo" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>EstiloClaseHasEstiloAtributo.EstiloAtributo</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloOperacion" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>EstiloClaseHasEstiloOperacion.EstiloOperacion</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+      </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="7b810f91-d14b-41fe-a8a6-9922e00ba1f7" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloAtributo" Name="EstiloAtributo" DisplayName="Estilo Atributo" Namespace="UPM_IPS.SMFJLYZClassWeb">
       <Properties>
@@ -236,34 +288,214 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="cfee5f26-9422-4b51-982f-9f1ba8f7773b" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloAtributo" Name="ClaseEnriquecidaReferencesEstiloAtributo" DisplayName="Clase Enriquecida References Estilo Atributo" Namespace="UPM_IPS.SMFJLYZClassWeb">
+    <DomainRelationship Id="01444836-036c-48c9-aaa7-bdaada4c4358" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo" Name="EstiloClaseHasEstiloAtributo" DisplayName="Estilo Clase Has Estilo Atributo" Namespace="UPM_IPS.SMFJLYZClassWeb" IsEmbedding="true">
       <Source>
-        <DomainRole Id="f37a1e3f-4bb5-4e70-801d-dc74dfe67fc1" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloAtributo.ClaseEnriquecida" Name="ClaseEnriquecida" DisplayName="Clase Enriquecida" PropertyName="EstiloAtributo" Multiplicity="One" PropertyDisplayName="Estilo Atributo">
+        <DomainRole Id="8faa2ad8-31ba-46fa-a5ab-a93dc381fbe1" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.EstiloClase" Name="EstiloClase" DisplayName="Estilo Clase" PropertyName="EstiloAtributo" Multiplicity="ZeroOne" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Atributo">
           <RolePlayer>
-            <DomainClassMoniker Name="ClaseEnriquecida" />
+            <DomainClassMoniker Name="EstiloClase" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="70f3761c-c77f-45ce-b350-1f6a0a40eed9" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloAtributo.EstiloAtributo" Name="EstiloAtributo" DisplayName="Estilo Atributo" PropertyName="ClaseEnriquecida" Multiplicity="OneMany" PropertyDisplayName="Clase Enriquecida">
+        <DomainRole Id="cc7f7613-9abe-4e0d-8cf7-585a9141c659" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloAtributo.EstiloAtributo" Name="EstiloAtributo" DisplayName="Estilo Atributo" PropertyName="EstiloClase" Multiplicity="ZeroOne" PropagatesDelete="true" PropertyDisplayName="Estilo Clase">
           <RolePlayer>
             <DomainClassMoniker Name="EstiloAtributo" />
           </RolePlayer>
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="5067de5d-98c7-43e1-9b54-aa45eca122ac" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloOperacion" Name="ClaseEnriquecidaReferencesEstiloOperacion" DisplayName="Clase Enriquecida References Estilo Operacion" Namespace="UPM_IPS.SMFJLYZClassWeb">
+    <DomainRelationship Id="8518f206-21fb-424f-ad0f-99a8e2cf7f8f" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion" Name="EstiloClaseHasEstiloOperacion" DisplayName="Estilo Clase Has Estilo Operacion" Namespace="UPM_IPS.SMFJLYZClassWeb" IsEmbedding="true">
       <Source>
-        <DomainRole Id="aab1694e-4121-4378-be2b-fbf6ebca29f1" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloOperacion.ClaseEnriquecida" Name="ClaseEnriquecida" DisplayName="Clase Enriquecida" PropertyName="EstiloOperacion" Multiplicity="One" PropertyDisplayName="Estilo Operacion">
+        <DomainRole Id="77637022-876f-41ee-9090-f50a83af6a3e" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.EstiloClase" Name="EstiloClase" DisplayName="Estilo Clase" PropertyName="EstiloOperacion" Multiplicity="ZeroOne" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Operacion">
           <RolePlayer>
-            <DomainClassMoniker Name="ClaseEnriquecida" />
+            <DomainClassMoniker Name="EstiloClase" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="74530dd4-de65-42cf-a4ab-fead43b38fa2" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecidaReferencesEstiloOperacion.EstiloOperacion" Name="EstiloOperacion" DisplayName="Estilo Operacion" PropertyName="ClaseEnriquecida" Multiplicity="OneMany" PropertyDisplayName="Clase Enriquecida">
+        <DomainRole Id="438aca61-6b2a-4ae8-b697-de138901da93" Description="Description for UPM_IPS.SMFJLYZClassWeb.EstiloClaseHasEstiloOperacion.EstiloOperacion" Name="EstiloOperacion" DisplayName="Estilo Operacion" PropertyName="EstiloClase" Multiplicity="ZeroOne" PropagatesDelete="true" PropertyDisplayName="Estilo Clase">
           <RolePlayer>
             <DomainClassMoniker Name="EstiloOperacion" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="4b60c7cf-aec9-490d-a3d1-3cb5470bbf9e" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase" Name="TapizClaseHasEstiloClase" DisplayName="Tapiz Clase Has Estilo Clase" Namespace="UPM_IPS.SMFJLYZClassWeb" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="7b1e0a74-1017-4f49-a3ec-5fd50d54d4ea" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.TapizClase" Name="TapizClase" DisplayName="Tapiz Clase" PropertyName="EstiloClase" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="TapizClase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="a2922cf2-08e4-40e1-8aad-af762c619c6b" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloClase.EstiloClase" Name="EstiloClase" DisplayName="Estilo Clase" PropertyName="TapizClase" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Tapiz Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloClase" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="44f9f796-7643-4950-b0ab-650b6f0381dd" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo" Name="TapizClaseHasEstiloAtributo" DisplayName="Tapiz Clase Has Estilo Atributo" Namespace="UPM_IPS.SMFJLYZClassWeb" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="e7e57984-c302-41bf-b908-f2bfee864c5f" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.TapizClase" Name="TapizClase" DisplayName="Tapiz Clase" PropertyName="EstiloAtributo" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Atributo">
+          <RolePlayer>
+            <DomainClassMoniker Name="TapizClase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="3f54d76b-31a2-4b0c-92d9-f4d7cd0b4ef7" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloAtributo.EstiloAtributo" Name="EstiloAtributo" DisplayName="Estilo Atributo" PropertyName="TapizClase" Multiplicity="ZeroOne" PropagatesDelete="true" PropertyDisplayName="Tapiz Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloAtributo" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="b7b0751b-4d8d-406c-8b44-c7be827eb3cf" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion" Name="TapizClaseHasEstiloOperacion" DisplayName="Tapiz Clase Has Estilo Operacion" Namespace="UPM_IPS.SMFJLYZClassWeb" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="a6ac4f6a-2f0b-4224-8dda-f22ef7001aed" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.TapizClase" Name="TapizClase" DisplayName="Tapiz Clase" PropertyName="EstiloOperacion" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Operacion">
+          <RolePlayer>
+            <DomainClassMoniker Name="TapizClase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="68560fe6-27ac-4767-b826-566ecce50463" Description="Description for UPM_IPS.SMFJLYZClassWeb.TapizClaseHasEstiloOperacion.EstiloOperacion" Name="EstiloOperacion" DisplayName="Estilo Operacion" PropertyName="TapizClase" Multiplicity="ZeroOne" PropagatesDelete="true" PropertyDisplayName="Tapiz Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloOperacion" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="f7f475a6-e8ad-4d50-b975-378b7ce4f432" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase" Name="ClaseHerenciaClase" DisplayName="Clase Herencia Clase" Namespace="UPM_IPS.SMFJLYZClassWeb">
+      <Properties>
+        <DomainProperty Id="c8ecf86d-52ea-45be-95e5-65a43db485aa" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Es Disjunta" Name="esDisjunta" DisplayName="Es Disjunta">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="c8167e43-2d03-46b6-8463-ead3806de1a1" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Es Total" Name="esTotal" DisplayName="Es Total">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="5b951a2e-d7c4-450b-90c6-0729d9b15fbe" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.Etiquetas Herencia" Name="etiquetasHerencia" DisplayName="Etiquetas Herencia" Kind="Calculated">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="b5c62b14-b248-4645-b2d8-ea7a8b1f9b20" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.SourceClase" Name="SourceClase" DisplayName="Source Clase" PropertyName="SuperClase" Multiplicity="OneMany" PropertyDisplayName="Super Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="49d30dad-6418-46bf-abd2-50a180a848fb" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseHerenciaClase.TargetClase" Name="TargetClase" DisplayName="Target Clase" PropertyName="SubClase" Multiplicity="One" PropertyDisplayName="Sub Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="969d71cb-5320-4270-991f-860f1ebe8256" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase" Name="ClaseAsociaClase" DisplayName="Clase Asocia Clase" Namespace="UPM_IPS.SMFJLYZClassWeb">
+      <Properties>
+        <DomainProperty Id="e2182fe0-141c-4ea9-901d-59a7489cfb92" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Cardinalidad Origen" Name="cardinalidadOrigen" DisplayName="Cardinalidad Origen">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="7ebd4a73-bcd9-4acc-a7d9-e0ccde5373a3" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Cardinalidad Destino" Name="cardinalidadDestino" DisplayName="Cardinalidad Destino">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="ce497b13-caa2-4a48-9e54-cf8dc4bef120" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.Nombre" Name="nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="ee2bc40f-ab3d-47dd-b2da-825b760efdc5" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.SourceClase" Name="SourceClase" DisplayName="Source Clase" PropertyName="OrigenClase" PropertyDisplayName="Origen Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="d6873e8a-9cef-47f5-9807-1a3374e16d11" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAsociaClase.TargetClase" Name="TargetClase" DisplayName="Target Clase" PropertyName="DestinoClase" PropertyDisplayName="Destino Clase">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="bc3cd22f-c07e-45d8-aab2-7c7617c59589" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase" Name="ClaseComponeClase" DisplayName="Clase Compone Clase" Namespace="UPM_IPS.SMFJLYZClassWeb">
+      <Properties>
+        <DomainProperty Id="4884c272-b22c-47c1-b08f-67c9d04208b5" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Nombre" Name="nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="53878195-a9bb-498b-aa9f-e18abb41932f" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Cardinalidad Origen" Name="cardinalidadOrigen" DisplayName="Cardinalidad Origen">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="df537c3f-f8ed-4315-bc25-37e1bbb83612" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.Cardinalidad Destino" Name="cardinalidadDestino" DisplayName="Cardinalidad Destino">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="7e81fc77-3606-420c-91e0-0f176a9b6262" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.SourceClase" Name="SourceClase" DisplayName="Source Clase" PropertyName="estaCompuesta" PropertyDisplayName="Esta Compuesta">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="79e1dbf6-f050-4f15-92fa-7fa2338ae96b" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseComponeClase.TargetClase" Name="TargetClase" DisplayName="Target Clase" PropertyName="esComponente" Multiplicity="ZeroOne" PropagatesDelete="true" PropertyDisplayName="Es Componente">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="d5a2ad62-26e9-41ed-ba53-77e03b786d28" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase" Name="ClaseAgregaClase" DisplayName="Clase Agrega Clase" Namespace="UPM_IPS.SMFJLYZClassWeb">
+      <Properties>
+        <DomainProperty Id="355e98b2-0fc0-47f7-bfab-cd36e1e54044" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Nombre" Name="nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="818793a8-ccb3-42b6-8721-e1d72f508f19" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Cardinalidad Origen" Name="cardinalidadOrigen" DisplayName="Cardinalidad Origen">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="523a22c3-e750-4007-acad-64ee5cbf2ee9" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.Cardinalidad Destino" Name="cardinalidadDestino" DisplayName="Cardinalidad Destino">
+          <Type>
+            <DomainEnumerationMoniker Name="CardinalidadEnum" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="7c77b2f6-5b97-4f9d-901f-b243bd336faa" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.SourceClase" Name="SourceClase" DisplayName="Source Clase" PropertyName="estaAgregada" PropertyDisplayName="Esta Agregada">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="33ce8319-a72a-483a-8806-317bf9abca8c" Description="Description for UPM_IPS.SMFJLYZClassWeb.ClaseAgregaClase.TargetClase" Name="TargetClase" DisplayName="Target Clase" PropertyName="esAgregado" PropertyDisplayName="Es Agregado">
+          <RolePlayer>
+            <DomainClassMoniker Name="Clase" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -344,6 +576,15 @@
         <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.AlineacionEnum.Izquierda" Name="Izquierda" Value="3" />
       </Literals>
     </DomainEnumeration>
+    <DomainEnumeration Name="CardinalidadEnum" Namespace="UPM_IPS.SMFJLYZClassWeb" Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAUno" Name="CeroAUno" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.CeroAMucho" Name="CeroAMucho" Value="1" />
+        <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAUno" Name="UnoAUno" Value="2" />
+        <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.UnoAMucho" Name="UnoAMucho" Value="3" />
+        <EnumerationLiteral Description="Description for UPM_IPS.SMFJLYZClassWeb.CardinalidadEnum.MuchoAMucho" Name="MuchoAMucho" Value="4" />
+      </Literals>
+    </DomainEnumeration>
   </Types>
   <Shapes>
     <CompartmentShape Id="9ac2e8bc-20d8-49cf-8c41-69b548aefb12" Description="Description for UPM_IPS.SMFJLYZClassWeb.MetaforaClase" Name="MetaforaClase" DisplayName="Metafora Clase" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Metafora Clase" FillColor="IndianRed" InitialHeight="1" Geometry="RoundedRectangle">
@@ -366,12 +607,53 @@
       <Compartment Name="Atributo" />
       <Compartment Name="Operacion" />
     </CompartmentShape>
-    <GeometryShape Id="217a359a-3205-435c-8f70-2f869a0f8bb2" Description="Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloClase" Name="MetaforaEstiloClase" DisplayName="Metafora Estilo Clase" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Metafora Estilo Clase" InitialHeight="1" Geometry="Rectangle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="NombreEClaseDec" DisplayName="Nombre EClase Dec" DefaultText="NombreEClaseDec" />
-      </ShapeHasDecorators>
-    </GeometryShape>
+    <GeometryShape Id="f47ceea9-d880-486c-b498-7233c84c137f" Description="Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloClase" Name="MetaforaEstiloClase" DisplayName="Metafora Estilo Clase" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Metafora Estilo Clase" FillColor="PapayaWhip" InitialHeight="1" Geometry="Ellipse" />
+    <GeometryShape Id="9a880ee0-b0c6-43f2-a52d-018da36c67cb" Description="Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloAtributo" Name="MetaforaEstiloAtributo" DisplayName="Metafora Estilo Atributo" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Metafora Estilo Atributo" FillColor="OrangeRed" InitialHeight="1" Geometry="Circle" />
+    <GeometryShape Id="f6426d78-ffb1-4e87-8683-aad178c8c237" Description="Description for UPM_IPS.SMFJLYZClassWeb.MetaforaEstiloOperacion" Name="MetaforaEstiloOperacion" DisplayName="Metafora Estilo Operacion" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Metafora Estilo Operacion" InitialHeight="1" Geometry="Rectangle" />
   </Shapes>
+  <Connectors>
+    <Connector Id="0deec8d2-edb8-4cd2-9b81-a12535b35814" Description="Description for UPM_IPS.SMFJLYZClassWeb.EnlaceCE_EC" Name="EnlaceCE_EC" DisplayName="Enlace CE_ EC" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Enlace CE_ EC" Color="Gray" DashStyle="Dot" />
+    <Connector Id="2ebc638f-5575-46d8-b81c-ff2925e6af71" Description="Description for UPM_IPS.SMFJLYZClassWeb.EnlaceEC_ATRIB" Name="EnlaceEC_ATRIB" DisplayName="Enlace EC_ ATRIB" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Enlace EC_ ATRIB" Color="Gray" DashStyle="Dot" />
+    <Connector Id="6bd7c251-381b-4c47-8727-87a30ade4dcd" Description="Description for UPM_IPS.SMFJLYZClassWeb.EnlaceEC_OPER" Name="EnlaceEC_OPER" DisplayName="Enlace EC_ OPER" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Enlace EC_ OPER" Color="Gray" DashStyle="Dot" />
+    <Connector Id="f8c2a7d8-02e1-4a9f-ba20-4999697b25c5" Description="Description for UPM_IPS.SMFJLYZClassWeb.ConectorHerencia" Name="ConectorHerencia" DisplayName="Conector Herencia" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Conector Herencia" TargetEndStyle="HollowArrow">
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="etiquetasDec" DisplayName="Etiquetas Dec" DefaultText="etiquetasDec" />
+      </ConnectorHasDecorators>
+    </Connector>
+    <Connector Id="6d865e3f-95f1-47e2-a24e-22706f988207" Description="Description for UPM_IPS.SMFJLYZClassWeb.ConectorAsociacion" Name="ConectorAsociacion" DisplayName="Conector Asociacion" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Conector Asociacion">
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="nombreDec" DisplayName="Nombre Dec" DefaultText="nombreDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="SourceBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardOrigenDec" DisplayName="Card Origen Dec" DefaultText="CardOrigenDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="TargetBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardDestinoDec" DisplayName="Card Destino Dec" DefaultText="CardDestinoDec" />
+      </ConnectorHasDecorators>
+    </Connector>
+    <Connector Id="226c11cb-b04b-4608-b5f6-3723a686b871" Description="Description for UPM_IPS.SMFJLYZClassWeb.ConectorComposicion" Name="ConectorComposicion" DisplayName="Conector Composicion" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Conector Composicion" TargetEndStyle="FilledDiamond">
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="nombreDec" DisplayName="Nombre Dec" DefaultText="nombreDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="SourceBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardOrigenDec" DisplayName="Card Origen Dec" DefaultText="CardOrigenDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="TargetBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardDestinoDec" DisplayName="Card Destino Dec" DefaultText="CardDestinoDec" />
+      </ConnectorHasDecorators>
+    </Connector>
+    <Connector Id="69822be2-861e-4a1a-8b81-873516417864" Description="Description for UPM_IPS.SMFJLYZClassWeb.ConectorAgregacion" Name="ConectorAgregacion" DisplayName="Conector Agregacion" Namespace="UPM_IPS.SMFJLYZClassWeb" FixedTooltipText="Conector Agregacion" TargetEndStyle="EmptyDiamond">
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="nombreDec" DisplayName="Nombre Dec" DefaultText="nombreDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="SourceBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardOrigenDec" DisplayName="Card Origen Dec" DefaultText="CardOrigenDec" />
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="TargetBottom" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardDestinoDec" DisplayName="Card Destino Dec" DefaultText="CardDestinoDec" />
+      </ConnectorHasDecorators>
+    </Connector>
+  </Connectors>
   <XmlSerializationBehavior Name="SMFJLYZClassWebSerializationBehavior" Namespace="UPM_IPS.SMFJLYZClassWeb">
     <ClassData>
       <XmlClassData TypeName="TapizClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizClaseMoniker" ElementName="tapizClase" MonikerTypeName="TapizClaseMoniker">
@@ -379,6 +661,15 @@
         <ElementData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="clase">
             <DomainRelationshipMoniker Name="TapizClaseHasClase" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloClase">
+            <DomainRelationshipMoniker Name="TapizClaseHasEstiloClase" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloAtributo">
+            <DomainRelationshipMoniker Name="TapizClaseHasEstiloAtributo" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloOperacion">
+            <DomainRelationshipMoniker Name="TapizClaseHasEstiloOperacion" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -396,6 +687,21 @@
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="operacion">
             <DomainRelationshipMoniker Name="ClaseHasOperacion" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="superClase">
+            <DomainRelationshipMoniker Name="ClaseHerenciaClase" />
+          </XmlRelationshipData>
+          <XmlPropertyData XmlName="esAbstracta">
+            <DomainPropertyMoniker Name="Clase/esAbstracta" />
+          </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="origenClase">
+            <DomainRelationshipMoniker Name="ClaseAsociaClase" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estaCompuesta">
+            <DomainRelationshipMoniker Name="ClaseComponeClase" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estaAgregada">
+            <DomainRelationshipMoniker Name="ClaseAgregaClase" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -442,12 +748,6 @@
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloClase">
             <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloClase" />
           </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloAtributo">
-            <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloAtributo" />
-          </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloOperacion">
-            <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloOperacion" />
-          </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EstiloClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloClaseMoniker" ElementName="estiloClase" MonikerTypeName="EstiloClaseMoniker">
@@ -470,6 +770,15 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="alineacion">
             <DomainPropertyMoniker Name="EstiloClase/alineacion" />
+          </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloAtributo">
+            <DomainRelationshipMoniker Name="EstiloClaseHasEstiloAtributo" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloOperacion">
+            <DomainRelationshipMoniker Name="EstiloClaseHasEstiloOperacion" />
+          </XmlRelationshipData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="EstiloClase/nombre" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -499,9 +808,6 @@
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="ClaseEnriquecidaReferencesEstiloAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseEnriquecidaReferencesEstiloAtributoMoniker" ElementName="claseEnriquecidaReferencesEstiloAtributo" MonikerTypeName="ClaseEnriquecidaReferencesEstiloAtributoMoniker">
-        <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloAtributo" />
-      </XmlClassData>
       <XmlClassData TypeName="EstiloOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloOperacionMoniker" ElementName="estiloOperacion" MonikerTypeName="EstiloOperacionMoniker">
         <DomainClassMoniker Name="EstiloOperacion" />
         <ElementData>
@@ -522,11 +828,106 @@
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="ClaseEnriquecidaReferencesEstiloOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseEnriquecidaReferencesEstiloOperacionMoniker" ElementName="claseEnriquecidaReferencesEstiloOperacion" MonikerTypeName="ClaseEnriquecidaReferencesEstiloOperacionMoniker">
-        <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloOperacion" />
+      <XmlClassData TypeName="EstiloClaseHasEstiloAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloClaseHasEstiloAtributoMoniker" ElementName="estiloClaseHasEstiloAtributo" MonikerTypeName="EstiloClaseHasEstiloAtributoMoniker">
+        <DomainRelationshipMoniker Name="EstiloClaseHasEstiloAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloClaseHasEstiloOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloClaseHasEstiloOperacionMoniker" ElementName="estiloClaseHasEstiloOperacion" MonikerTypeName="EstiloClaseHasEstiloOperacionMoniker">
+        <DomainRelationshipMoniker Name="EstiloClaseHasEstiloOperacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="TapizClaseHasEstiloClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizClaseHasEstiloClaseMoniker" ElementName="tapizClaseHasEstiloClase" MonikerTypeName="TapizClaseHasEstiloClaseMoniker">
+        <DomainRelationshipMoniker Name="TapizClaseHasEstiloClase" />
       </XmlClassData>
       <XmlClassData TypeName="MetaforaEstiloClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="metaforaEstiloClaseMoniker" ElementName="metaforaEstiloClase" MonikerTypeName="MetaforaEstiloClaseMoniker">
         <GeometryShapeMoniker Name="MetaforaEstiloClase" />
+      </XmlClassData>
+      <XmlClassData TypeName="EnlaceCE_EC" MonikerAttributeName="" SerializeId="true" MonikerElementName="enlaceCE_ECMoniker" ElementName="enlaceCE_EC" MonikerTypeName="EnlaceCE_ECMoniker">
+        <ConnectorMoniker Name="EnlaceCE_EC" />
+      </XmlClassData>
+      <XmlClassData TypeName="MetaforaEstiloAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="metaforaEstiloAtributoMoniker" ElementName="metaforaEstiloAtributo" MonikerTypeName="MetaforaEstiloAtributoMoniker">
+        <GeometryShapeMoniker Name="MetaforaEstiloAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="TapizClaseHasEstiloAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizClaseHasEstiloAtributoMoniker" ElementName="tapizClaseHasEstiloAtributo" MonikerTypeName="TapizClaseHasEstiloAtributoMoniker">
+        <DomainRelationshipMoniker Name="TapizClaseHasEstiloAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="EnlaceEC_ATRIB" MonikerAttributeName="" SerializeId="true" MonikerElementName="enlaceEC_ATRIBMoniker" ElementName="enlaceEC_ATRIB" MonikerTypeName="EnlaceEC_ATRIBMoniker">
+        <ConnectorMoniker Name="EnlaceEC_ATRIB" />
+      </XmlClassData>
+      <XmlClassData TypeName="TapizClaseHasEstiloOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizClaseHasEstiloOperacionMoniker" ElementName="tapizClaseHasEstiloOperacion" MonikerTypeName="TapizClaseHasEstiloOperacionMoniker">
+        <DomainRelationshipMoniker Name="TapizClaseHasEstiloOperacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="MetaforaEstiloOperacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="metaforaEstiloOperacionMoniker" ElementName="metaforaEstiloOperacion" MonikerTypeName="MetaforaEstiloOperacionMoniker">
+        <GeometryShapeMoniker Name="MetaforaEstiloOperacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="EnlaceEC_OPER" MonikerAttributeName="" SerializeId="true" MonikerElementName="enlaceEC_OPERMoniker" ElementName="enlaceEC_OPER" MonikerTypeName="EnlaceEC_OPERMoniker">
+        <ConnectorMoniker Name="EnlaceEC_OPER" />
+      </XmlClassData>
+      <XmlClassData TypeName="ClaseHerenciaClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseHerenciaClaseMoniker" ElementName="claseHerenciaClase" MonikerTypeName="ClaseHerenciaClaseMoniker">
+        <DomainRelationshipMoniker Name="ClaseHerenciaClase" />
+        <ElementData>
+          <XmlPropertyData XmlName="esDisjunta">
+            <DomainPropertyMoniker Name="ClaseHerenciaClase/esDisjunta" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="esTotal">
+            <DomainPropertyMoniker Name="ClaseHerenciaClase/esTotal" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="etiquetasHerencia" Representation="Ignore">
+            <DomainPropertyMoniker Name="ClaseHerenciaClase/etiquetasHerencia" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="ConectorHerencia" MonikerAttributeName="" SerializeId="true" MonikerElementName="conectorHerenciaMoniker" ElementName="conectorHerencia" MonikerTypeName="ConectorHerenciaMoniker">
+        <ConnectorMoniker Name="ConectorHerencia" />
+      </XmlClassData>
+      <XmlClassData TypeName="ClaseAsociaClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseAsociaClaseMoniker" ElementName="claseAsociaClase" MonikerTypeName="ClaseAsociaClaseMoniker">
+        <DomainRelationshipMoniker Name="ClaseAsociaClase" />
+        <ElementData>
+          <XmlPropertyData XmlName="cardinalidadOrigen">
+            <DomainPropertyMoniker Name="ClaseAsociaClase/cardinalidadOrigen" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="cardinalidadDestino">
+            <DomainPropertyMoniker Name="ClaseAsociaClase/cardinalidadDestino" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="ClaseAsociaClase/nombre" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="ConectorAsociacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="conectorAsociacionMoniker" ElementName="conectorAsociacion" MonikerTypeName="ConectorAsociacionMoniker">
+        <ConnectorMoniker Name="ConectorAsociacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="ClaseComponeClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseComponeClaseMoniker" ElementName="claseComponeClase" MonikerTypeName="ClaseComponeClaseMoniker">
+        <DomainRelationshipMoniker Name="ClaseComponeClase" />
+        <ElementData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="ClaseComponeClase/nombre" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="cardinalidadOrigen">
+            <DomainPropertyMoniker Name="ClaseComponeClase/cardinalidadOrigen" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="cardinalidadDestino">
+            <DomainPropertyMoniker Name="ClaseComponeClase/cardinalidadDestino" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="ConectorComposicion" MonikerAttributeName="" SerializeId="true" MonikerElementName="conectorComposicionMoniker" ElementName="conectorComposicion" MonikerTypeName="ConectorComposicionMoniker">
+        <ConnectorMoniker Name="ConectorComposicion" />
+      </XmlClassData>
+      <XmlClassData TypeName="ClaseAgregaClase" MonikerAttributeName="" SerializeId="true" MonikerElementName="claseAgregaClaseMoniker" ElementName="claseAgregaClase" MonikerTypeName="ClaseAgregaClaseMoniker">
+        <DomainRelationshipMoniker Name="ClaseAgregaClase" />
+        <ElementData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="ClaseAgregaClase/nombre" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="cardinalidadOrigen">
+            <DomainPropertyMoniker Name="ClaseAgregaClase/cardinalidadOrigen" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="cardinalidadDestino">
+            <DomainPropertyMoniker Name="ClaseAgregaClase/cardinalidadDestino" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="ConectorAgregacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="conectorAgregacionMoniker" ElementName="conectorAgregacion" MonikerTypeName="ConectorAgregacionMoniker">
+        <ConnectorMoniker Name="ConectorAgregacion" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -551,39 +952,77 @@
         </TargetDirectives>
       </LinkConnectDirective>
     </ConnectionBuilder>
-    <ConnectionBuilder Name="ClaseEnriquecidaReferencesEstiloAtributoBuilder">
+    <ConnectionBuilder Name="ClaseHerenciaClaseBuilder">
       <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloAtributo" />
+        <DomainRelationshipMoniker Name="ClaseHerenciaClase" />
         <SourceDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="ClaseEnriquecida" />
+              <DomainClassMoniker Name="Clase" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </SourceDirectives>
         <TargetDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="EstiloAtributo" />
+              <DomainClassMoniker Name="Clase" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
       </LinkConnectDirective>
     </ConnectionBuilder>
-    <ConnectionBuilder Name="ClaseEnriquecidaReferencesEstiloOperacionBuilder">
+    <ConnectionBuilder Name="ClaseAsociaClaseBuilder">
       <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloOperacion" />
+        <DomainRelationshipMoniker Name="ClaseAsociaClase" />
         <SourceDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="ClaseEnriquecida" />
+              <DomainClassMoniker Name="Clase" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </SourceDirectives>
         <TargetDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="EstiloOperacion" />
+              <DomainClassMoniker Name="Clase" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="ClaseComponeClaseBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="ClaseComponeClase" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Clase" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Clase" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="ClaseAgregaClaseBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="ClaseAgregaClase" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Clase" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Clase" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
@@ -673,7 +1112,138 @@
           </PropertyDisplayed>
         </CompartmentMap>
       </CompartmentShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloClase" />
+        <ParentElementPath>
+          <DomainPath>TapizClaseHasEstiloClase.TapizClase/!TapizClase</DomainPath>
+        </ParentElementPath>
+        <GeometryShapeMoniker Name="MetaforaEstiloClase" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloAtributo" />
+        <ParentElementPath>
+          <DomainPath>EstiloClaseHasEstiloAtributo.EstiloClase/!EstiloClase/TapizClaseHasEstiloClase.TapizClase/!TapizClase</DomainPath>
+        </ParentElementPath>
+        <GeometryShapeMoniker Name="MetaforaEstiloAtributo" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloOperacion" />
+        <ParentElementPath>
+          <DomainPath>EstiloClaseHasEstiloOperacion.EstiloClase/!EstiloClase/TapizClaseHasEstiloClase.TapizClase/!TapizClase</DomainPath>
+        </ParentElementPath>
+        <GeometryShapeMoniker Name="MetaforaEstiloOperacion" />
+      </ShapeMap>
     </ShapeMaps>
+    <ConnectorMaps>
+      <ConnectorMap>
+        <ConnectorMoniker Name="EnlaceCE_EC" />
+        <DomainRelationshipMoniker Name="ClaseEnriquecidaReferencesEstiloClase" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="EnlaceEC_ATRIB" />
+        <DomainRelationshipMoniker Name="EstiloClaseHasEstiloAtributo" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="EnlaceEC_OPER" />
+        <DomainRelationshipMoniker Name="EstiloClaseHasEstiloOperacion" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="ConectorHerencia" />
+        <DomainRelationshipMoniker Name="ClaseHerenciaClase" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorHerencia/etiquetasDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseHerenciaClase/etiquetasHerencia" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="ConectorAsociacion" />
+        <DomainRelationshipMoniker Name="ClaseAsociaClase" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAsociacion/nombreDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAsociaClase/nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAsociacion/CardOrigenDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAsociaClase/cardinalidadOrigen" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAsociacion/CardDestinoDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAsociaClase/cardinalidadDestino" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="ConectorComposicion" />
+        <DomainRelationshipMoniker Name="ClaseComponeClase" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorComposicion/nombreDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseComponeClase/nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorComposicion/CardOrigenDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseComponeClase/cardinalidadOrigen" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorComposicion/CardDestinoDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseComponeClase/cardinalidadDestino" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="ConectorAgregacion" />
+        <DomainRelationshipMoniker Name="ClaseAgregaClase" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAgregacion/nombreDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAgregaClase/nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAgregacion/CardOrigenDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAgregaClase/cardinalidadOrigen" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="ConectorAgregacion/CardDestinoDec" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="ClaseAgregaClase/cardinalidadDestino" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+      </ConnectorMap>
+    </ConnectorMaps>
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="SMFJLYZ_DSLClassWeb" EditorGuid="7a144e9d-b1ce-49fd-b31c-790b63a34743">
     <RootClass>
@@ -690,8 +1260,41 @@
       <ElementTool Name="ClaseEnriquecidaTool" ToolboxIcon="Resources\CE_Tool.bmp" Caption="Clase Enriquecida" Tooltip="Crea una Clase Enriquecida" HelpKeyword="ClaseEnriquecidaTool">
         <DomainClassMoniker Name="ClaseEnriquecida" />
       </ElementTool>
+      <ElementTool Name="AtributoTool" ToolboxIcon="Resources\Atributo_Tool.bmp" Caption="Atributo" Tooltip="Crea un Atributo" HelpKeyword="AtributoTool">
+        <DomainClassMoniker Name="Atributo" />
+      </ElementTool>
+      <ElementTool Name="OperacionTool" ToolboxIcon="Resources\Operacion_Tool.bmp" Caption="Operacion" Tooltip="Crea una operacion" HelpKeyword="OperacionTool">
+        <DomainClassMoniker Name="Operacion" />
+      </ElementTool>
     </ToolboxTab>
-    <ToolboxTab TabText="Relaciones" />
+    <ToolboxTab TabText="Relaciones">
+      <ConnectionTool Name="EnlaceHerenciaTool" ToolboxIcon="Resources\EnlaceHerenciaTool.bmp" Caption="Enlace Herencia" Tooltip="Crea una Herencia" HelpKeyword="EnlaceHerenciaTool">
+        <ConnectionBuilderMoniker Name="SMFJLYZClassWeb/ClaseHerenciaClaseBuilder" />
+      </ConnectionTool>
+      <ConnectionTool Name="EnlaceAsociacionTool" ToolboxIcon="Resources\EnlaceAsociacionTool.bmp" Caption="Enlace Asociacion" Tooltip="Crea una Asociacion" HelpKeyword="EnlaceAsociacionTool">
+        <ConnectionBuilderMoniker Name="SMFJLYZClassWeb/ClaseAsociaClaseBuilder" />
+      </ConnectionTool>
+      <ConnectionTool Name="EnlaceComposicionTool" ToolboxIcon="Resources\EnlaceComposicionTool.bmp" Caption="Enlace Composicion" Tooltip="Crea una Composicion" HelpKeyword="EnlaceComposicionTool">
+        <ConnectionBuilderMoniker Name="SMFJLYZClassWeb/ClaseComponeClaseBuilder" />
+      </ConnectionTool>
+      <ConnectionTool Name="EnlaceAgregacionTool" ToolboxIcon="Resources\EnlaceAgregacionTool.bmp" Caption="Enlace Agregacion" Tooltip="Crea una Agregacion " HelpKeyword="EnlaceAgregacionTool" ReversesDirection="true">
+        <ConnectionBuilderMoniker Name="SMFJLYZClassWeb/ClaseAgregaClaseBuilder" />
+      </ConnectionTool>
+    </ToolboxTab>
+    <ToolboxTab TabText="Estilos">
+      <ConnectionTool Name="EnlaceCE_ECTool" ToolboxIcon="Resources\EnlaceCE_ECTool.bmp" Caption="Enlace CE-EC" Tooltip="Crea un enlace de CE a EC" HelpKeyword="EnlaceCE_ECTool">
+        <ConnectionBuilderMoniker Name="SMFJLYZClassWeb/ClaseEnriquecidaReferencesEstiloClaseBuilder" />
+      </ConnectionTool>
+      <ElementTool Name="EstiloClaseTool" ToolboxIcon="Resources\EC_Tool.bmp" Caption="Estilo Clase" Tooltip="Crea un Estilo Clase " HelpKeyword="EstiloClaseTool">
+        <DomainClassMoniker Name="EstiloClase" />
+      </ElementTool>
+      <ElementTool Name="EstiloAtributoTool" ToolboxIcon="Resources\EA_Tool.bmp" Caption="Estilo Atributo" Tooltip="Crea un Estilo Atributo " HelpKeyword="EstiloAtributoTool">
+        <DomainClassMoniker Name="EstiloAtributo" />
+      </ElementTool>
+      <ElementTool Name="EstiloOperacionTool" ToolboxIcon="Resources\EO_Tool.bmp" Caption="Estilo Operacion" Tooltip="Crea un Estilo Operacion " HelpKeyword="EstiloOperacionTool">
+        <DomainClassMoniker Name="EstiloOperacion" />
+      </ElementTool>
+    </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
     <DiagramMoniker Name="SMFJLYZClassWebDiagram" />
   </Designer>

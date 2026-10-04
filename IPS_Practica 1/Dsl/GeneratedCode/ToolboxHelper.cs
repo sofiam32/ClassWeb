@@ -47,6 +47,26 @@ namespace UPM_IPS.SMFJLYZClassWeb
 		/// item filters.
 		/// </remarks>
 		public const string ToolboxFilterString = "SMFJLYZClassWeb.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceHerenciaTool connector tool.
+		/// </summary>
+		public const string EnlaceHerenciaToolFilterString = "EnlaceHerenciaTool.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceAsociacionTool connector tool.
+		/// </summary>
+		public const string EnlaceAsociacionToolFilterString = "EnlaceAsociacionTool.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceComposicionTool connector tool.
+		/// </summary>
+		public const string EnlaceComposicionToolFilterString = "EnlaceComposicionTool.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceAgregacionTool connector tool.
+		/// </summary>
+		public const string EnlaceAgregacionToolFilterString = "EnlaceAgregacionTool.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceCE_ECTool connector tool.
+		/// </summary>
+		public const string EnlaceCE_ECToolFilterString = "EnlaceCE_ECTool.1.0";
 
 	
 		private global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem> toolboxItemCache = new global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem>();
@@ -94,7 +114,7 @@ namespace UPM_IPS.SMFJLYZClassWeb
 		{
 			get
 			{
-				return 2;
+				return 4;
 			}
 		}
 		
@@ -171,6 +191,176 @@ namespace UPM_IPS.SMFJLYZClassWeb
 						"ClaseEnriquecidaTool", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ClaseEnriquecidaToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
 						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.ClaseEnriquecida.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.AtributoToolToolboxItem":
+					// Add AtributoTool shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.AtributoToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						3, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("AtributoToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("AtributoToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.SMFJLYZClassWeb.ClasesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("ClasesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"AtributoTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("AtributoToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.Atributo.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.OperacionToolToolboxItem":
+					// Add OperacionTool shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.OperacionToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						4, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("OperacionToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("OperacionToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.SMFJLYZClassWeb.ClasesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("ClasesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"OperacionTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("OperacionToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.Operacion.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EnlaceHerenciaToolToolboxItem":
+
+					// Add EnlaceHerenciaTool connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EnlaceHerenciaToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						1, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceHerenciaToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceHerenciaToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("RelacionesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceHerenciaTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceHerenciaToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceHerenciaToolFilterString)
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EnlaceAsociacionToolToolboxItem":
+
+					// Add EnlaceAsociacionTool connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EnlaceAsociacionToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						2, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceAsociacionToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceAsociacionToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("RelacionesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceAsociacionTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceAsociacionToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceAsociacionToolFilterString)
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EnlaceComposicionToolToolboxItem":
+
+					// Add EnlaceComposicionTool connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EnlaceComposicionToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						3, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceComposicionToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceComposicionToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("RelacionesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceComposicionTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceComposicionToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceComposicionToolFilterString)
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EnlaceAgregacionToolToolboxItem":
+
+					// Add EnlaceAgregacionTool connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EnlaceAgregacionToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						4, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceAgregacionToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceAgregacionToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("RelacionesToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceAgregacionTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceAgregacionToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceAgregacionToolFilterString)
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EnlaceCE_ECToolToolboxItem":
+
+					// Add EnlaceCE_ECTool connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EnlaceCE_ECToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						1, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceCE_ECToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceCE_ECToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("EstilosToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceCE_ECTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceCE_ECToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceCE_ECToolFilterString)
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EstiloClaseToolToolboxItem":
+					// Add EstiloClaseTool shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EstiloClaseToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						2, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EstiloClaseToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloClaseToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("EstilosToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EstiloClaseTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EstiloClaseToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.EstiloClase.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EstiloAtributoToolToolboxItem":
+					// Add EstiloAtributoTool shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EstiloAtributoToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						3, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EstiloAtributoToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloAtributoToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("EstilosToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EstiloAtributoTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EstiloAtributoToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.EstiloAtributo.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.SMFJLYZClassWeb.EstiloOperacionToolToolboxItem":
+					// Add EstiloOperacionTool shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.SMFJLYZClassWeb.EstiloOperacionToolToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						4, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EstiloOperacionToolToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloOperacionToolToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("EstilosToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EstiloOperacionTool", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EstiloOperacionToolToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.SMFJLYZClassWeb.EstiloOperacion.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});

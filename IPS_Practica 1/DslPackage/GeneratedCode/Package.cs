@@ -46,7 +46,88 @@ namespace UPM_IPS.SMFJLYZClassWeb
 					"@ClaseEnriquecidaToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
 					0xff00ff,
 					Index = 1)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.ClasesToolboxTab",
+					"@AtributoToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.AtributoToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"AtributoTool", 
+					"@AtributoToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 2)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.ClasesToolboxTab",
+					"@OperacionToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.OperacionToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"OperacionTool", 
+					"@OperacionToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 3)]
 	[VSShell::ProvideStaticToolboxGroup("@RelacionesToolboxTab;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", "UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab")]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab",
+					"@EnlaceHerenciaToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EnlaceHerenciaToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceHerenciaTool", 
+					"@EnlaceHerenciaToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 4)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab",
+					"@EnlaceAsociacionToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EnlaceAsociacionToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceAsociacionTool", 
+					"@EnlaceAsociacionToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 5)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab",
+					"@EnlaceComposicionToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EnlaceComposicionToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceComposicionTool", 
+					"@EnlaceComposicionToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 6)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.RelacionesToolboxTab",
+					"@EnlaceAgregacionToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EnlaceAgregacionToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceAgregacionTool", 
+					"@EnlaceAgregacionToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 7)]
+	[VSShell::ProvideStaticToolboxGroup("@EstilosToolboxTab;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", "UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab")]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab",
+					"@EnlaceCE_ECToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EnlaceCE_ECToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceCE_ECTool", 
+					"@EnlaceCE_ECToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 8)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab",
+					"@EstiloClaseToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EstiloClaseToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloClaseTool", 
+					"@EstiloClaseToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 9)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab",
+					"@EstiloAtributoToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EstiloAtributoToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloAtributoTool", 
+					"@EstiloAtributoToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 10)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.SMFJLYZClassWeb.EstilosToolboxTab",
+					"@EstiloOperacionToolToolboxItem;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					"UPM_IPS.SMFJLYZClassWeb.EstiloOperacionToolToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloOperacionTool", 
+					"@EstiloOperacionToolToolboxBitmap;UPM_IPS.SMFJLYZClassWeb.Dsl.dll", 
+					0xff00ff,
+					Index = 11)]
 	[VSShell::ProvideEditorFactory(typeof(SMFJLYZClassWebEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(SMFJLYZClassWebEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(SMFJLYZClassWebEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

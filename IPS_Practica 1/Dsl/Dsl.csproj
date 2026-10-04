@@ -70,12 +70,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Modeling.Sdk" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.Modeling.Sdk.Diagrams" Version="17.0.*-*" />
+    <PackageReference Include="Microsoft.VisualStudio.RpcContracts">
+      <Version>17.14.20</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.TextTemplating" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.10.0" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.11.0" Version="17.0.*-*" />
     <PackageReference Include="Microsoft.VisualStudio.TextTemplating.Modeling" Version="17.0.*-*" />
     <PackageReference Include="StreamJsonRpc">
       <Version>2.25.29</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>10.0.12</Version>
     </PackageReference>
     <PackageReference Include="System.Numerics.Vectors">
       <Version>4.6.1</Version>
@@ -89,6 +95,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>SerializationHelper.cs</LastGenOutput>
     </None>
+    <Compile Include="DesignerCustomization\ClaseHerenciaClase.cs" />
     <Compile Include="GeneratedCode\ConnectionBuilders.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +174,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Operacion_Tool.bmp" />
     <None Include="DslDefinition.dsl.diagram">
       <DependentUpon>DslDefinition.dsl</DependentUpon>
     </None>
@@ -257,10 +265,19 @@
     <CodeAnalysisDictionary Include="..\CodeAnalysisDictionary.xml">
       <Link>CodeAnalysisDictionary.xml</Link>
     </CodeAnalysisDictionary>
+    <Content Include="Resources\Atributo_Tool.bmp" />
     <Content Include="Resources\CE.BMP" />
     <Content Include="Resources\CE_Tool.bmp" />
     <Content Include="Resources\CN.bmp" />
     <Content Include="Resources\CN_Tool.bmp" />
+    <Content Include="Resources\EA_Tool.bmp" />
+    <Content Include="Resources\EC_Tool.bmp" />
+    <Content Include="Resources\EnlaceAgregacionTool.bmp" />
+    <Content Include="Resources\EnlaceAsociacionTool.bmp" />
+    <Content Include="Resources\EnlaceCE_ECTool.bmp" />
+    <Content Include="Resources\EnlaceComposicionTool.bmp" />
+    <Content Include="Resources\EnlaceHerenciaTool.bmp" />
+    <Content Include="Resources\EO_Tool.bmp" />
     <Content Include="Resources\ExampleConnectorToolBitmap.bmp" />
     <Content Include="Resources\ExampleShapeToolBitmap.bmp" />
     <EmbeddedResource Include="Resources\ConnectorSourceSearch.cur" />
