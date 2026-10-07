@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56B199B6-1D92-4A92-9798-C146D1EE9B20}|Dsl\\Dsl.csproj|c:\\users\\jilin\\downloads\\ips_practica 1\\dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|",
+      "RelativeMoniker": "D:0:0:{56B199B6-1D92-4A92-9798-C146D1EE9B20}|Dsl\\Dsl.csproj|solutionrelative:dsl\\dsldefinition.dsl||{702198C9-D1C6-40AB-804E-06BCF3519AE5}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DslDefinition.dsl",
+              "DocumentMoniker": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Dsl\\DslDefinition.dsl",
+              "RelativeDocumentMoniker": "Dsl\\DslDefinition.dsl",
+              "ToolTip": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Dsl\\DslDefinition.dsl",
+              "RelativeToolTip": "Dsl\\DslDefinition.dsl",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-06T22:05:38.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

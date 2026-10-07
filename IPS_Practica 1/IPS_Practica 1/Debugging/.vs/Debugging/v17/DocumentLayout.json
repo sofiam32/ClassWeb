@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC87B4EE-4225-45A7-84FC-38EA527F55E6}|Debugging.csproj|c:\\users\\jilin\\downloads\\ips_practica 1\\debugging\\sistema de gesti\u00F3n de hotel.smfjlyz_dslclassweb||{7A144E9D-B1CE-49FD-B31C-790B63A34743}|",
+      "RelativeMoniker": "D:0:0:{DC87B4EE-4225-45A7-84FC-38EA527F55E6}|Debugging.csproj|solutionrelative:sistema de gesti\u00F3n de hotel.smfjlyz_dslclassweb||{7A144E9D-B1CE-49FD-B31C-790B63A34743}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC87B4EE-4225-45A7-84FC-38EA527F55E6}|Debugging.csproj|C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\sample.smfjlyz_dslclassweb||{7A144E9D-B1CE-49FD-B31C-790B63A34743}|",
+      "RelativeMoniker": "D:0:0:{DC87B4EE-4225-45A7-84FC-38EA527F55E6}|Debugging.csproj|solutionrelative:sample.smfjlyz_dslclassweb||{7A144E9D-B1CE-49FD-B31C-790B63A34743}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sistema de Gesti\u00F3n de Hotel.SMFJLYZ_DSLClassWeb",
+              "DocumentMoniker": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\Sistema de Gesti\u00F3n de Hotel.SMFJLYZ_DSLClassWeb",
+              "RelativeDocumentMoniker": "Sistema de Gesti\u00F3n de Hotel.SMFJLYZ_DSLClassWeb",
+              "ToolTip": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\Sistema de Gesti\u00F3n de Hotel.SMFJLYZ_DSLClassWeb",
+              "RelativeToolTip": "Sistema de Gesti\u00F3n de Hotel.SMFJLYZ_DSLClassWeb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-07T07:42:44.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sample.SMFJLYZ_DSLClassWeb",
+              "DocumentMoniker": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\Sample.SMFJLYZ_DSLClassWeb",
+              "RelativeDocumentMoniker": "Sample.SMFJLYZ_DSLClassWeb",
+              "ToolTip": "C:\\Users\\jilin\\Downloads\\IPS_Practica 1\\Debugging\\Sample.SMFJLYZ_DSLClassWeb*",
+              "RelativeToolTip": "Sample.SMFJLYZ_DSLClassWeb*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-06T17:45:22.287Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tapizClase xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="957e1db3-cc40-46c3-b597-2f85258a2f79" nombre="Sistema de Gestión de Hotel" xmlns="http://schemas.microsoft.com/dsltools/SMFJLYZClassWeb">
+  <clase>
+    <tapizClaseHasClase Id="f9630a89-27c0-4a6f-9177-89cf6c8bff1d">
+      <clase Id="070b0f8e-0761-4167-a366-fa6e9649712a" nombre="Hotel" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="59fde621-dd0c-4685-b366-4dd072391525">
+            <atributo Id="c84468c2-1312-4873-a8e2-f0de52007d1e" nombre="nombre" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="aeb2e632-e4f9-4151-b7c4-4da3fb4a1a50">
+            <atributo Id="ed3a4023-4b65-4559-9b34-e6e59d63775e" nombre="IdHotel" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="060074bd-dd61-4ac3-a4ed-d05b5c33379b">
+            <atributo Id="20a20ebc-d424-4083-98eb-2e435fc36529" nombre="direccion" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="e2ed3c31-aea7-4eef-b199-00ac5c5eba1b">
+            <atributo Id="1271eb48-fc35-4758-8eab-76a818b5a6df" nombre="telefono" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="e29bcdf9-6432-41a8-b97f-f6481d26a061">
+            <atributo Id="9366f589-7826-4730-a7f9-c6ebbc447004" nombre="correo" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="c0152916-1163-4250-b805-b4c04e55f308">
+      <clase Id="b1ec5470-fd1f-4d5b-8121-d3844a910819" nombre="Habitacion" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="d5abc2dc-56f0-40da-8b87-b75298760a78">
+            <atributo Id="ba8d762e-8a92-47d7-adfa-d1c186decfd8" nombre="Numero" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="ca83c21f-4320-4168-952f-f4e072e747aa">
+            <atributo Id="5d3a106f-659c-46c5-81dc-bc317f85323c" nombre="Planta" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+        <estaCompuesta>
+          <claseComponeClase Id="885c8cd4-607b-4602-ba01-923204e4710c" nombre="HotelContieneHabitacion" cardinalidadOrigen="UnoAUno" cardinalidadDestino="UnoAMucho">
+            <claseMoniker Id="070b0f8e-0761-4167-a366-fa6e9649712a" />
+          </claseComponeClase>
+        </estaCompuesta>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="e315ca74-2a83-4195-9c81-4465b17730ac">
+      <clase Id="a54c8590-c3a2-4924-83d9-0ad20c6de157" nombre="Servicio" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="33852968-bf2f-4326-b674-2ef082c23017">
+            <atributo Id="c5a08705-5895-41f4-b92e-8515b6e5e146" nombre="codigo" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="b44ad529-f160-4e5e-91a2-668a3a119859">
+            <atributo Id="e7b2831c-8146-4a19-88bc-3818c0cfebd2" nombre="nombre" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="865aaa1f-6ffd-43da-bc45-01aece6429bc">
+      <claseEnriquecida Id="59cf669b-e2e0-4df3-9ee0-65bccbcae81e" nombre="Cliente" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="1df3f540-fcfa-4931-a58b-dea763125db6">
+            <atributo Id="d29aa9a6-856a-4790-8125-6591c5f3342a" nombre="IdCliente" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+        <superClase>
+          <claseHerenciaClase Id="6a0c02c9-f84f-447a-ad65-cebbe406164e" esDisjunta="true" esTotal="true">
+            <claseMoniker Id="5c53a4d8-67a7-4cf9-b058-99d2898008b7" />
+          </claseHerenciaClase>
+        </superClase>
+        <origenClase>
+          <claseAsociaClase Id="368c9551-dd55-464b-8b34-610e86165cc7" cardinalidadOrigen="UnoAUno" cardinalidadDestino="CeroAUno" nombre="ClienteTieneTarjetaSocio">
+            <claseMoniker Id="43552ea6-3a26-41fe-a244-4f4ea808bab2" />
+          </claseAsociaClase>
+          <claseAsociaClase Id="5ed06f25-d89b-4874-8657-e23e0b9c4e7b" cardinalidadOrigen="UnoAUno" cardinalidadDestino="CeroAMucho" nombre="ClienteHaceReserva">
+            <claseEnriquecidaMoniker Id="f467114a-6012-4916-a2d3-57b7094785b6" />
+          </claseAsociaClase>
+        </origenClase>
+        <estiloClase>
+          <claseEnriquecidaReferencesEstiloClase Id="ab359bc8-c6c7-49a1-81be-7caba890bc9b">
+            <estiloClaseMoniker Id="e3640b5f-224a-4a5e-8f3d-594ef3be333c" />
+          </claseEnriquecidaReferencesEstiloClase>
+        </estiloClase>
+      </claseEnriquecida>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="ceeebf7b-8f5e-4f33-b48d-d37c3e0161de">
+      <clase Id="43552ea6-3a26-41fe-a244-4f4ea808bab2" nombre="TarjetaSocio" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="1c6fa4e6-3132-415e-b0df-12e2d60b1bfd">
+            <atributo Id="06a4e492-2472-4bf5-9341-5507284b7d88" nombre="IdTarjeta" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="cfa7c768-f58b-47ec-b401-493286011b69">
+      <clase Id="5c53a4d8-67a7-4cf9-b058-99d2898008b7" nombre="Usuario" esAbstracta="true">
+        <atributo>
+          <claseHasAtributo Id="ebc1337c-38b5-4615-85f8-973d20e9e74a">
+            <atributo Id="39adbc7c-d647-4325-b9be-5b5f318aa5d4" nombre="nombre" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="d4ee04d5-f4cb-4268-832d-a4454e85a032">
+            <atributo Id="51f160a6-0a06-491e-8b36-d7106a510ac7" nombre="apellidos" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="9d393bba-cba6-41b4-af82-8d2f018d72e9">
+            <atributo Id="5f995904-f494-4606-b0c3-1536a8e60e6b" nombre="telefono" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="22148447-4a22-45b9-b29a-55ea7952b577">
+            <atributo Id="b7490888-513c-462b-a165-4589c482bbca" nombre="correo" tipo_dato="String" />
+          </claseHasAtributo>
+          <claseHasAtributo Id="687eac91-f5c2-49b7-a5bf-cbb7e78ebaaf">
+            <atributo Id="fcb39f48-823c-441d-a137-2d8cc0451752" nombre="DNI" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+        <origenClase>
+          <claseAsociaClase Id="339cca0f-7604-4cde-bc90-6573321c05a7" cardinalidadOrigen="CeroAMucho" cardinalidadDestino="CeroAMucho" nombre="UsuarioEstanciaHotel">
+            <claseMoniker Id="070b0f8e-0761-4167-a366-fa6e9649712a" />
+          </claseAsociaClase>
+        </origenClase>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="336c980f-3faf-49a2-895f-e702d16a0f61">
+      <clase Id="b2b733e3-6d84-49d4-b4c6-a652a82285aa" nombre="Empleado" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="0b863526-d22c-4446-addb-02c1c81ca501">
+            <atributo Id="36e87261-58ae-4d0d-8e32-a50d905aa47e" nombre="IdEmpleado" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+        <superClase>
+          <claseHerenciaClase Id="ed61a53c-8df6-4ca8-84ce-5c20bb06375a" esDisjunta="true" esTotal="true">
+            <claseMoniker Id="5c53a4d8-67a7-4cf9-b058-99d2898008b7" />
+          </claseHerenciaClase>
+        </superClase>
+      </clase>
+    </tapizClaseHasClase>
+    <tapizClaseHasClase Id="bf80126c-ab1c-4b93-bc11-616411553786">
+      <claseEnriquecida Id="f467114a-6012-4916-a2d3-57b7094785b6" nombre="Reserva" esAbstracta="false">
+        <atributo>
+          <claseHasAtributo Id="000eb304-78ba-44ee-b8c2-e582f705d6c1">
+            <atributo Id="2abdad27-953f-44a3-821f-53c86d822e44" nombre="fechaInicio" tipo_dato="String" />
+          </claseHasAtributo>
+        </atributo>
+        <operacion>
+          <claseHasOperacion Id="c8f68b6e-82c4-4ed1-ac43-6846a94975d2">
+            <operacion Id="b906204f-8879-409c-9745-fde362a02a85" tipo_retorno="String" nombre="calcularTotal()" />
+          </claseHasOperacion>
+        </operacion>
+        <estaAgregada>
+          <claseAgregaClase Id="1651e1ab-b7db-4776-a376-39e64ca49c44" cardinalidadOrigen="CeroAMucho" cardinalidadDestino="CeroAMucho">
+            <claseMoniker Id="a54c8590-c3a2-4924-83d9-0ad20c6de157" />
+          </claseAgregaClase>
+        </estaAgregada>
+        <estiloClase>
+          <claseEnriquecidaReferencesEstiloClase Id="b730faa8-344e-488f-b8b8-c238385afb13">
+            <estiloClaseMoniker Id="57308441-c299-444d-856d-94f7002e5bcc" />
+          </claseEnriquecidaReferencesEstiloClase>
+        </estiloClase>
+      </claseEnriquecida>
+    </tapizClaseHasClase>
+  </clase>
+  <estiloClase>
+    <tapizClaseHasEstiloClase Id="9a1153be-1e0b-43dd-9d29-7349d4bf1571">
+      <estiloClase Id="57308441-c299-444d-856d-94f7002e5bcc" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Doce" color_letra="Negro" color_fondo="Morado" alineacion="Justificado" nombre="EstiloClase">
+        <estiloAtributo>
+          <estiloClaseHasEstiloAtributo Id="146e97f9-8322-41b3-bf01-5bf380a3a36d">
+            <estiloAtributo Id="d8a5e2f8-ecfb-4cdb-99e5-1e32344f76fb" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Diez" color_letra="Azul" formato_atributo="true" />
+          </estiloClaseHasEstiloAtributo>
+        </estiloAtributo>
+        <estiloOperacion>
+          <estiloClaseHasEstiloOperacion Id="c5d3a4c5-f53f-4d35-a00a-42ffe17d996d">
+            <estiloOperacion Id="f412efe1-4f24-4c97-aada-2b67ac907231" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Diez" color_letra="Verde" color_fondo="Amarillo" />
+          </estiloClaseHasEstiloOperacion>
+        </estiloOperacion>
+      </estiloClase>
+    </tapizClaseHasEstiloClase>
+    <tapizClaseHasEstiloClase Id="d510b532-9a66-4b1d-a098-e274cb123b7c">
+      <estiloClase Id="e3640b5f-224a-4a5e-8f3d-594ef3be333c" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Diez" color_letra="Rojo" color_fondo="Rojo" alineacion="Centrado">
+        <estiloAtributo>
+          <estiloClaseHasEstiloAtributo Id="06a94640-8d60-4183-a73e-df556521320a">
+            <estiloAtributo Id="ca26b6f1-f6a7-47fd-bbf5-96d302941832" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Diez" color_letra="Rojo" formato_atributo="false" />
+          </estiloClaseHasEstiloAtributo>
+        </estiloAtributo>
+        <estiloOperacion>
+          <estiloClaseHasEstiloOperacion Id="d608a4f7-3e04-4598-bf0f-7ecff2e46e26">
+            <estiloOperacion Id="41955a74-abc2-4d80-9ff7-a827bccdeb16" tipo_letra="Arial" formato_letra="Negrita" tamanio_letra="Diez" color_letra="Rojo" color_fondo="Rojo" />
+          </estiloClaseHasEstiloOperacion>
+        </estiloOperacion>
+      </estiloClase>
+    </tapizClaseHasEstiloClase>
+  </estiloClase>
+</tapizClase>
